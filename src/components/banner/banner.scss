@@ -1,0 +1,67 @@
+@import "../../sass/theme/theme-variables";
+
+.banner {
+  position: relative;
+  height: 100%;
+  opacity: 1;
+  background-image: url(https://image.shutterstock.com/z/stock-vector-modern-flat-design-isometric-illustration-of-data-analysis-can-be-used-for-website-and-mobile-1090361219.jpg);
+  background-position: center right;
+  background-size: 42%;
+  background-repeat: no-repeat;
+  @media (max-width: 991px) {
+    background-position: bottom right;
+  }
+  @media (min-width: 1600px) {
+    background-size: 30%;
+    background-position: bottom 50% right 26%;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__content {
+    //margin-top: -90px;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    h1 {
+      font-size: 3.4rem;
+      font-weight: 600;
+      line-height: 1em;
+      margin-top: 20px;
+      @media (max-width: 991px) {
+        font-size: 2.5rem;
+      }
+      //@include media-breakpoint-down(md) {
+      //  font-size: 36px;
+      //}
+      //@include media-breakpoint-down (lg) {
+      //  font-size: 45px;
+      //}
+      @media (max-width: 414px) {
+        font-size: 32px;
+      }
+    }
+    .primary-btn {
+      text-transform: capitalize;
+      border-radius: 0;
+      padding-right: 30px;
+      background-color: $primary-color;
+      color: $white;
+      border: 1px solid transparent;
+      //@include transition();
+      &:hover {
+        background-color: transparent;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+
+      }
+    }
+    @media(max-width: 763px) {
+      p {
+        color: $black;
+      }
+    }
+  }
+}

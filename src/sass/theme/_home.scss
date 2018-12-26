@@ -1,0 +1,408 @@
+
+.section-gap {
+  padding: 120px 0;
+}
+
+.section-title {
+  padding-bottom: 30px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+    @include media-breakpoint-down (md) {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.primary-btn {
+  background-color: $primary-color;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 60px;
+  border-radius: 25px;
+  border: none;
+  color: $white;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  @include transition();
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  &:focus {
+    outline: none;
+  }
+  span {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 30px;
+    @include transition();
+  }
+  &:hover {
+    color: $white;
+    span {
+      color: $white;
+      right: 20px;
+    }
+  }
+  &.white {
+    border: 1px solid $white;
+    color: $white;
+    span {
+      color: $white;
+    }
+    &:hover {
+      background: $white;
+      color: $primary-color;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+//--------- Start Banner Area -------------//
+//--------- End Banner Area -------------//
+
+//--------- Start we-offer Area -------------//
+//--------- End we-offer Area -------------//
+
+//--------- Start video Area -------------//
+
+.home-video-area {
+  background-color: $offwhite;
+}
+
+.video-area {
+  padding: 200px 0 200px 0;
+  position: relative;
+  background: url(/img/video-bg.jpg) no-repeat center center/cover;
+  .overlay-bg {
+    background: rgba(#000, .5);
+    opacity: .6;
+  }
+  .video-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+//--------- End video Area -------------//
+
+//--------- Start home-video  Area -------------//
+
+.video-area {
+  background-color: $offwhite;
+}
+
+.video-right {
+  padding-right: 10%;
+  p {
+    span {
+      font-weight: 500;
+      color: $black;
+    }
+  }
+  .top-title {
+    color: $primary-color;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  @media(max-width: 1366px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media(max-width: 990px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+//--------- End home-video  Area -------------//
+
+//--------- Start home-aboutus  Area -------------//
+
+.home-aboutus-area {
+  background-color: $black;
+  .top-title {
+    color: $primary-color;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .about-right {
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      span {
+        color: $white;
+        font-weight: 500;
+      }
+    }
+    padding-right: 8%;
+    @media(max-width: 1366px) {
+      padding: 10px;
+      h1 {
+        font-size: 24px;
+      }
+      p span {
+        font-size: 10px;
+      }
+    }
+  }
+
+}
+
+//--------- End home-aboutus  Area -------------//
+
+//--------- Start Portfolio Area -------------//
+
+.single-portfolio {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.single-portfolio:hover .image {
+  opacity: 0.8;
+}
+
+.single-portfolio:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: $primary-color;
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
+}
+
+//--------- End Portfolio Area -------------//
+
+//--------- Start callto-action Area -------------//
+
+.callto-action-area {
+  background-size: cover;
+  .primary-btn {
+    text-transform: capitalize;
+    border-radius: 0;
+    background-color: $primary-color;
+    color: $white;
+    border: 1px solid transparent;
+    @include transition();
+    &:hover {
+      background-color: transparent;
+      color: $white;
+      border: 1px solid $white;
+    }
+  }
+  .overlay-bg {
+    background: rgba(#04091e, .6);
+  }
+}
+
+//--------- End callto-action Area -------------//
+
+//--------- start price  area -------------//
+
+.price-area {
+
+}
+
+.single-price {
+  background-color: $white;
+  .top-sec, .bottom-sec {
+    border-bottom: 1px solid #eeeeee;
+    padding: 40px 40px 22px 40px;
+    @include transition();
+    br {
+      display: none;
+    }
+
+    @media(max-width: 1024px) {
+      br {
+        display: block;
+      }
+    }
+
+  }
+  .end-sec {
+    background-color: $offwhite;
+    @include transition();
+    padding: 40px 40px 22px 40px;
+    ul li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .price-btn {
+    background: $primary-color;
+    color: $white;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  &:hover {
+    cursor: pointer;
+    .bottom-sec, .end-sec {
+      background-color: $primary-color;
+      box-shadow: 0px 20px 20px 0px rgba(157, 157, 157, 0.5);
+      color: $white;
+    }
+    .price-btn {
+      border-color: transparent;
+      background: $black;
+      color: $white;
+      .lnr {
+        color: $white;
+      }
+    }
+  }
+  @media(max-width: 800px) {
+    margin-bottom: 30px;
+    .bottom-sec, .end-sec {
+      text-align: center;
+    }
+  }
+}
+
+//--------- end price area  -------------//
+
+//--------- Start testimonial Area -------------//
+
+.testomial-area {
+  background-color: $offwhite;
+  .owl-carousel .owl-item img {
+    width: auto !important;
+  }
+
+  .owl-dots {
+    text-align: center;
+    bottom: 5px;
+    margin-top: 20px;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .owl-dot {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background: rgba(127, 127, 127, 0.5);
+    margin-left: 5px;
+    margin-right: 5px;
+    @include transition();
+  }
+
+  .owl-dot.active {
+    @include transition;
+    background: $primary-color;
+  }
+
+}
+
+.single-testimonial {
+  text-align: center;
+  padding: 30px;
+  background: $white;
+  text-align: center;
+  border: 1px solid #eee;
+  .desc {
+    padding: 30px 0px;
+  }
+}
+
+//--------- End testimonial Area -------------//
+
+//--------- Start latest-blog Area -------------//
+
+.latest-blog-area {
+  .single-blog {
+    img {
+      border-radius: 5px;
+    }
+    .tags {
+      margin: 20px 0;
+      li {
+        display: inline-block;
+        background: $primary-color;
+        border: 1px solid transparent;
+        a {
+          color: $white;
+          padding: 10px;
+        }
+        &:hover {
+          background-color: $white;
+          border: 1px solid #eee;
+          a {
+            color: $black;
+          }
+        }
+      }
+    }
+    h4 {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+//--------- End latest-blog Area -------------//
+
+//--------- start footer Area -------------//
+
+//--------- end footer Area -------------//
+
+//----------- Start Generic Page -------------//
+
+//----------- End Generic Page -------------//

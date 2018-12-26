@@ -1,0 +1,43 @@
+.banner-area {
+}
+
+.banner-content {
+  margin-top: -90px;
+  text-align: center;
+  font-size: 1rem;
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1em;
+    margin-top: 20px;
+    @include media-breakpoint-down(md) {
+      font-size: 36px;
+    }
+    @include media-breakpoint-down (lg) {
+      font-size: 45px;
+    }
+    @media (max-width: 414px) {
+      font-size: 32px;
+    }
+  }
+  .primary-btn {
+    text-transform: capitalize;
+    border-radius: 0;
+    padding-right: 30px;
+    background-color: $primary-color;
+    color: $white;
+    border: 1px solid transparent;
+    @include transition();
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+
+    }
+  }
+  @media(max-width: 763px) {
+    p {
+      color: $black;
+    }
+  }
+}
