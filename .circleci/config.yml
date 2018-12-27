@@ -8,6 +8,10 @@ jobs:
     branches:
       only:
         - master
+    environment:
+      EMAIL: kostas.siabanis@gmail.com
+      GIT_AUTHOR_NAME: Kostas Siabanis
+      GIT_COMMITTER_NAME: Kostas Siabanis
     docker:
     # specify the version you desire here
     - image: circleci/node:10.0.0
