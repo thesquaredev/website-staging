@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Squaredev'
   },
+  pathPrefix: "/website",
   plugins: [
     'gatsby-plugin-react-helmet',
     {
