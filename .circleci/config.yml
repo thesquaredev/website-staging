@@ -9,9 +9,8 @@ jobs:
       only:
         - master
     environment:
-      EMAIL: kostas.siabanis@gmail.com
-      GIT_AUTHOR_NAME: Kostas Siabanis
-      GIT_COMMITTER_NAME: Kostas Siabanis
+      GH_EMAIL: kostas.siabanis@gmail.com
+      GH_NAME: Kostas Siabanis
     docker:
     # specify the version you desire here
     - image: circleci/node:10.0.0
@@ -36,13 +35,16 @@ jobs:
     - run:
         name: Install dependencies
         command: npm install
+
     - run:
         name: Build site
         command: npm run build
     - run:
         name: Deploy to GitHub Pages
-        command: npm run deploy
-
+        command: |
+          git config --global user.email $GH_EMAIL
+          git config --global user.name $GH_NAME
+          npm run deploy
     - save_cache:
         paths:
         - node_modules
