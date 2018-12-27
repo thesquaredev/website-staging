@@ -1,0 +1,64 @@
+@import "../../sass/theme/theme-variables";
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact {
+  padding: 120px 0;
+  &__address {
+    padding-left: 100px;
+    &__icon {
+      width: 15px;
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__response {
+      padding-right: 8px;
+      max-width: 0;
+      opacity: 0;
+      white-space: nowrap;
+      transition: all 0.6s ease-in-out;
+      overflow: hidden;
+      &.expanded {
+        max-width: 100%;
+        opacity: 1;
+        flex: 1 1 auto;
+      }
+    }
+    &__spinner {
+      font-size: 1.2rem;
+      animation: rotate 2s linear infinite;
+    }
+  }
+  .primary-btn {
+    text-transform: capitalize;
+    border-radius: 0;
+    padding-right: 30px;
+    background-color: $primary-color;
+    color: $white;
+    border: 1px solid transparent;
+    transition: all 0.3s ease 0s;
+    min-width: 120px;
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+    &:disabled {
+      background-color: transparent;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

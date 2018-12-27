@@ -20,6 +20,16 @@ exports.createPages = ({ graphql, actions }) => {
                 btnTxt
                 description
                 icons
+                formTitle
+                formNamePlaceholder
+                formEmailPlaceholder
+                formMessagePlaceholder
+                formSubmitBtnTxt
+                addressTitle
+                addressLine1
+                addressLine2
+                addressCountry
+                addressEmail
               }
               html
             }
@@ -53,6 +63,28 @@ exports.createPages = ({ graphql, actions }) => {
             html,
             icon: icons[i],
           }))
+        }
+        if (node.frontmatter.component === 'callToAction') {
+          component.heading = node.frontmatter.heading
+          component.btnTxt = node.frontmatter.btnTxt
+          component.html = node.html
+        }
+        if (node.frontmatter.component === 'contact') {
+          component.heading = node.frontmatter.heading
+          component.form = {
+            title: node.frontmatter.formTitle,
+            namePlaceholder: node.frontmatter.formNamePlaceholder,
+            emailPlaceholder: node.frontmatter.formEmailPlaceholder,
+            messagePlaceholder: node.frontmatter.formMessagePlaceholder,
+            submitBtnTxt: node.frontmatter.formSubmitBtnTxt,
+          }
+          component.address = {
+            title: node.frontmatter.addressTitle,
+            line1: node.frontmatter.addressLine1,
+            line2: node.frontmatter.addressLine2,
+            country: node.frontmatter.addressCountry,
+            email: node.frontmatter.addressEmail,
+          }
         }
         // Find page index if already exists
         const index = pages.findIndex(p => p.title === page.title)
