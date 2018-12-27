@@ -1,5 +1,5 @@
 {
-  "name": "thesquaredev.github.io",
+  "name": "website",
   "description": "Squaredev's website",
   "version": "1.0.0",
   "author": "Kostas Siabanis <kostas.siabanis@gmail.com>",
@@ -37,6 +37,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thesquaredev/thesquaredev.github.io.git"
+    "url": "https://github.com/thesquaredev/website.git"
   }
 }
