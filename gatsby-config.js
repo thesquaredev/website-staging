@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Startup'
+    title: 'Squaredev'
   },
-  pathPrefix: process.env.PATH_PREFIX || "/",
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -18,7 +17,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-transformer-json',
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

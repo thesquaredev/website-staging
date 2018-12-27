@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "thesquaredev.github.io",
+  "description": "Squaredev's website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kostas Siabanis <kostas.siabanis@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.12",
     "@fortawesome/free-solid-svg-icons": "5.6.3",
@@ -14,7 +14,6 @@
     "gatsby-plugin-react-helmet": "3.0.5",
     "gatsby-plugin-sass": "2.0.1",
     "gatsby-source-filesystem": "2.0.1",
-    "gatsby-transformer-json": "2.1.2",
     "gatsby-transformer-remark": "2.1.17",
     "node-sass": "4.9.3",
     "react": "16.7.0",
@@ -28,14 +27,16 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gh-pages": "2.0.1",
     "prettier": "1.15.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/thesquaredev/thesquaredev.github.io.git"
   }
 }

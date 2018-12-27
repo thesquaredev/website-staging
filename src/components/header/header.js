@@ -11,7 +11,7 @@ const Header = ({isScrolled}) =>
       <div className="container">
         <div className="row align-items-center justify-content-between d-flex">
           <div className="header__logo">
-            <Link to="/"><img src={withPrefix("images/logo.png")} alt="Startup"/></Link>
+            <Link to="/"><img src={withPrefix("images/logo.png")} alt="Squaredev"/></Link>
           </div>
           <nav id="nav-menu-container">
             <ul className="nav-menu sf-arrows">

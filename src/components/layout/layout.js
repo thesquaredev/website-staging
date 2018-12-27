@@ -1,13 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-import Footer from '../footer/footer';
-import Header from '../header/header';
-import '../../sass/style.scss';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
+import Footer from '../footer/footer'
+import Header from '../header/header'
+import '../../sass/style.scss'
 
 class Layout extends React.Component {
-
   constructor(props) {
     super(props)
     this.state = {
@@ -43,9 +42,13 @@ class Layout extends React.Component {
               meta={[
                 {
                   name: 'description',
-                  content: 'Startup template for TippetCMS',
+                  content: 'Squaredev website',
                 },
-                { name: 'keywords', content: 'startup template, TippetCMS' },
+                {
+                  name: 'keywords',
+                  content:
+                    'Squaredev, Software Development, Data Analytics, Data Visualisations',
+                },
               ]}
             >
               <html lang="en" />
