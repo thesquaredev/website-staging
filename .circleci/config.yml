@@ -8,6 +8,8 @@ jobs:
     branches:
       only:
         - master
+      ignore:
+        - gh-pages
     environment:
       GH_EMAIL: kostas.siabanis@gmail.com
       GH_NAME: Kostas Siabanis
