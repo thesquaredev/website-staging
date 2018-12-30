@@ -2,6 +2,8 @@
 
 .callto-action-area {
   background-image: url(https://image.shutterstock.com/z/stock-photo-wave-of-particles-futuristic-blue-dots-background-with-a-dynamic-wave-big-data-d-rendering-1208236762.jpg);
+  //background-image: url(/images/paris-at-night.jpg);
+  background-size: cover;
   .primary-btn {
     text-transform: capitalize;
     border-radius: 0;
@@ -12,8 +14,11 @@
     transition: all 0.3s ease 0s;
     &:hover {
       background-color: transparent;
-      color: $primary-color;
-      border: 1px solid $primary-color;
+      color: $white;
+      border: 1px solid $white;
     }
+  }
+  .overlay-bg {
+    background: rgba(#04091e, .5);
   }
 }

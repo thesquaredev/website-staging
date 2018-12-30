@@ -16,7 +16,7 @@ class Layout extends React.Component {
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const isScrolled = window.scrollY > 200
+      const isScrolled = window.scrollY > 10
       if (isScrolled !== this.state.isScrolled) {
         this.setState({ isScrolled })
       }

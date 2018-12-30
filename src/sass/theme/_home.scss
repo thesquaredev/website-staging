@@ -230,26 +230,6 @@
 
 //--------- Start callto-action Area -------------//
 
-.callto-action-area {
-  background-size: cover;
-  .primary-btn {
-    text-transform: capitalize;
-    border-radius: 0;
-    background-color: $primary-color;
-    color: $white;
-    border: 1px solid transparent;
-    @include transition();
-    &:hover {
-      background-color: transparent;
-      color: $white;
-      border: 1px solid $white;
-    }
-  }
-  .overlay-bg {
-    background: rgba(#04091e, .6);
-  }
-}
-
 //--------- End callto-action Area -------------//
 
 //--------- start price  area -------------//

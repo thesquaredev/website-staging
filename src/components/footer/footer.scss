@@ -1,10 +1,52 @@
+@import '../../sass/theme/theme-variables';
+
 .footer {
-    width: 100%;
-    background-color: #333;
-    &-content {
-        height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  padding: 45px 0;
+  background-color: $dark-color;
+  &__text {
+    margin: 0;
+    color: $grey;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+  &__social {
+    text-align: right;
+    a {
+      background: $dark-color;
+      width: 40px;
+      display: inline-table;
+      height: 40px;
+      text-align: center;
+      padding-top: 10px;
+      color: $grey;
+      //@include transition();
+      &:hover {
+        background-color: $grey;
+        color: $dark-color;
+      }
     }
+
+    i {
+      color: #cccccc;
+      //@include transition();
+
+    }
+    @media (max-width:992px) {
+      text-align: left;
+      margin-top: 20px;
+    }
+  }
 }
+
+.footer-bottom {
+  //padding-top: 80px;
+}
+
+.footer-text {
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+

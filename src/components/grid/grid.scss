@@ -1,0 +1,17 @@
+.single-offer {
+  flex: 1 1 50%;
+  .desc {
+    margin-left: 12px;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+  .icon {
+    height: 60px;
+    margin: 8px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}

@@ -6,7 +6,7 @@ component: grid
 position: 2
 heading: Technology
 description: Performing beyond state of the art
-icons: s1.png, s2.png, s3.png, s4.png
+icons: frontend.svg, backend.svg, analytics.svg, serverless.svg
 ---
 
 ### Front end

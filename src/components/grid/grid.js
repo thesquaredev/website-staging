@@ -1,4 +1,5 @@
 import React from 'react'
+import './grid.scss'
 
 // Subcomponents
 const Tile = ({ html, icon }) => (
