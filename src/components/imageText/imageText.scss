@@ -1,0 +1,66 @@
+@import '../../sass/theme/theme-variables';
+
+.image-text {
+  background: $light-grey;
+
+  .primary-btn {
+    text-transform: capitalize;
+    border-radius: 0;
+    padding-right: 30px;
+    background-color: $primary-color;
+    color: $white;
+    border: 1px solid transparent;
+    //@include transition();
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+  }
+}
+
+.image-text.image-right .container .image-wrap.inview .image {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, -webkit-transform 500ms;
+  transition: transform 500ms, opacity 500ms;
+  transition: transform 500ms, opacity 500ms, -webkit-transform 500ms;
+}
+
+.image-text.image-right .container .image-wrap .image {
+  opacity: 0;
+  background-position: center center;
+  left: 0;
+  -webkit-transform: translate(50px, 0px);
+  -ms-transform: translate(50px, 0px);
+  transform: translate(50px, 0px);
+}
+
+.image-text .container .image-wrap .image {
+  min-height: 450px;
+  height: 100%;
+  width: 43vw;
+  max-width: 720px;
+  max-height: 600px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+}
+
+.image-text .container .image-col {
+  position: relative;
+  min-height: 580px;
+}
+
+@media screen and (max-width: 767px) {
+  .image-text .container .image-wrap .image {
+    min-height: 300px;
+    width: 100%;
+    max-width: 100%;
+  }
+}

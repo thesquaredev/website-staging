@@ -19,6 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
                 heading
                 btnTxt
                 description
+                image
                 icons
                 formTitle
                 formNamePlaceholder
@@ -49,9 +50,14 @@ exports.createPages = ({ graphql, actions }) => {
           name: node.frontmatter.component,
           position: node.frontmatter.position,
         }
-        if (node.frontmatter.component === 'banner') {
+        if (
+          node.frontmatter.component === 'banner' ||
+          node.frontmatter.component === 'callToAction' ||
+          node.frontmatter.component === 'imageText'
+        ) {
           component.heading = node.frontmatter.heading
           component.btnTxt = node.frontmatter.btnTxt
+          component.image =  node.frontmatter.image
           component.html = node.html
         }
         if (node.frontmatter.component === 'grid') {
@@ -63,11 +69,6 @@ exports.createPages = ({ graphql, actions }) => {
             html,
             icon: icons[i],
           }))
-        }
-        if (node.frontmatter.component === 'callToAction') {
-          component.heading = node.frontmatter.heading
-          component.btnTxt = node.frontmatter.btnTxt
-          component.html = node.html
         }
         if (node.frontmatter.component === 'contact') {
           component.heading = node.frontmatter.heading

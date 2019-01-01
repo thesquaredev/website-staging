@@ -15,8 +15,8 @@ const Tile = ({ html, icon }) => (
 
 // Component
 const Grid = ({ heading, description, tiles, elemId }) => (
-  <section className="we-offer-area section-gap" id={elemId}>
-    <div className="container">
+  <section className="grid section-gap" id={elemId}>
+    <div className="grid__content container">
       <div className="row d-flex justify-content-center">
         <div className="menu-content pb-60 col-lg-10">
           <div className="title text-center">

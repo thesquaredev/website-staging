@@ -3,7 +3,7 @@ template: index
 title: Home
 slug: /
 component: contact
-position: 4
+position: 5
 heading: Contact Us
 formTitle: Send us a message
 formNamePlaceholder: Your name

@@ -1,3 +1,10 @@
+@import '../../sass/theme/theme-variables';
+
+.grid {
+  position: relative;
+  &__content {
+  }
+}
 .single-offer {
   flex: 1 1 50%;
   .desc {

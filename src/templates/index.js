@@ -4,6 +4,7 @@ import Banner from '../components/banner/banner'
 import Grid from '../components/grid/grid'
 import CallToAction from '../components/callToAction/callToAction'
 import Contact from '../components/contact/contact'
+import ImageText from '../components/imageText/imageText'
 
 const IndexTemplate = ({ pageContext: { title, components } }) => (
   <Layout>
@@ -46,6 +47,17 @@ const IndexTemplate = ({ pageContext: { title, components } }) => (
               heading={com.heading}
               form={com.form}
               address={com.address}
+              elemId={`${com.name}${com.position}`}
+              key={i}
+            />
+          )
+        case 'imagetext':
+          return (
+            <ImageText
+              heading={com.heading}
+              html={com.html}
+              btnTxt={com.btnTxt}
+              image={com.image}
               elemId={`${com.name}${com.position}`}
               key={i}
             />
