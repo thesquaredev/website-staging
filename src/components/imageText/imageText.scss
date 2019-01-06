@@ -2,6 +2,7 @@
 
 .image-text {
   background: $light-grey;
+  padding: 80px 0;
 
   .primary-btn {
     text-transform: capitalize;
@@ -19,7 +20,8 @@
   }
 }
 
-.image-text.image-right .container .image-wrap.inview .image {
+.image-text.image-right .container .image-wrap.inview .image,
+.image-text.image-left .container .image-wrap.inview .image{
   opacity: 1;
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
@@ -34,9 +36,14 @@
   opacity: 0;
   background-position: center center;
   left: 0;
-  -webkit-transform: translate(50px, 0px);
-  -ms-transform: translate(50px, 0px);
   transform: translate(50px, 0px);
+}
+
+.image-text.image-left .container .image-wrap .image {
+  opacity: 0;
+  background-position: center center;
+  right: 0;
+  transform: translate(-50px, 0px);
 }
 
 .image-text .container .image-wrap .image {
@@ -57,10 +64,24 @@
   min-height: 580px;
 }
 
+.container .text-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .image-text .container .image-wrap .image {
     min-height: 300px;
     width: 100%;
     max-width: 100%;
   }
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
 }

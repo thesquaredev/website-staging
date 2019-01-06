@@ -19,3 +19,19 @@ body {
 .fullscreen {
   height: 100vh;
 }
+
+.row {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.section-gap {
+  padding: 120px 0;
+}
+
+// Larger container for larger screens
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}

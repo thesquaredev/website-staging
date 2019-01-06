@@ -59,6 +59,7 @@ const IndexTemplate = ({ pageContext: { title, components } }) => (
               btnTxt={com.btnTxt}
               image={com.image}
               elemId={`${com.name}${com.position}`}
+              imagePosition={com.imagePosition}
               key={i}
             />
           )

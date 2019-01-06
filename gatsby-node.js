@@ -20,6 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
                 btnTxt
                 description
                 image
+                imagePosition
                 icons
                 formTitle
                 formNamePlaceholder
@@ -58,6 +59,7 @@ exports.createPages = ({ graphql, actions }) => {
           component.heading = node.frontmatter.heading
           component.btnTxt = node.frontmatter.btnTxt
           component.image =  node.frontmatter.image
+          component.imagePosition = node.frontmatter.imagePosition
           component.html = node.html
         }
         if (node.frontmatter.component === 'grid') {

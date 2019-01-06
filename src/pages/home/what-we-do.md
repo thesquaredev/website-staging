@@ -9,20 +9,20 @@ description: Performing beyond state of the art
 icons: frontend.svg, backend.svg, analytics.svg, serverless.svg
 ---
 
-### Front end
+### IoT Dashboards
 We set up your digital architecture, and enable you to develop a fully scalable and maintainable platform.
 
 ***
 
-### Back end
+### Machine Learning
 We power your application with a high-performance back-end platform using node.js.
 
 ***
 
-### Data
+### Data Visualizations
 Manage and visualize your data with our dashboards and get fast access to your business intelligence.
 
 ***
 
-### Serverless
+### Data Analytics
 We develop intuitive mobile apps using React Native, that seamlessly integrate into your software environment.

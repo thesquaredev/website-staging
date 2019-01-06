@@ -12,6 +12,8 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(-45deg, $light-blue, $blue);
+    //background-image: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
+    //background-image: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%, $light-blue 50%,$blue 110%);
     transform: skewY(-6deg);
     transform-origin: top left;
   }
