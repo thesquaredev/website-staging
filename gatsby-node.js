@@ -22,16 +22,16 @@ exports.createPages = ({ graphql, actions }) => {
                 image
                 imagePosition
                 icons
-                formTitle
-                formNamePlaceholder
-                formEmailPlaceholder
-                formMessagePlaceholder
-                formSubmitBtnTxt
-                addressTitle
-                addressLine1
-                addressLine2
-                addressCountry
-                addressEmail
+                # formTitle
+                # formNamePlaceholder
+                # formEmailPlaceholder
+                # formMessagePlaceholder
+                # formSubmitBtnTxt
+                # addressTitle
+                # addressLine1
+                # addressLine2
+                # addressCountry
+                # addressEmail
               }
               html
             }
