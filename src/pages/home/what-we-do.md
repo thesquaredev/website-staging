@@ -6,7 +6,7 @@ component: grid
 position: 2
 heading: Technology
 description: Performing beyond state of the art
-icons: frontend.svg, backend.svg, analytics.svg, serverless.svg
+icons: frontend.svg, backend.svg, analytics.svg, serverless.svg, serverless.svg
 ---
 
 ### IoT Dashboards
