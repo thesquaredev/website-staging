@@ -1,6 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/**
+ * CAUTION:
+ * Don't prettier this file unless you know what you 're doing
+ */
+
 export default class HTML extends React.Component {
   render() {
     return (
@@ -15,7 +20,8 @@ export default class HTML extends React.Component {
           <script
             async
             src="https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver"
-          />
+          >
+          </script>
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
