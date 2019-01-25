@@ -3,6 +3,9 @@
 .image-text {
   background: $light-grey;
   padding: 80px 0;
+  @media screen and (max-width: 767px) {
+    padding: 40px 0;
+  }
 
   .primary-btn {
     text-transform: capitalize;
@@ -66,6 +69,10 @@
 .image-text .container .image-col {
   position: relative;
   min-height: 580px;
+  @media screen and (max-width: 767px) {
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
 }
 
 .container .text-col {
