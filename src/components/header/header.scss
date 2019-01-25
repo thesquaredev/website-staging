@@ -120,9 +120,10 @@
   display: inline-block;
   color: $white;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.8rem;
   text-transform: uppercase;
   outline: none;
+  font-family: $secondary-font;
 }
 
 .nav-menu li:hover > a,
@@ -154,8 +155,13 @@
   text-transform: none;
 }
 
-.nav-menu ul li:hover > a {
-  color: $primary-color;
+//.nav-menu ul li:hover > a {
+//  //color: $primary-color;
+//}
+
+.nav-menu a:hover {
+  color: $white;
+  text-decoration: underline !important;
 }
 
 .nav-menu ul ul {
@@ -230,7 +236,7 @@
 }
 
 #mobile-nav ul li a:hover {
-  color: #fff;
+  //color: #fff;
 }
 
 #mobile-nav ul li li {
