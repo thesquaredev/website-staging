@@ -7,7 +7,6 @@ const Banner = ({ heading, html, btnTxt, elemId }) => (
     <div className="banner__bg" />
     <div className="container fullscreen">
       <div className="row fullscreen banner__wrapper">
-        {/*<div className="banner__content col-lg-12">*/}
         <div className="banner__text col-lg-7">
           <h1>{heading}</h1>
           <div
@@ -386,7 +385,6 @@ const Banner = ({ heading, html, btnTxt, elemId }) => (
             />
           </svg>
         </div>
-        {/*</div>*/}
       </div>
     </div>
   </section>

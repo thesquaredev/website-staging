@@ -15,7 +15,7 @@ export default class HTML extends React.Component {
           <script
             async
             src="https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver"
-          ></script>
+          />
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
@@ -26,6 +26,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <div id="mobile-body-overly" style={{ display: 'none' }} />
         </body>
       </html>
     )

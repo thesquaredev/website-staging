@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import './header.scss'
-import { withPrefix } from 'gatsby'
+import { withPrefix, Link } from 'gatsby'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGripLines } from '@fortawesome/free-solid-svg-icons'
 
 const Header = ({ isScrolled }) => (
   <header className={isScrolled ? 'header header-scrolled' : 'header'}>
@@ -27,7 +26,7 @@ const Header = ({ isScrolled }) => (
               <AnchorLink href="#imageText3">Our Vision</AnchorLink>
             </li>
             <li>
-              <AnchorLink href='#imageText4'>Open Source</AnchorLink>
+              <AnchorLink href="#imageText4">Open Source</AnchorLink>
             </li>
             {/*<li className="menu-has-children">*/}
             {/*<Link to="">*/}
@@ -39,6 +38,34 @@ const Header = ({ isScrolled }) => (
             {/*</ul>*/}
             {/*</li>*/}
             {/*<li><Link to="#contact">Contact</Link></li>*/}
+          </ul>
+        </nav>
+        <button type="button" id="mobile-nav-toggle">
+          <FontAwesomeIcon icon={faGripLines} />
+        </button>
+        <nav id="mobile-nav">
+          <ul style={{ touchAction: 'pan-y' }}>
+            <li>
+              <Link to="#home">Home</Link>
+            </li>
+            <li>
+              <Link to="#offer">We Offer</Link>
+            </li>
+            <li>
+              <Link to="#about">About</Link>
+            </li>
+            <li>
+              <Link to="#project">Project</Link>
+            </li>
+            <li>
+              <Link to="#price">Price</Link>
+            </li>
+            {/*<li className="menu-has-children"><i className="lnr lnr-chevron-up" /><a href className="sf-with-ul menu-item-active">Pages</a>*/}
+            {/*<ul style={{}}>*/}
+            {/*<li><a href="generic.html">Generic</a></li>*/}
+            {/*<li><a href="elements.html">Elements</a></li>*/}
+            {/*</ul>*/}
+            {/*</li>*/}
           </ul>
         </nav>
       </div>
