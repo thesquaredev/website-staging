@@ -20,6 +20,7 @@
     "gatsby-transformer-remark": "2.1.17",
     "node-sass": "4.9.3",
     "react": "16.7.0",
+    "react-anchor-link-smooth-scroll": "1.0.11",
     "react-dom": "16.7.0",
     "react-helmet": "^5.2.0",
     "react-inview-monitor": "2.2.0"

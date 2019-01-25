@@ -4,7 +4,7 @@ title: Home
 slug: /
 component: grid
 position: 2
-heading: Technology
+heading: What We Do
 description: Performing beyond state of the art
 icons: frontend.svg, backend.svg, analytics.svg, serverless.svg, serverless.svg
 ---
