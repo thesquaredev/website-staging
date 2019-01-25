@@ -14,9 +14,9 @@ const Banner = ({ heading, html, btnTxt, elemId }) => (
               className="pt-20 pb-20"
               dangerouslySetInnerHTML={{ __html: html }}
             />
-            <Link className="primary-btn" to="">
+            <a className="primary-btn" href="mailto:hello@thesquaredev.com?subject=Hello Squaredev" target="_blank">
               {btnTxt}
-            </Link>
+            </a>
           </div>
           <div className="banner__image col-lg-5">
             <svg
