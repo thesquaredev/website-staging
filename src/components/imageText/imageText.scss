@@ -20,6 +20,10 @@
   }
 }
 
+.image-wrap {
+  min-height: 100%;
+}
+
 .image-text.image-right .container .image-wrap.inview .image,
 .image-text.image-left .container .image-wrap.inview .image{
   opacity: 1;
