@@ -52,10 +52,16 @@ class Layout extends React.Component {
               ]}
             >
               <html lang="en" />
+              <script
+                async
+                src="https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver"
+              >
+              </script>
             </Helmet>
             <Header isScrolled={this.state.isScrolled} />
             {this.props.children}
             <Footer />
+            <div id="mobile-body-overly" style={{ display: 'none' }} />
           </>
         )}
       />
