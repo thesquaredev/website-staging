@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import './banner.scss'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Banner = ({ heading, html, btnTxt, elemId }) => (
   <section className="banner" id={elemId}>
@@ -13,13 +13,15 @@ const Banner = ({ heading, html, btnTxt, elemId }) => (
             className="pt-20 pb-20"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <a
-            className="primary-btn"
-            href="mailto:hello@thesquaredev.com?subject=Hello Squaredev"
-            target="_blank"
-          >
+          {/*<a*/}
+          {/*className="primary-btn"*/}
+          {/*href="mailto:hello@thesquaredev.com?subject=Hello Squaredev"*/}
+          {/*target="_blank"*/}
+          {/*>*/}
+          {/*</a>*/}
+          <AnchorLink className="primary-btn" href="#footer">
             {btnTxt}
-          </a>
+          </AnchorLink>
         </div>
         <div className="banner__image col-lg-5">
           <svg

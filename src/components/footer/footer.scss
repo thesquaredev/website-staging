@@ -3,12 +3,16 @@
 .footer {
   padding: 45px 0;
   background-color: $dark-color;
+  color: $white;
   &__text {
     margin: 0;
     color: $grey;
     display: flex;
     flex-direction: column;
     font-size: 0.8rem;
+    @media (max-width:767px) {
+      text-align: center;
+    }
   }
   &__social {
     text-align: right;
@@ -20,7 +24,7 @@
       text-align: center;
       padding-top: 10px;
       color: $grey;
-      //@include transition();
+      font-size: 1.3rem;
       &:hover {
         background-color: $grey;
         color: $dark-color;
@@ -32,9 +36,46 @@
       //@include transition();
 
     }
-    @media (max-width:992px) {
-      text-align: left;
-      margin-top: 20px;
+    @media (max-width:767px) {
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  &__address {
+    text-align: right;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    h5 {
+      font-family: $secondary-font !important;
+      color: $white;
+    }
+    &__icon {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  &__contact {
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__logo {
+    align-self: start;
+    @media screen and (max-width: 767px) {
+      margin-left: 15px;
+      display: none;
+    }
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 30px;
+      @media screen and (max-width: 767px) {
+        max-height: 20px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
