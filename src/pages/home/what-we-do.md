@@ -5,30 +5,24 @@ slug: /
 component: grid
 position: 2
 heading: What We Do
-description: Performing beyond state of the art
-icons: frontend.svg, backend.svg, analytics.svg, serverless.svg, serverless.svg
+description: We create beautiful data visualizations and AI enabled data analytics platforms.
+icons: engineering.svg, visualizations.svg, analytics.svg, ml.svg
 ---
 
-### IoT Dashboards
-We set up your digital architecture, and enable you to develop a fully scalable and maintainable platform.
-
-***
-
-### Machine Learning
-We power your application with a high-performance back-end platform using node.js.
-We make the best things in the world!
+### IoT Dashboards  
+We provide you with the tools to build complex IoT solutions. Connect and manage millions of devices. Collect, aggregate, and understand data from disparate sources.
 
 ***
 
 ### Data Visualizations
-Manage and visualize your data with our dashboards and get fast access to your business intelligence.
+We expose patterns and produce eye-catching visualizations. We then give you the tools to share and manage your data storytelling.
 
 ***
 
 ### Data Analytics
-We develop intuitive mobile apps using React Native, that seamlessly integrate into your software environment.
+We power our products with effective and reliable data analysis for guaranteed results and reliable decision making.
 
 ***
 
-### Test tile
-Hey, This is just a test!
+### Machine Learning
+We go deeper with Machine Learning to come up with patterns that cannot be identified with conventional techniques.

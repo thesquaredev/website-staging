@@ -4,8 +4,8 @@ title: Home
 slug: /
 component: banner
 position: 1
-heading: Tell me your story
-btnTxt: Contact us
+heading: Share your data visualizations
+btnTxt: Get in touch
 ---
 
-Use our experience and expertise to **harness** the power of your data. We build beyond state-of-the-art front-end visualizations and AI enabled data analytics platforms. Put your own stuff here.
+Create, visualize, explain and manage your stories with dashboards and embedded analytics. We make sharing and embedding visualizations and analytics easy for teams and individuals.
