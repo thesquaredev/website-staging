@@ -22,15 +22,17 @@ const ImageText = ({ heading, html, btnTxt, image, elemId, imagePosition }) => (
               : 'col-md-5 image-col offset-md-1 order-md-2'
           }
         >
-          <InViewMonitor
-            classNameNotInView="image-wrap"
-            classNameInView="image-wrap inview"
-          >
-            <div
-              className="image"
-              style={{ backgroundImage: `url(images/${image})` }}
-            />
-          </InViewMonitor>
+          <div className="image-wrap">
+            <InViewMonitor
+              classNameNotInView=""
+              classNameInView="inview"
+            >
+              <div
+                className="image"
+                style={{ backgroundImage: `url(images/${image})` }}
+              />
+            </InViewMonitor>
+          </div>
         </div>
         <div className="text-col col-md-5 offset-md-1">
           <div className="text-container">
