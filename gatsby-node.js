@@ -18,6 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
                 position
                 heading
                 btnTxt
+                btnUrl
                 description
                 image
                 imagePosition
@@ -57,7 +58,8 @@ exports.createPages = ({ graphql, actions }) => {
           node.frontmatter.component === 'imageText'
         ) {
           component.heading = node.frontmatter.heading
-          component.btnTxt = node.frontmatter.btnTxt
+          component.btnTxt = node.frontmatter.btnTxt || ''
+          component.btnUrl = node.frontmatter.btnUrl || ''
           component.image =  node.frontmatter.image
           component.imagePosition = node.frontmatter.imagePosition
           component.html = node.html

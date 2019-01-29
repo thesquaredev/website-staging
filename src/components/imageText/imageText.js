@@ -1,10 +1,17 @@
 import React from 'react'
 import InViewMonitor from 'react-inview-monitor'
-import { Link } from 'gatsby'
 import { IMAGE_LEFT } from '../common/common'
 import './imageText.scss'
 
-const ImageText = ({ heading, html, btnTxt, image, elemId, imagePosition }) => (
+const ImageText = ({
+  heading,
+  html,
+  btnTxt,
+  btnUrl,
+  image,
+  elemId,
+  imagePosition,
+}) => (
   <section
     className={
       imagePosition === IMAGE_LEFT
@@ -22,15 +29,17 @@ const ImageText = ({ heading, html, btnTxt, image, elemId, imagePosition }) => (
               : 'col-md-5 image-col offset-md-1 order-md-2'
           }
         >
-          <InViewMonitor
-            classNameNotInView="image-wrap"
-            classNameInView="image-wrap inview"
-          >
+          {/*<InViewMonitor*/}
+          {/*classNameNotInView="image-wrap"*/}
+          {/*classNameInView="image-wrap inview"*/}
+          {/*>*/}
+          <div className="image-wrap inview">
             <div
               className="image"
               style={{ backgroundImage: `url(images/${image})` }}
             />
-          </InViewMonitor>
+          </div>
+          {/*</InViewMonitor>*/}
         </div>
         <div className="text-col col-md-5 offset-md-1">
           <div className="text-container">
@@ -40,9 +49,11 @@ const ImageText = ({ heading, html, btnTxt, image, elemId, imagePosition }) => (
                 className="pt-20 pb-20"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
-              <Link className="primary-btn" to="">
-                {btnTxt}
-              </Link>
+              {btnTxt && (
+                <a className="primary-btn" href={btnUrl} target="_blank">
+                  {btnTxt}
+                </a>
+              )}
             </div>
           </div>
         </div>

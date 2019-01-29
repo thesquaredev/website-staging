@@ -23,8 +23,8 @@ const Footer = () => (
               <FontAwesomeIcon icon={faMapMarkerAlt} />
             </div>
             <div className="pl-md-3">
-              <div className="pb-1">Rue Chair et Pain 3</div>
-              <div className="pb-1">1000 Bruselles</div>
+              <div className="pb-1">Aarschotsestraat 52 / 004</div>
+              <div className="pb-1">1800 Vilvoorde</div>
               <div className="pb-1">Belgium</div>
             </div>
           </div>
