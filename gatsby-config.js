@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Squaredev'
+    title: 'Squaredev',
   },
   // pathPrefix: "/website",
   plugins: [
@@ -25,6 +25,12 @@ module.exports = {
         path: `./src/pages`,
       },
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-134148559-1',
+      },
+    },
   ],
 }
