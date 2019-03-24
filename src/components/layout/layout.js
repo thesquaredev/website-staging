@@ -42,7 +42,7 @@ class Layout extends React.Component {
               meta={[
                 {
                   name: 'description',
-                  content: 'Squaredev website',
+                  content: 'We make it possible to turn your organisation\'s big data into actionable insights and build a sustainable competitive advantage.',
                 },
                 {
                   name: 'keywords',

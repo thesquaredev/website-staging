@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Squaredev',
+    title: 'Squaredev - Unlock your business value with modern analytics',
   },
   // pathPrefix: "/website",
   plugins: [
