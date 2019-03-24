@@ -8,9 +8,9 @@ const Banner = ({ heading, html, btnTxt, elemId }) => (
     <div className="container fullscreen">
       <div className="row fullscreen banner__wrapper">
         <div className="banner__text col-lg-7">
-          <h1>{heading}</h1>
+          <h1 className="banner__text__heading">{heading}</h1>
           <div
-            className="pt-20 pb-20"
+            className="banner__text__body"
             dangerouslySetInnerHTML={{ __html: html }}
           />
           {/*<a*/}

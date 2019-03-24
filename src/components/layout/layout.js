@@ -47,7 +47,7 @@ class Layout extends React.Component {
                 {
                   name: 'keywords',
                   content:
-                    'Squaredev, Software Development, Data Analytics, Data Visualisations',
+                    'Squaredev, software development, big data analytics, data visualisations, graph analytics, knowledge rraph, IOT, IIOT, augmented analytics, digital twins, machine learning, natural language processing, data silos',
                 },
               ]}
             >
@@ -55,8 +55,7 @@ class Layout extends React.Component {
               <script
                 async
                 src="https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver"
-              >
-              </script>
+              />
             </Helmet>
             <Header isScrolled={this.state.isScrolled} />
             {this.props.children}

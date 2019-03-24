@@ -20,7 +20,7 @@ const Header = ({ isScrolled }) => (
               <AnchorLink href="#banner1">Home</AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#grid2">What we do</AnchorLink>
+              <AnchorLink href="#grid2">Solutions</AnchorLink>
             </li>
             <li>
               <AnchorLink href="#imageText3">Our Vision</AnchorLink>
