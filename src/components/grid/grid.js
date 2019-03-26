@@ -3,7 +3,7 @@ import './grid.scss'
 
 // Subcomponents
 const Tile = ({ html, icon }) => (
-  <div className="single-offer d-flex flex-row pb-30">
+  <div className="single-offer d-flex flex-row">
     <div className="icon">
       <img src={`images/${icon}`} alt=""/>
     </div>
