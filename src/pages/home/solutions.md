@@ -15,9 +15,9 @@ Connect to diverse data sources, process and analyze massive volumes of structur
 
 ---
 
-### Knowledge graph
+### Knowledge graphs
 
-Create knowledge graphs to seamlessly break down data silos accross your teams or departments and use connections to identify and build corporate knowledge. Simply know what you know and what you don't know.
+Create knowledge graphs to seamlessly break down data silos across your teams or departments and use connections to identify and build corporate knowledge. Simply know what you know and what you don't know.
 
 ---
 
