@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './callToAction.scss'
 
-const CallToAction = ({ heading, html, elemId, btnTxt }) => (
-  <section id={elemId} className="callto-action-area relative section-gap">
+const CallToAction = ({ heading, html, elemId, btnTxt, image }) => (
+  <section
+    id={elemId}
+    className="callto-action-area relative section-gap"
+    style={{ backgroundImage: `url(images/${image})` }}
+  >
     <div className="overlay overlay-bg" />
     <div className="container">
       <div className="row d-flex justify-content-center">

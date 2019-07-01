@@ -4,8 +4,11 @@ title: Home
 slug: /
 component: banner
 position: 1
-heading: Unlock your business value with modern analytics
-btnTxt: Get in touch
+heading: Your data is your value.
+btnTxt: Our solutions
+# Previous mottos include:
+# Unlock business value
+# Connect. Learn. Build.
 ---
 
-We make it possible to turn your organisation's big data into actionable insights and build a sustainable competitive advantage.
+We make it possible to turn your organisation's data into actionable insights and build a sustainable competitive advantage.

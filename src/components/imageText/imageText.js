@@ -4,6 +4,7 @@ import { IMAGE_LEFT } from '../common/common'
 import './imageText.scss'
 
 const ImageText = ({
+  headline,
   heading,
   html,
   btnTxt,
@@ -15,8 +16,8 @@ const ImageText = ({
   <section
     className={
       imagePosition === IMAGE_LEFT
-        ? 'image-text image-left'
-        : 'image-text image-right'
+        ? 'image-text image-left section-gap'
+        : 'image-text image-right section-gap'
     }
     id={elemId}
   >
@@ -41,9 +42,16 @@ const ImageText = ({
           </div>
           {/*</InViewMonitor>*/}
         </div>
-        <div className="text-col col-md-5 offset-md-1">
+        <div
+          className={
+            imagePosition === IMAGE_LEFT
+             ? 'text-col col-md-6 offset-md-1'
+             : 'text-col col-md-6'
+          }
+        >
           <div className="text-container">
             <div className="text-wrap">
+              <h6>{headline}</h6>
               <h2>{heading}</h2>
               <div
                 className="pt-20 pb-20"

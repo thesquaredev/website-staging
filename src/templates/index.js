@@ -5,6 +5,7 @@ import Grid from '../components/grid/grid'
 import CallToAction from '../components/callToAction/callToAction'
 import Contact from '../components/contact/contact'
 import ImageText from '../components/imageText/imageText'
+import Cards from '../components/cards/cards'
 
 const IndexTemplate = ({ pageContext: { title, components } }) => (
   <Layout>
@@ -39,6 +40,7 @@ const IndexTemplate = ({ pageContext: { title, components } }) => (
               btnTxt={com.btnTxt}
               elemId={`${com.name}${com.position}`}
               key={i}
+              image={com.image}
             />
           )
         case 'contact':
@@ -54,6 +56,7 @@ const IndexTemplate = ({ pageContext: { title, components } }) => (
         case 'imagetext':
           return (
             <ImageText
+              headline={com.headline}
               heading={com.heading}
               html={com.html}
               btnTxt={com.btnTxt}
@@ -61,6 +64,16 @@ const IndexTemplate = ({ pageContext: { title, components } }) => (
               image={com.image}
               elemId={`${com.name}${com.position}`}
               imagePosition={com.imagePosition}
+              key={i}
+            />
+          )
+        case 'cards':
+          return (
+            <Cards
+              headline={com.headline}
+              moreTxt={com.moreTxt}
+              cards={com.cards}
+              elemId={`${com.name}${com.position}`}
               key={i}
             />
           )

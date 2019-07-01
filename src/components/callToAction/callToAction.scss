@@ -1,11 +1,10 @@
 @import "../../sass/theme/theme-variables";
 
 .callto-action-area {
-  background-image: url(https://image.shutterstock.com/z/stock-photo-wave-of-particles-futuristic-blue-dots-background-with-a-dynamic-wave-big-data-d-rendering-1208236762.jpg);
-  //background-image: url(/images/paris-at-night.jpg);
+  padding: 180px 0;
   background-size: cover;
   .primary-btn {
-    text-transform: capitalize;
+    text-transform: uppercase;
     border-radius: 0;
     padding-right: 30px;
     background-color: $primary-color;
@@ -19,6 +18,11 @@
     }
   }
   .overlay-bg {
-    background: rgba(#04091e, .5);
+    //background: rgba(#04091e, .5);
+    background-image: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
+    opacity: 0.7;
   }
+}
+.callto-action-area p {
+  font-size: 1.2rem;
 }

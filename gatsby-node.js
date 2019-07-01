@@ -1,6 +1,15 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const getTextContent = (str, strElem) => {
+  if (str && str.indexOf(strElem) > -1) {
+    const start = str.indexOf(`<${strElem}>`) + strElem.length + 2;
+    const end = str.indexOf(`</${strElem}>`);
+    return str.substring(start, end);
+  }
+  return null;
+}
+
 exports.createPages = ({ graphql, actions }) => {
   let pages = []
   const { createPage } = actions
@@ -18,11 +27,13 @@ exports.createPages = ({ graphql, actions }) => {
                 position
                 heading
                 btnTxt
-                btnUrl
-                description
+                # btnUrl
+                # description
                 image
                 imagePosition
-                icons
+                moreTxt
+                headline
+                # icons
                 # formTitle
                 # formNamePlaceholder
                 # formEmailPlaceholder
@@ -60,6 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
           component.heading = node.frontmatter.heading
           component.btnTxt = node.frontmatter.btnTxt || ''
           component.btnUrl = node.frontmatter.btnUrl || ''
+          component.headline = node.frontmatter.headline || ''
           component.image =  node.frontmatter.image
           component.imagePosition = node.frontmatter.imagePosition
           component.html = node.html
@@ -72,6 +84,17 @@ exports.createPages = ({ graphql, actions }) => {
           component.tiles = texts.map((html, i) => ({
             html,
             icon: icons[i],
+          }))
+        }
+        if (node.frontmatter.component === 'cards') {
+          const cards = node.html.split('<hr>\n')
+          component.headline = node.frontmatter.headline
+          component.moreTxt = node.frontmatter.moreTxt
+          component.cards = cards.map((card) => ({
+            industry: getTextContent(card, 'h1'),
+            heading: getTextContent(card, 'h2'),
+            image: getTextContent(card, 'h3'),
+            description: getTextContent(card, 'p'),
           }))
         }
         if (node.frontmatter.component === 'contact') {

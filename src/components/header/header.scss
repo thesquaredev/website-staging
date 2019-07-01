@@ -1,4 +1,4 @@
-@import "../../sass/theme/theme-variables";
+@import '../../sass/theme/theme-variables';
 
 .header {
   padding: 14px 0;
@@ -10,20 +10,35 @@
   z-index: 997;
   &.header-scrolled {
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-    background: $dark-blue;
+    background: $white;
     transition: all 0.5s;
+    .nav-menu a {
+      color: $primary-color;
+    }
+    .nav-menu ul a {
+      color: $accent-color;
+    }
+    #path22,
+    #path24,
+    #path26 {
+      fill: $primary-color !important;
+    }
   }
   &__logo {
     @media screen and (max-width: 767px) {
       margin-left: 15px;
     }
-    img {
-      padding: 0;
-      margin: 0;
+    svg {
       max-height: 30px;
+      width: auto;
       @media screen and (max-width: 767px) {
         max-height: 20px;
       }
+    }
+    #path22,
+    #path24,
+    #path26 {
+      fill: $white !important;
     }
   }
 }
@@ -119,8 +134,8 @@
   text-decoration: none;
   display: inline-block;
   color: $white;
-  font-weight: 300;
-  font-size: 1rem;
+  //font-weight: 300;
+  //font-size: 1rem;
   text-transform: uppercase;
   outline: none;
   font-family: $secondary-font;
@@ -128,7 +143,7 @@
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  // color: $primary-color;
+   color: $white;
 }
 
 .nav-menu > li {
@@ -139,7 +154,8 @@
   margin: 16px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
+  background: $white;
+  border-radius: 4px;
 }
 
 .nav-menu ul li {
@@ -148,10 +164,13 @@
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: $accent-color;
+  font-weight: 500;
+  //color: #333;
   transition: 0.3s;
   display: block;
-  font-size: 12px;
+  //font-size: 12px;
+  font-size: 1.1rem;
   text-transform: none;
 }
 
@@ -160,12 +179,21 @@
 //}
 
 .nav-menu a:hover {
-  color: $white;
   text-decoration: underline !important;
 }
 
 .nav-menu ul ul {
   margin: 0;
+}
+
+.nav-menu img {
+  height: 24px;
+  margin-right: 18px;
+}
+
+// Submenu
+.nav-submenu a:hover {
+  color: $accent-color !important;
 }
 
 /* Mobile Nav Toggle */
@@ -223,8 +251,6 @@
 }
 
 #mobile-nav ul li a {
-  color: #fff;
-  font-size: 13px;
   text-transform: uppercase;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -233,11 +259,9 @@
   width: 100%;
   display: block;
   outline: none;
-  font-weight: 700;
 }
 
 #mobile-nav ul li a:hover {
-  //color: #fff;
 }
 
 #mobile-nav ul li li {

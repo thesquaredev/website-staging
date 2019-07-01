@@ -43,16 +43,6 @@ const Footer = () => (
             Copyright © {new Date().getFullYear()} Squaredev, All rights
             reserved | Cookies | Policy
           </span>
-          <span>
-            Illustrations by{' '}
-            <a href="https://undraw.co/" target="_blank">
-              unDraw
-            </a>
-            {` | Icons by `}
-            <a href="https://www.freepik.com/" target="_blank">
-              Freepik
-            </a>
-          </span>
         </div>
         <div className="col-md-3 col-sm-12 footer__social">
           <a href="https://twitter.com/thesquaredev" target="_blank">

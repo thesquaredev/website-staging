@@ -3,12 +3,12 @@ template: index
 title: Home
 slug: /
 component: imageText
-position: 3
+position: 4
 heading: Our vision
 btnTxt: 
 btnUrl: 
-image: dev_sm.jpg
-imagePosition: left
+image: vision.jpg
+imagePosition: right
 ---
 
 We believe that individuals or teams should be able to find the truth in their data, easily, that 
