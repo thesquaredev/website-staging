@@ -13,9 +13,9 @@ const Header = ({ isScrolled }) => (
     <div className="container">
       <div className="row align-items-center justify-content-between d-flex">
         <div className="header__logo">
-          <AnchorLink href="/">
+          <Link to="/">
             <Logo className="logo" />
-          </AnchorLink>
+          </Link>
         </div>
         <nav id="nav-menu-container">
           <ul className="nav-menu sf-arrows">

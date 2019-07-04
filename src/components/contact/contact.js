@@ -7,13 +7,13 @@ import './contact.scss'
 
 const responseText = ''
 
-const Contact = ({ heading, form: myForm, address, elemId }) => (
+const Contact = ({ meta: { heading, form, address }, elemId }) => (
   <section id={elemId} className="contact">
     <div className="container">
       <h1 className="text-center pb-60">{heading}</h1>
       <div className="row">
         <div className="col-lg-6">
-          <h4 className="pb-15">{myForm.title}</h4>
+          <h4 className="pb-15">{form.title}</h4>
 
           <Formik
             initialValues={{ name: '', email: '', message: '' }}
@@ -49,7 +49,7 @@ const Contact = ({ heading, form: myForm, address, elemId }) => (
                   <input
                     name="name"
                     type="text"
-                    placeholder={myForm.namePlaceholder}
+                    placeholder={form.namePlaceholder}
                     maxLength="120"
                     className="single-input"
                     onChange={handleChange}
@@ -64,7 +64,7 @@ const Contact = ({ heading, form: myForm, address, elemId }) => (
                   <input
                     type="email"
                     name="email"
-                    placeholder={myForm.emailPlaceholder}
+                    placeholder={form.emailPlaceholder}
                     maxLength="120"
                     className="single-input"
                     onChange={handleChange}
@@ -81,7 +81,7 @@ const Contact = ({ heading, form: myForm, address, elemId }) => (
                 <div className="mt-15 pb-25">
                   <textarea
                     name="message"
-                    placeholder={myForm.messagePlaceholder}
+                    placeholder={form.messagePlaceholder}
                     maxLength="1000"
                     rows="5"
                     className="single-textarea"
@@ -94,10 +94,14 @@ const Contact = ({ heading, form: myForm, address, elemId }) => (
                   </small>
                 </div>
                 {/*<div className="contact__actions">*/}
-                  {/*<h5 className="contact__actions__response">{responseText}</h5>*/}
-                  <button type="submit" className="primary-btn" disabled={isSubmitting}>
-                    {responseText ? 'OK' : myForm.submitBtnTxt}
-                  </button>
+                {/*<h5 className="contact__actions__response">{responseText}</h5>*/}
+                <button
+                  type="submit"
+                  className="primary-btn"
+                  disabled={isSubmitting}
+                >
+                  {responseText ? 'OK' : form.submitBtnTxt}
+                </button>
                 {/*</div>*/}
               </form>
             )}

@@ -17,7 +17,6 @@
       height: 100%;
       width: 100%;
       opacity: 0.3;
-      //transform: skewY(3deg);
     }
   }
   &__wrapper {
@@ -48,8 +47,9 @@
     }
     &__body p {
       padding: 20px 0;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       line-height: 1.8rem;
+      letter-spacing: 0.5px;
       @media (max-width: 414px) {
         font-size: 1.1rem;
       }

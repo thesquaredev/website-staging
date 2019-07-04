@@ -68,7 +68,7 @@
 
 .image-text .container .image-col {
   position: relative;
-  min-height: 520px;
+  min-height: 460px;
   @media screen and (max-width: 767px) {
     min-height: 300px;
     margin-bottom: 20px;
@@ -106,7 +106,7 @@
     letter-spacing: 1.5px;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin: 24px 0 18px;
   }
 }

@@ -1,5 +1,5 @@
 ---
-template: index
+template: default
 title: Home
 slug: /
 component: imageText

@@ -11,7 +11,7 @@ const Card = ({ industry, heading, description, image, moreTxt }) => (
   </a>
 )
 
-const Cards = ({ headline, moreTxt, cards, elemId }) => (
+const Cards = ({ meta: { headline, moreTxt, cards }, elemId }) => (
   <section className="cards section-gap" id={elemId}>
     <div className="container">
       <div className="cards__wrapper">

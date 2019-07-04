@@ -1,17 +1,11 @@
 import React from 'react'
-import InViewMonitor from 'react-inview-monitor'
+// import InViewMonitor from 'react-inview-monitor'
 import { IMAGE_LEFT } from '../common/common'
 import './imageText.scss'
 
 const ImageText = ({
-  headline,
-  heading,
-  html,
-  btnTxt,
-  btnUrl,
-  image,
+  meta: { headline, heading, html, btnTxt, btnUrl, image, imagePosition },
   elemId,
-  imagePosition,
 }) => (
   <section
     className={
@@ -45,8 +39,8 @@ const ImageText = ({
         <div
           className={
             imagePosition === IMAGE_LEFT
-             ? 'text-col col-md-6 offset-md-1'
-             : 'text-col col-md-6'
+              ? 'text-col col-md-6 offset-md-1'
+              : 'text-col col-md-6'
           }
         >
           <div className="text-container">

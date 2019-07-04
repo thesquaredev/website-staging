@@ -1,11 +1,11 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import './banner.scss'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const Banner = ({ heading, html, btnTxt, elemId }) => (
+const Banner = ({ meta: { heading, html, btnTxt, btnUrl }, elemId }) => (
   <section className="banner" id={elemId}>
     <div className="banner__bg">
-      <div className="banner__bg__img"/>
+      <div className="banner__bg__img" />
     </div>
     <div className="container fullscreen">
       <div className="row fullscreen banner__wrapper">
@@ -21,9 +21,9 @@ const Banner = ({ heading, html, btnTxt, elemId }) => (
           {/*target="_blank"*/}
           {/*>*/}
           {/*</a>*/}
-          <AnchorLink className="primary-btn" href="#footer">
+          <Link className="primary-btn" to={btnUrl}>
             {btnTxt}
-          </AnchorLink>
+          </Link>
         </div>
       </div>
     </div>

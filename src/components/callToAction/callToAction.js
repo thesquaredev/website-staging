@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './callToAction.scss'
 
-const CallToAction = ({ heading, html, elemId, btnTxt, image }) => (
+const CallToAction = ({ meta: { heading, html, btnTxt, image }, elemId }) => (
   <section
     id={elemId}
     className="callto-action-area relative section-gap"

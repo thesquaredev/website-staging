@@ -27,7 +27,7 @@ exports.createPages = ({ graphql, actions }) => {
                 position
                 heading
                 btnTxt
-                # btnUrl
+                btnUrl
                 # description
                 image
                 imagePosition
@@ -66,7 +66,8 @@ exports.createPages = ({ graphql, actions }) => {
         if (
           node.frontmatter.component === 'banner' ||
           node.frontmatter.component === 'callToAction' ||
-          node.frontmatter.component === 'imageText'
+          node.frontmatter.component === 'imageText' ||
+          node.frontmatter.component === 'hero'
         ) {
           component.heading = node.frontmatter.heading
           component.btnTxt = node.frontmatter.btnTxt || ''

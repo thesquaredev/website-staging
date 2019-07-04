@@ -5,7 +5,7 @@ import './grid.scss'
 const Tile = ({ html, icon }) => (
   <div className="single-offer d-flex flex-row">
     <div className="icon">
-      <img src={`images/${icon}`} alt=""/>
+      <img src={`images/${icon}`} alt="" />
     </div>
     <div className="desc">
       <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -14,7 +14,7 @@ const Tile = ({ html, icon }) => (
 )
 
 // Component
-const Grid = ({ heading, description, tiles, elemId }) => (
+const Grid = ({ meta: { heading, description, tiles }, elemId }) => (
   <section className="grid section-gap" id={elemId}>
     <div className="grid__content container">
       <div className="row d-flex justify-content-center">

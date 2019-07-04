@@ -1,11 +1,12 @@
 ---
-template: index
+template: default
 title: Home
 slug: /
 component: banner
 position: 1
 heading: Your data is your value.
 btnTxt: Our solutions
+btnUrl: /solutions
 # Previous mottos include:
 # Unlock business value
 # Connect. Learn. Build.
