@@ -56,6 +56,9 @@ const Header = ({ isScrolled }) => (
               </ul>
             </li>
             <li>
+              <AnchorLink href="#imageText3">Technology</AnchorLink>
+            </li>
+            <li>
               <AnchorLink href="#imageText3">Company</AnchorLink>
             </li>
             <li>

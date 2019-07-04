@@ -15,9 +15,11 @@ const Cards = ({ meta: { headline, moreTxt, cards }, elemId }) => (
   <section className="cards section-gap" id={elemId}>
     <div className="container">
       <div className="cards__wrapper">
-        <div className="cards__heading">
-          <h1>{headline}</h1>
-        </div>
+        {headline && (
+          <div className="cards__heading">
+            <h1>{headline}</h1>
+          </div>
+        )}
         {cards.map(({ industry, heading, image, description }, i) => {
           return (
             <Card
