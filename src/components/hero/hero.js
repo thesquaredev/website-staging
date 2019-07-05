@@ -9,7 +9,7 @@ const Hero = ({ meta: { heading, html, image, btnTxt, btnUrl }, elemId }) => (
     <div className="hero__bg">
       <div
         className="hero__bg__img"
-        style={{ backgroundImage: `url(images/${image})` }}
+        style={{ backgroundImage: `url(/images/${image})` }}
       />
     </div>
     <div className="container">
