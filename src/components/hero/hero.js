@@ -1,6 +1,8 @@
 import React from 'react'
 import './hero.scss'
 import { Link } from 'gatsby'
+import withLocation from '../common/withLocation'
+import withShowcase from '../common/withShowcase/withShowcase'
 
 const Hero = ({ meta: { heading, html, image, btnTxt, btnUrl }, elemId }) => (
   <section className="hero" id={elemId}>
@@ -26,4 +28,4 @@ const Hero = ({ meta: { heading, html, image, btnTxt, btnUrl }, elemId }) => (
   </section>
 )
 
-export default Hero
+export default withLocation(withShowcase(Hero))

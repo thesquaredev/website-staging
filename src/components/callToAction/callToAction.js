@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './callToAction.scss'
+import withLocation from '../common/withLocation'
+import withShowcase from '../common/withShowcase/withShowcase'
 
 const CallToAction = ({ meta: { heading, html, btnTxt, image }, elemId }) => (
   <section
@@ -28,4 +30,4 @@ const CallToAction = ({ meta: { heading, html, btnTxt, image }, elemId }) => (
   </section>
 )
 
-export default CallToAction
+export default withLocation(withShowcase(CallToAction))

@@ -1,5 +1,7 @@
 import React from 'react'
 import './grid.scss'
+import withLocation from '../common/withLocation'
+import withShowcase from '../common/withShowcase/withShowcase'
 
 // Subcomponents
 const Tile = ({ html, icon }) => (
@@ -34,4 +36,4 @@ const Grid = ({ meta: { heading, description, tiles }, elemId }) => (
   </section>
 )
 
-export default Grid
+export default withLocation(withShowcase(Grid))

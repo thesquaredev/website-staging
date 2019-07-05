@@ -1,7 +1,9 @@
 import React from 'react'
 // import InViewMonitor from 'react-inview-monitor'
-import { IMAGE_LEFT } from '../common/common'
+import { IMAGE_LEFT } from '../common/constants'
 import './imageText.scss'
+import withLocation from '../common/withLocation'
+import withShowcase from '../common/withShowcase/withShowcase'
 
 const ImageText = ({
   meta: { headline, heading, html, btnTxt, btnUrl, image, imagePosition },
@@ -64,4 +66,4 @@ const ImageText = ({
   </section>
 )
 
-export default ImageText
+export default withLocation(withShowcase(ImageText))

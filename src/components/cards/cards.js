@@ -1,5 +1,7 @@
 import React from 'react'
 import './cards.scss'
+import withLocation from '../common/withLocation'
+import withShowcase from '../common/withShowcase/withShowcase'
 
 const Card = ({ industry, heading, description, image, moreTxt }) => (
   <a href="/behavioral-analytics/" className="card">
@@ -37,4 +39,4 @@ const Cards = ({ meta: { headline, moreTxt, cards }, elemId }) => (
   </section>
 )
 
-export default Cards
+export default withLocation(withShowcase(Cards))

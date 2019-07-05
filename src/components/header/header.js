@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronDown,
 } from '@fortawesome/free-solid-svg-icons'
-import Logo from '../logo'
+import Logo from '../common/logo'
 
 const Header = ({ isScrolled }) => (
   <header className={isScrolled ? 'header header-scrolled' : 'header'}>

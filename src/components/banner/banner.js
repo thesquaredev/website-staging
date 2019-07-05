@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './banner.scss'
+import withShowcase from '../common/withShowcase/withShowcase'
+import withLocation from '../common/withLocation'
 
 const Banner = ({ meta: { heading, html, btnTxt, btnUrl }, elemId }) => (
   <section className="banner" id={elemId}>
@@ -30,4 +32,4 @@ const Banner = ({ meta: { heading, html, btnTxt, btnUrl }, elemId }) => (
   </section>
 )
 
-export default Banner
+export default withLocation(withShowcase(Banner))

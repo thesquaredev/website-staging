@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './contact.scss'
+import withLocation from '../common/withLocation'
+import withShowcase from '../common/withShowcase/withShowcase'
 
 const responseText = ''
 
@@ -133,4 +135,4 @@ const Contact = ({ meta: { heading, form, address }, elemId }) => (
   </section>
 )
 
-export default Contact
+export default withLocation(withShowcase(Contact))
