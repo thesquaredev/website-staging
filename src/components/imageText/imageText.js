@@ -33,7 +33,7 @@ const ImageText = ({
           <div className="image-wrap inview">
             <div
               className="image"
-              style={{ backgroundImage: `url(images/${image})` }}
+              style={{ backgroundImage: `url(/images/${image})` }}
             />
           </div>
           {/*</InViewMonitor>*/}
