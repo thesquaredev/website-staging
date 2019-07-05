@@ -7,7 +7,7 @@ const Card = ({ industry, heading, description, image, moreTxt }) => (
   <a href="/behavioral-analytics/" className="card">
     <span className="card__title">{industry}</span>
     <h4>{heading}</h4>
-    <img src={`images/${image}`} alt="" />
+    <img src={`/images/${image}`} alt="" />
     <p>{description}</p>
     <span className="card__more">{moreTxt}</span>
   </a>

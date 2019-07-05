@@ -8,7 +8,7 @@ const CallToAction = ({ meta: { heading, html, btnTxt, image }, elemId }) => (
   <section
     id={elemId}
     className="callto-action-area relative section-gap"
-    style={{ backgroundImage: `url(images/${image})` }}
+    style={{ backgroundImage: `url(/images/${image})` }}
   >
     <div className="overlay overlay-bg" />
     <div className="container">
