@@ -103,4 +103,19 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Just push to master branch, the rest is taken care by CircleCI
+
+## Migrate from staging to live environment
+
+1.  **Merge from staging repo to live repo**
+
+    ```
+    # Add staging remote to live repo (only needed once)
+    git remote add website-staging https://github.com/thesquaredev/website-staging.git
+    git remote update
+    
+    # Merge remote master branch (or the branch you want to merge) from local master branch
+    git merge website-staging/master
+    ```
+
+2. **Resolve conflicts and push new changes to live repo**
