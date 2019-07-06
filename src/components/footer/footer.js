@@ -7,14 +7,14 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import './footer.scss'
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-import { withPrefix } from 'gatsby'
+// import { withPrefix } from 'gatsby'
 
 const Footer = () => (
   <footer id="footer" className="footer">
     <div className="container">
       <div className="footer__contact row d-flex justify-content-between align-items-center">
         <div className="footer__logo">
-            <img src={withPrefix('images/logo.png')} alt="Squaredev" />
+            <img src={'/images/logo.png'} alt="Squaredev" />
         </div>
         <div className="footer__address col-sm-12 col-md-6">
           <h5 className="pb-15">Get in touch with us</h5>

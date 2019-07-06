@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.scss'
-import { withPrefix, Link } from 'gatsby' // TODO: this vs relative paths
+import { Link } from 'gatsby'
 // import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -30,26 +30,26 @@ const Header = ({ isScrolled }) => (
               <ul className="nav-submenu">
                 <li>
                   <Link to="/generic">
-                    <img src={withPrefix('images/brain-icon.png')} alt="" />
+                    <img src={'/icons/brain-icon.png'} alt="" />
                     Knowledge Graphs
                     {/*<FontAwesomeIcon icon={faAngleRight} />*/}
                   </Link>
                 </li>
                 <li>
                   <Link to="/solutions/pharmacovigilance">
-                    <img src={withPrefix('images/pills-icon.png')} alt="" />
+                    <img src={'/icons/pills-icon.png'} alt="" />
                     Pharmacovigilance
                   </Link>
                 </li>
                 <li>
                   <Link to="/generic">
-                    <img src={withPrefix('images/shield-icon.png')} alt="" />
+                    <img src={'/icons/shield-icon.png'} alt="" />
                     GDPR Compliance
                   </Link>
                 </li>
                 <li>
                   <Link to="/generic">
-                    <img src={withPrefix('images/databases-icon.png')} alt="" />
+                    <img src={'/icons/databases-icon.png'} alt="" />
                     Master Data Management
                   </Link>
                 </li>
