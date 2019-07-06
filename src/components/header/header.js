@@ -56,7 +56,7 @@ const Header = ({ isScrolled }) => (
               </ul>
             </li>
             <li>
-              <Link to="/showcase">Technology</Link>
+              <Link to="/technology">Technology</Link>
             </li>
             <li>
               <Link to="/showcase">Company</Link>
