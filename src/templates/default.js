@@ -7,6 +7,7 @@ import Contact from '../components/contact/contact'
 import ImageText from '../components/imageText/imageText'
 import Cards from '../components/cards/cards'
 import Hero from '../components/hero/hero'
+import Pills from '../components/pills/pills'
 
 /**
  * Utility to resolve the component in use
@@ -22,6 +23,7 @@ const componentResolver = (meta, elemId, i) => ({
   ['imagetext']: <ImageText meta={meta} elemId={elemId} key={i} />,
   ['cards']: <Cards meta={meta} elemId={elemId} key={i} />,
   ['hero']: <Hero meta={meta} elemId={elemId} key={i} />,
+  ['pills']: <Pills meta={meta} elemId={elemId} key={i} />,
 })
 
 /**

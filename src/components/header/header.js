@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.scss'
-import { withPrefix, Link } from 'gatsby'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { withPrefix, Link } from 'gatsby' // TODO: this vs relative paths
+// import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronDown,
@@ -23,7 +23,7 @@ const Header = ({ isScrolled }) => (
             {/*<AnchorLink href="#banner1">Home</AnchorLink>*/}
             {/*</li>*/}
             <li className="menu-has-children">
-              <Link to="">
+              <Link to="/solutions">
                 <span>Solutions</span>
                 <FontAwesomeIcon icon={faChevronDown} />
               </Link>
@@ -36,7 +36,7 @@ const Header = ({ isScrolled }) => (
                   </Link>
                 </li>
                 <li>
-                  <Link to="/generic">
+                  <Link to="/solutions/pharmacovigilance">
                     <img src={withPrefix('images/pills-icon.png')} alt="" />
                     Pharmacovigilance
                   </Link>
@@ -56,13 +56,10 @@ const Header = ({ isScrolled }) => (
               </ul>
             </li>
             <li>
-              <AnchorLink href="#imageText3">Technology</AnchorLink>
+              <Link to="/showcase">Technology</Link>
             </li>
             <li>
-              <AnchorLink href="#imageText3">Company</AnchorLink>
-            </li>
-            <li>
-              <Link to="#contact">Contact</Link>
+              <Link to="/showcase">Company</Link>
             </li>
           </ul>
         </nav>

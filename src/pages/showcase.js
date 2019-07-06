@@ -6,6 +6,7 @@ import Cards from '../components/cards/cards'
 import ImageText from '../components/imageText/imageText'
 import Grid from '../components/grid/grid'
 import Hero from '../components/hero/hero'
+import Pills from '../components/pills/pills'
 import { IMAGE_LEFT } from '../components/common/constants'
 
 const lorem =
@@ -61,6 +62,23 @@ const meta = {
       icon: 'ml.svg',
     },
   ],
+  pills: [
+    {
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      description: lorem.substring(0, 150),
+    },
+    {
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      description: lorem.substring(0, 150),
+    },
+    {
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      description: lorem.substring(0, 150),
+    },
+  ]
 }
 
 const Showcase = () => (
@@ -70,6 +88,7 @@ const Showcase = () => (
     <CallToAction meta={{ ...meta, name: 'CallToAction' }} />
     <Grid meta={{ ...meta, name: 'Grid' }} />
     <Hero meta={{ ...meta, name: 'Hero' }} />
+    <Pills meta={{ ...meta, name: 'Pills' }} />
     <ImageText meta={{ ...meta, name: 'ImageText' }} />
   </Layout>
 )

@@ -7,7 +7,7 @@ import withShowcase from '../common/withShowcase/withShowcase'
 const Tile = ({ html, icon }) => (
   <div className="single-offer d-flex flex-row">
     <div className="icon">
-      <img src={`/images/${icon}`} alt="" />
+      <img src={`/icons/${icon}`} alt="" />
     </div>
     <div className="desc">
       <div dangerouslySetInnerHTML={{ __html: html }} />

@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
 
-const Hero = ({ meta: { heading, html, image, btnTxt, btnUrl }, elemId }) => (
+const Hero = ({ meta: { heading, description, html, image, btnTxt, btnUrl }, elemId }) => (
   <section className="hero" id={elemId}>
     <div className="hero__bg">
       <div
@@ -17,10 +17,10 @@ const Hero = ({ meta: { heading, html, image, btnTxt, btnUrl }, elemId }) => (
         <div className="col-lg-10">
           <div className="generic-banner-content">
             <h1 className="text-white">{heading}</h1>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-            <Link className="primary-btn" to={btnUrl}>
+            <p>{description}</p>
+            {btnTxt && <Link className="primary-btn" to={btnUrl}>
               {btnTxt}
-            </Link>
+            </Link>}
           </div>
         </div>
       </div>

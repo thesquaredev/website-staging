@@ -3,11 +3,11 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const getTextContent = (str, strElem) => {
   if (str && str.indexOf(strElem) > -1) {
-    const start = str.indexOf(`<${strElem}>`) + strElem.length + 2;
-    const end = str.indexOf(`</${strElem}>`);
-    return str.substring(start, end);
+    const start = str.indexOf(`<${strElem}>`) + strElem.length + 2
+    const end = str.indexOf(`</${strElem}>`)
+    return str.substring(start, end)
   }
-  return null;
+  return null
 }
 
 exports.createPages = ({ graphql, actions }) => {
@@ -28,7 +28,7 @@ exports.createPages = ({ graphql, actions }) => {
                 heading
                 btnTxt
                 btnUrl
-                # description
+                description
                 image
                 imagePosition
                 moreTxt
@@ -69,11 +69,12 @@ exports.createPages = ({ graphql, actions }) => {
           node.frontmatter.component === 'imageText' ||
           node.frontmatter.component === 'hero'
         ) {
-          component.heading = node.frontmatter.heading
+          component.headline = node.frontmatter.headline || ''
+          component.heading = node.frontmatter.heading || ''
           component.btnTxt = node.frontmatter.btnTxt || ''
           component.btnUrl = node.frontmatter.btnUrl || ''
-          component.headline = node.frontmatter.headline || ''
-          component.image =  node.frontmatter.image
+          component.description = node.frontmatter.description || ''
+          component.image = node.frontmatter.image
           component.imagePosition = node.frontmatter.imagePosition
           component.html = node.html
         }
@@ -91,11 +92,19 @@ exports.createPages = ({ graphql, actions }) => {
           const cards = node.html.split('<hr>\n')
           component.headline = node.frontmatter.headline
           component.moreTxt = node.frontmatter.moreTxt
-          component.cards = cards.map((card) => ({
+          component.cards = cards.map(card => ({
             industry: getTextContent(card, 'h1'),
             heading: getTextContent(card, 'h2'),
             image: getTextContent(card, 'h3'),
             description: getTextContent(card, 'p'),
+          }))
+        }
+        if (node.frontmatter.component === 'pills') {
+          const pills = node.html.split('<hr>\n')
+          component.pills = pills.map(pill => ({
+            heading: getTextContent(pill, 'h1'),
+            icon: getTextContent(pill, 'h2'),
+            description: getTextContent(pill, 'p'),
           }))
         }
         if (node.frontmatter.component === 'contact') {
