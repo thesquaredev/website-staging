@@ -29,14 +29,13 @@
   &__text {
     color: white;
     font-size: 1.1rem;
-    z-index: 1;
     @media (max-width: 414px) {
       font-size: 0.9rem;
     }
     &__heading {
       color: white;
-      font-size: 3.4rem;
-      font-weight: 500;
+      font-size: 3.2rem;
+      font-weight: 400;
       margin-top: 20px;
       @media (max-width: 991px) {
         font-size: 2.5rem;
@@ -47,7 +46,7 @@
     }
     &__body p {
       padding: 20px 0;
-      font-size: 1.25rem;
+      font-size: 1.14rem;
       line-height: 1.8rem;
       letter-spacing: 0.5px;
       @media (max-width: 414px) {
