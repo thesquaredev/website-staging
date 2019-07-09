@@ -6,8 +6,7 @@
   left: 0;
   top: 0;
   right: 0;
-  transition: all 0.5s;
-  z-index: 997;
+  z-index: 1;
   &.header-scrolled {
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
     background: $white;
@@ -15,7 +14,7 @@
     .nav-menu a {
       color: $primary-color;
     }
-    .nav-menu ul a {
+    .nav-submenu a {
       color: $accent-color;
     }
     #path22,
@@ -54,15 +53,6 @@
   list-style: none;
 }
 
-.nav-menu ul {
-  position: absolute;
-  opacity: 0;
-  top: -500px;
-  left: 0;
-  z-index: 99;
-  transition-delay: 0.3s;
-}
-
 .nav-menu li {
   position: relative;
   white-space: nowrap;
@@ -72,20 +62,11 @@
   float: left;
 }
 
-.nav-menu li:hover > ul {
+.nav-menu li:hover .nav-submenu {
   opacity: 1;
   top: 100%;
-  transition: all 0s ease;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
-
-.nav-menu ul li {
-  min-width: 180px;
-  text-align: left;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 // TODO: i added this one, classes in nav must be revised
@@ -114,16 +95,7 @@
 /* Nav Meu Container */
 #nav-menu-container {
   margin: 0 0 -14px 0;
-}
-
-@media (min-width: 1024px) {
-  #nav-menu-container {
-    padding-right: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  #nav-menu-container {
+  @media (max-width: 768px) {
     display: none;
   }
 }
@@ -134,56 +106,24 @@
   text-decoration: none;
   display: inline-block;
   color: $white;
-  //font-weight: 300;
+  font-weight: 400;
   //font-size: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   outline: none;
   font-family: $secondary-font;
 }
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-   color: $white;
+  color: $white;
 }
 
 .nav-menu > li {
-  margin-left: 10px;
+  margin-left: 15px;
 }
-
-.nav-menu ul {
-  margin: 16px 0 0 0;
-  padding: 10px;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: $white;
-  border-radius: 4px;
-}
-
-.nav-menu ul li {
-  transition: 0.3s;
-}
-
-.nav-menu ul li a {
-  padding: 10px;
-  color: $accent-color;
-  font-weight: 500;
-  //color: #333;
-  transition: 0.3s;
-  display: block;
-  //font-size: 12px;
-  font-size: 1.1rem;
-  text-transform: none;
-}
-
-//.nav-menu ul li:hover > a {
-//  //color: $primary-color;
-//}
 
 .nav-menu a:hover {
   text-decoration: underline !important;
-}
-
-.nav-menu ul ul {
-  margin: 0;
 }
 
 .nav-menu img {
@@ -192,8 +132,86 @@
 }
 
 // Submenu
-.nav-submenu a:hover {
-  color: $accent-color !important;
+.nav-submenu {
+  display: flex;
+  top: -500px;
+  left: -160px;
+  width: 552px;
+  transform: translateY(17px);
+  visibility: hidden;
+  will-change: transform, opacity;
+  transition: top 0s, transform 0.27s ease, opacity 0.27s ease,
+    visibility 0.27s ease;
+  box-shadow: 0 12px 20px 0 rgba(23, 28, 33, 0.16);
+  position: absolute;
+  opacity: 0;
+  transition-delay: 0.25s;
+  margin: 25px 0 0 0;
+  padding: 5px;
+  background: $white;
+  border-radius: 5px;
+  & li {
+    min-width: 180px;
+    text-align: left;
+    transition: 0.3s;
+  }
+  & li a {
+    padding: 15px 10px;
+    color: $accent-color;
+    font-weight: 500;
+    //color: #333;
+    transition: 0.3s;
+    display: flex;
+    font-size: 1rem;
+    text-transform: none;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    bottom: 100%;
+    left: 185px;
+    height: 0;
+    width: 0;
+    border-bottom: 7px solid #fff;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+  }
+  & a:hover {
+    color: $accent-color !important;
+  }
+  &__col {
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding: 10px 8px 30px;
+    &:first-of-type {
+      border-right: 1px solid $grey;
+    }
+    h6 {
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 10px 10px 15px;
+      color: $dark-grey;
+      font-size: 0.9rem;
+    }
+    img {
+      align-self: center;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    & span:first-of-type {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    & span:last-of-type {
+      //font-weight: 600;
+      font-size: 0.9rem;
+      color: $dark-grey;
+    }
+  }
 }
 
 /* Mobile Nav Toggle */
@@ -217,7 +235,7 @@
 //  font-weight: 900;
 //}
 
-@media (max-width: 800px) {
+@media (max-width: 1023px) {
   #mobile-nav-toggle {
     display: inline;
   }

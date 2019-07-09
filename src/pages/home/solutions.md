@@ -16,7 +16,7 @@ Identify patterns in user engagement, retention, and conversion to improve exist
 
 ---
 
-# Cybersecurity
+# Data privacy
 ## GDPR compliance
 ### security.jpg
 

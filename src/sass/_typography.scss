@@ -1,19 +1,47 @@
 //@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 //@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=greek');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+//@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
 //@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+
+// Condensed
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:300,400,500&display=swap');
 
 body {
     //font-family: 'Roboto', sans-serif;
     //font-family: 'Comfortaa', cursive;
-    font-family: 'Raleway', sans-serif;
-    //font-family: 'Lato', sans-serif !important;
+    //font-family: 'Raleway', sans-serif;
+    //font-family: 'Lato', sans-serif;
+    //font-family: 'PT Sans', sans-serif;
+    //font-family: 'Montserrat', sans-serif;
+    //font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Noto Sans', sans-serif;
+
     //font-size: 20px;
     color: $color_text;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif !important;
-    //font-family: 'Raleway', sans-serif !important;
+    //font-family: 'Montserrat', sans-serif !important;
+    //font-family: 'Merriweather', serif !important;
+    //font-family: 'Open Sans Condensed', sans-serif !important;
+    font-family: 'Raleway', sans-serif !important;
+    //font-family: 'Roboto Condensed', sans-serif;
+    //font-family: 'Roboto Slab', serif !important;
+    //font-family: 'Roboto Condensed', sans-serif !important;
+    //font-family: 'Fjalla One', sans-serif !important;
+    //font-family: 'PT Sans Narrow', sans-serif !important;
+    //font-family: 'Oswald', sans-serif !important;
 }
