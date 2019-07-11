@@ -98,6 +98,9 @@
   @media (max-width: 768px) {
     display: none;
   }
+  @media (max-width: 1599px) {
+    padding-right: 60px;
+  }
 }
 
 /* Nav Meu Styling */
@@ -107,7 +110,7 @@
   display: inline-block;
   color: $white;
   font-weight: 400;
-  //font-size: 1rem;
+  font-size: 1rem;
   text-transform: capitalize;
   outline: none;
   font-family: $secondary-font;
@@ -156,10 +159,9 @@
     transition: 0.3s;
   }
   & li a {
-    padding: 15px 10px;
+    padding: 12px 10px;
     color: $accent-color;
     font-weight: 500;
-    //color: #333;
     transition: 0.3s;
     display: flex;
     font-size: 1rem;
