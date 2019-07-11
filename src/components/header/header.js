@@ -98,13 +98,19 @@ const Header = ({ isScrolled }) => (
               </ul>
             </li>
             <li>
-              <Link to="/technology">Labs</Link>
-            </li>
-            <li>
               <Link to="/showcase">Company</Link>
             </li>
             <li>
-              <Link to="/showcase">Contact Us</Link>
+              <Link to="/technology">
+                <img src={'/icons/flask.png'} alt="" />
+                Labs
+              </Link>
+            </li>
+            <li>
+              <Link to="/showcase">
+                <img src={'/icons/mailbox.png'} alt="" />
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>

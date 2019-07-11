@@ -130,8 +130,8 @@
 }
 
 .nav-menu img {
-  height: 24px;
-  margin-right: 18px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 // Submenu
@@ -199,6 +199,8 @@
     }
     img {
       align-self: center;
+      height: 24px;
+      margin-right: 18px;
     }
   }
   &__item {
