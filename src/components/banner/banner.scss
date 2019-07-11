@@ -13,9 +13,11 @@
     height: 100%;
     background-image: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
     &__img {
-      background-image: url("/images/banner_bg.jpg");
+      background-image: url("/images/city.jpg");
       height: 100%;
       width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
       opacity: 0.3;
     }
   }
@@ -34,8 +36,8 @@
     }
     &__heading {
       color: white;
-      font-size: 3.2rem;
-      font-weight: 400;
+      font-size: 3.4rem;
+      font-weight: 500;
       margin-top: 20px;
       @media (max-width: 991px) {
         font-size: 2.5rem;
@@ -46,9 +48,9 @@
     }
     &__body p {
       padding: 20px 0;
-      font-size: 1.14rem;
+      font-size: 1.4rem;
       line-height: 1.8rem;
-      letter-spacing: 0.5px;
+      opacity: 8;
       @media (max-width: 414px) {
         font-size: 1.1rem;
       }

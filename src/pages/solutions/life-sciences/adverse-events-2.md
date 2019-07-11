@@ -3,7 +3,7 @@ template: default
 title: Life-sciences
 slug: /solutions/life-sciences
 component: imageText
-position: 3
+position: 5
 headline: 
 heading: Advance capabilities for identifying adverse events
 btnTxt: 
