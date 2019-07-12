@@ -1,9 +1,9 @@
 ---
 template: default
-title: Pharmacovigilance
-slug: /solutions/pharmacovigilance
+title: Life-sciences
+slug: /solutions/life-sciences
 component: pills
-position: 2
+position: 4
 ---
 
 # Data integration with multiple public data sources

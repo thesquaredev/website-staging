@@ -1,11 +1,11 @@
 ---
 template: default
-title: Pharmacovigilance
-slug: /solutions/pharmacovigilance
+title: Life-sciences
+slug: /solutions/life-sciences
 component: hero
 position: 1
-heading: Pharmacovigilance
-description: Predict ADR and validate with health records
+heading: Life sciences
+description: Accelerate the discovery and development of new patient treatments and operate more efficiently with Google Cloud.
 image: lab.jpg
 btnTxt: ''
 btnUrl: ''

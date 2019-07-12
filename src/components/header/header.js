@@ -29,6 +29,45 @@ const Header = ({ isScrolled }) => (
                 <span className="nav-submenu__col">
                   <h6>By Industry</h6>
                   <li>
+                    <Link to="/solutions/life-sciences">
+                      <img src={'/icons/pills-icon.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>Life Sciences</span>
+                        <span>Predict Adverse Events</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/generic">
+                      <img src={'/icons/shield-icon.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>Telecommunications</span>
+                        <span>Augment Network Security</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/generic">
+                      <img src={'/icons/databases-icon.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>Financial Services</span>
+                        <span>Next gen data management</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/generic">
+                      <img src={'/icons/databases-icon.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>Logistics & Manufacturing</span>
+                        <span>Next gen data management</span>
+                      </div>
+                    </Link>
+                  </li>
+                </span>
+                <span className="nav-submenu__col">
+                  <h6>By Technology</h6>
+                  <li>
                     <Link to="/generic">
                       <img src={'/icons/brain-icon.png'} alt="" />
                       <div className="nav-submenu__item">
@@ -38,11 +77,11 @@ const Header = ({ isScrolled }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/pharmacovigilance">
-                      <img src={'/icons/pills-icon.png'} alt="" />
+                    <Link to="/generic">
+                      <img src={'/icons/shield-icon.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Pharmacovigilance</span>
-                        <span>Predict Adverse Events</span>
+                        <span>Deep Learning</span>
+                        <span>Do that with neural networks</span>
                       </div>
                     </Link>
                   </li>
@@ -50,38 +89,8 @@ const Header = ({ isScrolled }) => (
                     <Link to="/generic">
                       <img src={'/icons/shield-icon.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>GDPR Compliance</span>
-                        <span>Shield your privacy</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/generic">
-                      <img src={'/icons/databases-icon.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Master Data Management</span>
-                        <span>Unify your data</span>
-                      </div>
-                    </Link>
-                  </li>
-                </span>
-                <span className="nav-submenu__col">
-                  <h6>By Technology</h6>
-                  <li>
-                    <Link to="/generic">
-                      <img src={'/icons/shield-icon.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>GDPR Compliance</span>
-                        <span>Shield your privacy</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/generic">
-                      <img src={'/icons/databases-icon.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Master Data Management</span>
-                        <span>Unify your data</span>
+                        <span>Data Engineering</span>
+                        <span>Effectively manage data pipelines</span>
                       </div>
                     </Link>
                   </li>
@@ -89,13 +98,19 @@ const Header = ({ isScrolled }) => (
               </ul>
             </li>
             <li>
-              <Link to="/technology">Technology</Link>
-            </li>
-            <li>
               <Link to="/showcase">Company</Link>
             </li>
             <li>
-              <Link to="/showcase">Contact Us</Link>
+              <Link to="/technology">
+                <img src={'/icons/flask.png'} alt="" />
+                Labs
+              </Link>
+            </li>
+            <li>
+              <Link to="/showcase">
+                <img src={'/icons/mailbox.png'} alt="" />
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>

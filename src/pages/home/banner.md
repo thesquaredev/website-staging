@@ -4,12 +4,14 @@ title: Home
 slug: /
 component: banner
 position: 1
-heading: Your data is your value.
-btnTxt: Our solutions
+heading: Unlock the power of your data.
+btnTxt: Browse our solutions
 btnUrl: /solutions
 # Previous mottos include:
 # Unlock business value
 # Connect. Learn. Build.
+# Unlock your data
 ---
 
-We make it possible to turn your organisation's data into actionable insights and build a sustainable competitive advantage.
+Connect siloed data and deliver intelligence for IT engineers, 
+data scientists and business users.
