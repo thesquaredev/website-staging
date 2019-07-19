@@ -32,35 +32,35 @@ const Header = ({ isScrolled }) => (
                     <Link to="/solutions/life-sciences">
                       <img src={'/icons/pills-icon.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Life Sciences</span>
-                        <span>Predict Adverse Events</span>
+                        <span>Life sciences</span>
+                        <span>Leverage data-driven innovation</span>
                       </div>
                     </Link>
                   </li>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/shield-icon.png'} alt="" />
+                      <img src={'/icons/bank.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>Financial services</span>
+                        <span>Redefine banking with AI</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/generic">
+                      <img src={'/icons/5g.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Telecommunications</span>
-                        <span>Augment Network Security</span>
+                        <span>Your network is a graph</span>
                       </div>
                     </Link>
                   </li>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/databases-icon.png'} alt="" />
+                      <img src={'/icons/truck.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Financial Services</span>
-                        <span>Next gen data management</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/generic">
-                      <img src={'/icons/databases-icon.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Logistics & Manufacturing</span>
-                        <span>Next gen data management</span>
+                        <span>Logistics & manufacturing</span>
+                        <span>Intelligent product management</span>
                       </div>
                     </Link>
                   </li>
@@ -71,26 +71,35 @@ const Header = ({ isScrolled }) => (
                     <Link to="/generic">
                       <img src={'/icons/brain-icon.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Knowledge Graphs</span>
-                        <span>Your data is now smarter</span>
+                        <span>Knowledge graphs</span>
+                        <span>Break down data silos</span>
                       </div>
                     </Link>
                   </li>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/shield-icon.png'} alt="" />
+                      <img src={'/icons/robot-head.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Deep Learning</span>
-                        <span>Do that with neural networks</span>
+                        <span>AI & machine learning</span>
+                        <span>Lorem ipsum dolor sit amet</span>
                       </div>
                     </Link>
                   </li>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/shield-icon.png'} alt="" />
+                      <img src={'/icons/visualizations.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Data Engineering</span>
-                        <span>Effectively manage data pipelines</span>
+                        <span>Data engineering</span>
+                        <span>Lorem ipsum dolor sit amet</span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/generic">
+                      <img src={'/icons/user-shield.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>Data protection</span>
+                        <span>Ensure GDPR compliance</span>
                       </div>
                     </Link>
                   </li>

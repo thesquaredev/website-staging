@@ -13,12 +13,12 @@
     height: 100%;
     background-image: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
     &__img {
-      background-image: url("/images/city.jpg");
+      background-image: url("/images/windmills.jpg");
       height: 100%;
       width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      opacity: 0.3;
+      opacity: 0.5;
     }
   }
   &__wrapper {
@@ -36,7 +36,7 @@
     }
     &__heading {
       color: white;
-      font-size: 3.4rem;
+      font-size: 3.5rem;
       font-weight: 500;
       margin-top: 20px;
       @media (max-width: 991px) {
