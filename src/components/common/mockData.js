@@ -70,6 +70,28 @@ const mockData = {
       icon: 'lab-tubes.png',
       description: lorem.substring(0, 150),
     },
+  ],
+  quarters: [
+    {
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      description: lorem.substring(0, 150),
+    },
+    {
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      description: lorem.substring(0, 150),
+    },
+    {
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      description: lorem.substring(0, 150),
+    },
+    {
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      description: lorem.substring(0, 150),
+    },
   ]
 }
 

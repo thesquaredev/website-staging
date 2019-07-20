@@ -4,7 +4,7 @@ title: Home
 slug: /
 component: banner
 position: 1
-heading: Connect what matters.
+heading: Connect what matters
 btnTxt: Browse our solutions
 btnUrl: /solutions
 # Previous mottos include:
