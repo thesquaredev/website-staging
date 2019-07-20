@@ -38,7 +38,7 @@ const Header = ({ isScrolled }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/generic">
+                    <Link to="/solutions/financial-services">
                       <img src={'/icons/bank.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Financial services</span>

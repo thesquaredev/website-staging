@@ -11,14 +11,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 20%,#1cafc6 50%,#012690 110%);
+    background-image: radial-gradient(ellipse farthest-side at 100% 100%,#1cafc6 20%,#012690 110%);
     &__img {
-      background-image: url("/images/windmills.jpg");
+      background-image: url("/images/shipping-boxes-in-front-of-red-brick.jpg");
       height: 100%;
       width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      opacity: 0.5;
+      opacity: 0.6;
     }
   }
   &__wrapper {

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 // import InViewMonitor from 'react-inview-monitor'
 import { IMAGE_LEFT } from '../common/constants'
 import './imageText.scss'
@@ -54,9 +55,9 @@ const ImageText = ({
                 dangerouslySetInnerHTML={{ __html: html }}
               />
               {btnTxt && (
-                <a className="primary-btn" href={btnUrl} target="_blank">
+                <Link className="primary-btn" to={btnUrl}>
                   {btnTxt}
-                </a>
+                </Link>
               )}
             </div>
           </div>

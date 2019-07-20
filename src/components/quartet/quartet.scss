@@ -1,0 +1,126 @@
+@import '../../sass/theme/theme-variables';
+
+.quartet {
+  position: relative;
+  background: $light-grey;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+    height: 2px;
+    background-image: radial-gradient(circle, $grey 50%, $light-grey 90%);
+  }
+  &__heading {
+    text-align: center;
+    font-size: 2.57rem;
+    margin: 16px 0;
+  }
+  &__description {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  &__separator {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: $white;
+    top: calc(50% - 38px);
+    left: calc(50% - 38px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px 0 rgba(23, 28, 33, 0.1),
+      0 7px 13px 0 rgba(23, 28, 33, 0.05);
+    @media (max-width: 767px) {
+      display: none;
+    }
+    img {
+      height: 32px;
+      width: auto;
+      transform: rotate(180deg);
+    }
+  }
+  &__quarters {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    @media (max-width: 767px) {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+    }
+  }
+}
+
+.quarter {
+  border-radius: 5px;
+  padding: 40px 55px;
+  border-style: solid;
+  border-width: 1px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &:nth-of-type(2) {
+    border-image: linear-gradient(
+        to top left,
+        $white 10%,
+        $white 30%,
+        $light-grey 35%
+      )
+      100;
+    background-image: linear-gradient(to top left, $grey, $light-grey 25%);
+  }
+  &:nth-of-type(3) {
+    border-image: linear-gradient(
+        to top right,
+        $white 10%,
+        $white 30%,
+        $light-grey 35%
+      )
+      100;
+    background-image: linear-gradient(to top right, $grey, $light-grey 25%);
+  }
+  &:nth-of-type(4) {
+    border-image: linear-gradient(
+        to bottom left,
+        $white 10%,
+        $white 30%,
+        $light-grey 35%
+      )
+      100;
+    background-image: linear-gradient(to bottom left, $grey, $light-grey 25%);
+  }
+  &:nth-of-type(5) {
+    border-image: linear-gradient(
+        to bottom right,
+        $white 10%,
+        $white 30%,
+        $light-grey 35%
+      )
+      100;
+    background-image: linear-gradient(to bottom right, $grey, $light-grey 25%);
+  }
+  @media (max-width: 767px) {
+    min-height: 0;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    &:nth-of-type(n) {
+      border: none;
+      background-image: none;
+    }
+  }
+  &__heading {
+    margin: 30px 0 20px;
+  }
+  img {
+    height: 38px;
+    width: auto;
+  }
+}

@@ -69,11 +69,11 @@ exports.createPages = ({ graphql, actions }) => {
           node.frontmatter.component === 'imageText' ||
           node.frontmatter.component === 'hero'
         ) {
-          component.headline = node.frontmatter.headline || ''
-          component.heading = node.frontmatter.heading || ''
-          component.btnTxt = node.frontmatter.btnTxt || ''
-          component.btnUrl = node.frontmatter.btnUrl || ''
-          component.description = node.frontmatter.description || ''
+          component.headline = node.frontmatter.headline
+          component.heading = node.frontmatter.heading
+          component.btnTxt = node.frontmatter.btnTxt
+          component.btnUrl = node.frontmatter.btnUrl
+          component.description = node.frontmatter.description
           component.image = node.frontmatter.image
           component.imagePosition = node.frontmatter.imagePosition
           component.html = node.html
@@ -105,6 +105,16 @@ exports.createPages = ({ graphql, actions }) => {
             heading: getTextContent(pill, 'h1'),
             icon: getTextContent(pill, 'h2'),
             description: getTextContent(pill, 'p'),
+          }))
+        }
+        if (node.frontmatter.component === 'quartet') {
+          component.heading = node.frontmatter.heading
+          component.description = node.frontmatter.description
+          const quarters = node.html.split('<hr>\n')
+          component.quarters = quarters.map(quarter => ({
+            heading: getTextContent(quarter, 'h1'),
+            icon: getTextContent(quarter, 'h2'),
+            description: getTextContent(quarter, 'p'),
           }))
         }
         if (node.frontmatter.component === 'contact') {
