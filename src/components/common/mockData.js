@@ -13,6 +13,7 @@ const mockData = {
   headline: lorem.substring(0, 30),
   image: 'grid.jpg',
   html: `<p>${lorem.substring(0, 150)}</p>`,
+  icon: 'lab-tubes.png',
   cards: [
     {
       industry: lorem.substring(0, 11),
