@@ -3,7 +3,7 @@ template: default
 title: Home
 slug: /
 component: imageText
-position: 3
+position: 2
 headline: Solution
 heading: Your Enterprise Knowledge Graph
 btnTxt: Learn more

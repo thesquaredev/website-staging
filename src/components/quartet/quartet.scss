@@ -52,6 +52,7 @@
     @media (max-width: 767px) {
       grid-template-columns: 100%;
       grid-template-rows: auto;
+      grid-row-gap: 20px;
     }
   }
 }
@@ -110,6 +111,7 @@
     height: auto;
     align-items: center;
     text-align: center;
+    background-color: $white;
     &:nth-of-type(n) {
       border: none;
       background-image: none;

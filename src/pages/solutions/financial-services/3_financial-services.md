@@ -7,7 +7,7 @@ position: 3
 heading: Gain a holistic worldview of adverse events
 btnTxt: 
 btnUrl: 
-image: buying-online-black-friday.jpg
+image: online-shopping.jpg
 imagePosition: left
 ---
 

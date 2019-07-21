@@ -42,7 +42,7 @@ const Header = ({ isScrolled }) => (
                       <img src={'/icons/bank.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Financial services</span>
-                        <span>Redefine banking with AI</span>
+                        <span>Meet data challenges with AI</span>
                       </div>
                     </Link>
                   </li>
