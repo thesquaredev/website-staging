@@ -110,7 +110,7 @@ exports.createPages = ({ graphql, actions }) => {
         if (node.frontmatter.component === 'quartet') {
           component.heading = node.frontmatter.heading
           component.description = node.frontmatter.description
-          component.image = node.frontmatter.image
+          component.icon = node.frontmatter.icon
           const quarters = node.html.split('<hr>\n')
           component.quarters = quarters.map(quarter => ({
             heading: getTextContent(quarter, 'h1'),
