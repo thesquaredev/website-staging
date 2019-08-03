@@ -21,10 +21,7 @@ const Header = ({ isScrolled }) => (
             {/*<AnchorLink href="#banner1">Home</AnchorLink>*/}
             {/*</li>*/}
             <li className="menu-has-children">
-              <Link to="/solutions">
-                <span>Solutions</span>
-                {/*<FontAwesomeIcon icon={faChevronDown} />*/}
-              </Link>
+              <h5 className="menu-has-children__title">Solutions</h5>
               <ul className="nav-submenu">
                 <span className="nav-submenu__col">
                   <h6>By Use Case</h6>
@@ -90,12 +87,6 @@ const Header = ({ isScrolled }) => (
             </li>
             <li>
               <Link to="/showcase">Company</Link>
-            </li>
-            <li>
-              <Link to="/technology">
-                {/*<img src={'/icons/flask.png'} alt="" />*/}
-                Labs
-              </Link>
             </li>
             <li>
               <Link to="/showcase">
