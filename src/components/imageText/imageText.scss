@@ -1,7 +1,7 @@
 @import '../../sass/theme/theme-variables';
 
 .image-text {
-  background: $light-grey;
+  background: $white; // linear-gradient(to bottom, $light-grey, $white);
   overflow: hidden;
   @media (max-width: 767px) {
     padding: 40px 0;
