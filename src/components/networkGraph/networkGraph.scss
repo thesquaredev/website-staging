@@ -1,7 +1,7 @@
 @import '../../sass/theme/theme-variables';
 
 .image-text {
-  background: $light-grey;
+  background-color: $white;
   overflow: hidden;
   @media screen and (max-width: 767px) {
     padding: 40px 0;
@@ -23,8 +23,9 @@
 }
 
 .graph {
-  background: $light-grey;
-  min-height: 500px;
+  min-height: 550px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .nodes {
@@ -34,62 +35,116 @@
   grid-template-rows: auto;
   height: 100%;
   width: 100%;
-  &:after {
+  &:before {
     content: "";
     position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
-    width: 50px;
-    height: 50px;
+    top: calc(50% - 32px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: white;
+    z-index: 1;
+    box-shadow: 0 35px 50px 0 rgba(160, 161, 188, 0.6);
+  }
+  &__image {
+    width: 60px;
+    height: 60px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 30px);
+    z-index: 1;
   }
 }
 
 .node {
   position: relative;
-  &:after {
+  &:before {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: white;
+    background-color: white;
+    box-shadow: 0 35px 50px 0 rgba(160, 161, 188, 0.6);
+  }
+  &__image {
+    width: 60px;
+    height: 60px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    &--1 {
+      bottom: -30px;
+      left: -31px;
+      transform: rotate(-10deg);
+    }
+    &--2 {
+      top: -30px;
+      left: -31px;
+      transform: rotate(-10deg);
+    }
+    &--3 {
+      bottom: -30px;
+      right: -31px;
+      transform: rotate(20deg);
+    }
+    &--4 {
+      top: -30px;
+      right: -31px;
+      transform: rotate(25deg);
+    }
   }
   &--1 {
-    transform: rotate(10deg);
     transform-origin: bottom right;
-    border-bottom: 1px solid white;
-    &:after {
-      bottom: -25px;
-      left: -25px;
+    border-bottom: 1px solid $primary-color;
+    animation-name: rotate1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    &:before {
+      bottom: -30px;
+      left: -31px;
     }
   }
   &--2 {
-    transform: rotate(10deg);
     transform-origin: bottom left;
-    border-left: 1px solid white;
-    &:after {
-      top: -25px;
-      left: -25px;
+    border-left: 1px solid $primary-color;
+    animation-name: rotate1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    &:before {
+      top: -30px;
+      left: -31px;
     }
   }
   &--3 {
-    transform: rotate(1deg);
     transform-origin: top right;
-    border-right: 1px solid white;
-    &:after {
-      bottom: -25px;
-      right: -25px;
+    border-right: 1px solid $primary-color;
+    animation-name: rotate2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    &:before {
+      bottom: -30px;
+      right: -31px;
     }
   }
   &--4 {
-    transform: rotate(-25deg);
     transform-origin: top left;
-    border-top: 1px solid white;
-    &:after {
-      top: -25px;
-      right: -25px;
+    border-top: 1px solid $primary-color;
+    animation-name: rotate3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    &:before {
+      top: -30px;
+      right: -31px;
     }
   }
 }
@@ -127,5 +182,35 @@
   p {
     font-size: 1.2rem;
     margin: 24px 0 18px;
+  }
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotate(10deg);
+  }
+
+  to {
+    transform: rotate(13deg);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(-18deg);
+  }
+
+  to {
+    transform: rotate(-22deg);
+  }
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotate(-25deg);
+  }
+
+  to {
+    transform: rotate(-30deg);
   }
 }

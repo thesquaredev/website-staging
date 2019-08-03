@@ -3,13 +3,13 @@ template: default
 title: Home
 slug: /
 component: imageText
-position: 4
+position: 3
 headline: Technology
 heading: Data Science
 btnTxt: Get in touch
 btnUrl: 
-image: network.svg
-imagePosition: right
+image: buying-online-black-friday.jpg
+imagePosition: left
 ---
 
 We believe that individuals or teams should be able to find the truth in their data, easily, that 
