@@ -27,7 +27,7 @@ const Header = ({ isScrolled }) => (
                   <h6>By Use Case</h6>
                   <li>
                     <Link to="/solutions/life-sciences">
-                      <img src={'/icons/pills-icon.png'} alt="" />
+                      <img src={'/icons/pills-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Pharmacovigilance</span>
                         <span>Leverage data-driven innovation</span>
@@ -57,7 +57,7 @@ const Header = ({ isScrolled }) => (
                   <h6>By Technology</h6>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/brain-icon.png'} alt="" />
+                      <img src={'/icons/brain-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Knowledge graphs</span>
                         <span>Break down data silos</span>
@@ -66,7 +66,7 @@ const Header = ({ isScrolled }) => (
                   </li>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/robot-head.png'} alt="" />
+                      <img src={'/icons/robot-head-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>AI & machine learning</span>
                         <span>Lorem ipsum dolor sit amet</span>
