@@ -11,12 +11,13 @@
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
     background: $white;
     transition: all 0.5s;
-    .nav-menu a {
+    .nav-menu a,
+    .menu-has-children__title {
       color: $primary-color;
     }
-    .nav-submenu a {
-      color: $accent-color;
-    }
+    //.nav-submenu a {
+    //  color: $accent-color;
+    //}
     #path22,
     #path24,
     #path26 {
@@ -72,6 +73,20 @@
 // TODO: i added this one, classes in nav must be revised
 .nav-menu li.menu-has-children span {
   margin-right: 4px;
+}
+
+.menu-has-children__title {
+  padding: 0 8px 0px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  cursor: default;
+  transition: all 0.3s ease 0s;
 }
 
 /* Nav Menu Arrows */
@@ -172,7 +187,7 @@
     position: absolute;
     pointer-events: none;
     bottom: 100%;
-    left: 190px;
+    left: 197px;
     height: 0;
     width: 0;
     border-bottom: 7px solid #fff;

@@ -1,9 +1,6 @@
 import React from 'react'
 import './header.scss'
 import { Link } from 'gatsby'
-// import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import Logo from '../common/logo'
 
 const Header = ({ isScrolled }) => (
@@ -17,20 +14,14 @@ const Header = ({ isScrolled }) => (
         </div>
         <nav id="nav-menu-container">
           <ul className="nav-menu sf-arrows">
-            {/*<li className="menu-active">*/}
-            {/*<AnchorLink href="#banner1">Home</AnchorLink>*/}
-            {/*</li>*/}
             <li className="menu-has-children">
-              <Link to="/solutions">
-                <span>Solutions</span>
-                {/*<FontAwesomeIcon icon={faChevronDown} />*/}
-              </Link>
+              <h5 className="menu-has-children__title">Solutions</h5>
               <ul className="nav-submenu">
                 <span className="nav-submenu__col">
                   <h6>By Use Case</h6>
                   <li>
                     <Link to="/solutions/life-sciences">
-                      <img src={'/icons/pills-icon.png'} alt="" />
+                      <img src={'/icons/pills-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Pharmacovigilance</span>
                         <span>Leverage data-driven innovation</span>
@@ -60,7 +51,7 @@ const Header = ({ isScrolled }) => (
                   <h6>By Technology</h6>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/brain-icon.png'} alt="" />
+                      <img src={'/icons/brain-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Knowledge graphs</span>
                         <span>Break down data silos</span>
@@ -69,7 +60,7 @@ const Header = ({ isScrolled }) => (
                   </li>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/robot-head.png'} alt="" />
+                      <img src={'/icons/robot-head-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>AI & machine learning</span>
                         <span>Lorem ipsum dolor sit amet</span>
@@ -92,14 +83,7 @@ const Header = ({ isScrolled }) => (
               <Link to="/showcase">Company</Link>
             </li>
             <li>
-              <Link to="/technology">
-                {/*<img src={'/icons/flask.png'} alt="" />*/}
-                Labs
-              </Link>
-            </li>
-            <li>
               <Link to="/showcase">
-                {/*<img src={'/icons/mailbox.png'} alt="" />*/}
                 Contact Us
               </Link>
             </li>
