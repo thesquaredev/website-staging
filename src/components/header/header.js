@@ -1,9 +1,6 @@
 import React from 'react'
 import './header.scss'
 import { Link } from 'gatsby'
-// import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import Logo from '../common/logo'
 
 const Header = ({ isScrolled }) => (
@@ -17,9 +14,6 @@ const Header = ({ isScrolled }) => (
         </div>
         <nav id="nav-menu-container">
           <ul className="nav-menu sf-arrows">
-            {/*<li className="menu-active">*/}
-            {/*<AnchorLink href="#banner1">Home</AnchorLink>*/}
-            {/*</li>*/}
             <li className="menu-has-children">
               <h5 className="menu-has-children__title">Solutions</h5>
               <ul className="nav-submenu">
@@ -90,7 +84,6 @@ const Header = ({ isScrolled }) => (
             </li>
             <li>
               <Link to="/showcase">
-                {/*<img src={'/icons/mailbox.png'} alt="" />*/}
                 Contact Us
               </Link>
             </li>

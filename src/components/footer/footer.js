@@ -8,7 +8,6 @@ import {
 import './footer.scss'
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
-// import { withPrefix } from 'gatsby'
 
 const Footer = () => (
   <footer id="footer" className="footer">
