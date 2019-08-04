@@ -9,6 +9,7 @@ import Cards from '../components/cards/cards'
 import Hero from '../components/hero/hero'
 import Pills from '../components/pills/pills'
 import Quartet from '../components/quartet/quartet'
+import NetworkGraph from '../components/networkGraph/networkGraph'
 
 /**
  * Utility to resolve the component in use
@@ -26,6 +27,7 @@ const componentResolver = (meta, elemId, i) => ({
   ['hero']: <Hero meta={meta} elemId={elemId} key={i} />,
   ['pills']: <Pills meta={meta} elemId={elemId} key={i} />,
   ['quartet']: <Quartet meta={meta} elemId={elemId} key={i} />,
+  ['networkgraph']: <NetworkGraph meta={meta} elemId={elemId} key={i} />,
 })
 
 /**

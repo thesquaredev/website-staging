@@ -27,40 +27,31 @@ const Header = ({ isScrolled }) => (
               </Link>
               <ul className="nav-submenu">
                 <span className="nav-submenu__col">
-                  <h6>By Industry</h6>
+                  <h6>By Use Case</h6>
                   <li>
                     <Link to="/solutions/life-sciences">
                       <img src={'/icons/pills-icon.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Life sciences</span>
+                        <span>Pharmacovigilance</span>
                         <span>Leverage data-driven innovation</span>
                       </div>
                     </Link>
                   </li>
                   <li>
                     <Link to="/solutions/financial-services">
-                      <img src={'/icons/bank.png'} alt="" />
+                      <img src={'/icons/user-credit-card-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Financial services</span>
-                        <span>Redefine banking with AI</span>
+                        <span>KYC / Customer 360</span>
+                        <span>Meet data challenges with AI</span>
                       </div>
                     </Link>
                   </li>
                   <li>
                     <Link to="/generic">
-                      <img src={'/icons/5g.png'} alt="" />
+                      <img src={'/icons/user-shield.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Telecommunications</span>
-                        <span>Your network is a graph</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/generic">
-                      <img src={'/icons/truck.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Logistics & manufacturing</span>
-                        <span>Intelligent product management</span>
+                        <span>Data privacy</span>
+                        <span>Ensure GDPR compliance</span>
                       </div>
                     </Link>
                   </li>
@@ -94,15 +85,6 @@ const Header = ({ isScrolled }) => (
                       </div>
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/generic">
-                      <img src={'/icons/user-shield.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Data protection</span>
-                        <span>Ensure GDPR compliance</span>
-                      </div>
-                    </Link>
-                  </li>
                 </span>
               </ul>
             </li>
@@ -111,13 +93,13 @@ const Header = ({ isScrolled }) => (
             </li>
             <li>
               <Link to="/technology">
-                <img src={'/icons/flask.png'} alt="" />
+                {/*<img src={'/icons/flask.png'} alt="" />*/}
                 Labs
               </Link>
             </li>
             <li>
               <Link to="/showcase">
-                <img src={'/icons/mailbox.png'} alt="" />
+                {/*<img src={'/icons/mailbox.png'} alt="" />*/}
                 Contact Us
               </Link>
             </li>

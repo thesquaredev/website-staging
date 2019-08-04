@@ -33,17 +33,17 @@ exports.createPages = ({ graphql, actions }) => {
                 imagePosition
                 moreTxt
                 headline
-                # icons
-                # formTitle
-                # formNamePlaceholder
-                # formEmailPlaceholder
-                # formMessagePlaceholder
-                # formSubmitBtnTxt
-                # addressTitle
-                # addressLine1
-                # addressLine2
-                # addressCountry
-                # addressEmail
+                icons
+                formTitle
+                formNamePlaceholder
+                formEmailPlaceholder
+                formMessagePlaceholder
+                formSubmitBtnTxt
+                addressTitle
+                addressLine1
+                addressLine2
+                addressCountry
+                addressEmail
               }
               html
             }
@@ -110,13 +110,22 @@ exports.createPages = ({ graphql, actions }) => {
         if (node.frontmatter.component === 'quartet') {
           component.heading = node.frontmatter.heading
           component.description = node.frontmatter.description
-          component.icon = node.frontmatter.icon
+          component.image = node.frontmatter.image
           const quarters = node.html.split('<hr>\n')
           component.quarters = quarters.map(quarter => ({
             heading: getTextContent(quarter, 'h1'),
             icon: getTextContent(quarter, 'h2'),
             description: getTextContent(quarter, 'p'),
           }))
+        }
+        if (node.frontmatter.component === 'networkGraph') {
+          component.headline = node.frontmatter.headline
+          component.heading = node.frontmatter.heading
+          component.btnTxt = node.frontmatter.btnTxt
+          component.btnUrl = node.frontmatter.btnUrl
+          component.imagePosition = node.frontmatter.imagePosition
+          component.html = node.html
+          component.icons = node.frontmatter.icons.split(', ')
         }
         if (node.frontmatter.component === 'contact') {
           component.heading = node.frontmatter.heading

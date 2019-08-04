@@ -14,6 +14,13 @@ const mockData = {
   image: 'grid.jpg',
   html: `<p>${lorem.substring(0, 150)}</p>`,
   icon: 'lab-tubes.png',
+  icons: [
+    'lab-tubes.png',
+    'lab-tubes.png',
+    'lab-tubes.png',
+    'lab-tubes.png',
+    'lab-tubes.png',
+  ],
   cards: [
     {
       industry: lorem.substring(0, 11),
@@ -93,7 +100,7 @@ const mockData = {
       icon: 'lab-tubes.png',
       description: lorem.substring(0, 150),
     },
-  ]
+  ],
 }
 
 export default mockData

@@ -4,11 +4,11 @@ title: Home
 slug: /
 component: imageText
 position: 3
-headline: Solution
-heading: Your Enterprise Knowledge Graph
-btnTxt: Learn more
+headline: Technology
+heading: Data Science
+btnTxt: Get in touch
 btnUrl: 
-image: test-tubes.jpg
+image: buying-online-black-friday.jpg
 imagePosition: left
 ---
 
