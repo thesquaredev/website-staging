@@ -13,12 +13,12 @@
     height: 100%;
     background-image: radial-gradient(ellipse farthest-side at 100% 100%,#1cafc6 20%,#012690 110%);
     &__img {
-      background-image: url("/images/hand-holding-phone-taking-photo.jpg");
+      background-image: url("/images/hand-holding-phone-taking-photo.png");
       height: 100%;
       width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      opacity: 0.5;
+      opacity: 0.7;
     }
   }
   &__wrapper {
@@ -36,7 +36,7 @@
     }
     &__heading {
       color: white;
-      font-size: 3.5rem;
+      font-size: 3.2rem;
       font-weight: 500;
       margin-top: 20px;
       @media (max-width: 991px) {
@@ -48,7 +48,7 @@
     }
     &__body p {
       padding: 20px 0;
-      font-size: 1.4rem;
+      font-size: 1.25rem;
       line-height: 1.8rem;
       opacity: 8;
       @media (max-width: 414px) {
