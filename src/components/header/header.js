@@ -2,17 +2,22 @@ import React from 'react'
 import './header.scss'
 import { Link } from 'gatsby'
 import Logo from '../common/logo'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMap } from '@fortawesome/free-solid-svg-icons'
 
 const Header = ({ isScrolled }) => (
   <header className={isScrolled ? 'header header-scrolled' : 'header'}>
     <div className="container">
-      <div className="row align-items-center justify-content-between d-flex">
-        <div className="header__logo">
+      <div className="nav">
+        <div className="nav__logo">
           <Link to="/">
             <Logo className="logo" />
           </Link>
         </div>
-        <nav id="nav-menu-container">
+        <div className="nav__toggle">
+          <FontAwesomeIcon icon={faMap} />
+        </div>
+        <nav className="nav__menu" id="nav-menu-container">
           <ul className="nav-menu sf-arrows">
             <li className="menu-has-children">
               <h5 className="menu-has-children__title">Solutions</h5>
