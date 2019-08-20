@@ -11,7 +11,7 @@ const Banner = ({ meta: { heading, html, btnTxt, btnUrl }, elemId }) => (
     </div>
     <div className="container fullscreen">
       <div className="row fullscreen banner__wrapper">
-        <div className="banner__text col-lg-6">
+        <div className="banner__text col-lg-5 col-md-8">
           <h1 className="banner__text__heading">{heading}</h1>
           <div
             className="banner__text__body"
