@@ -51,10 +51,12 @@
 }
 
 .nav-menu li:hover .nav-submenu {
-  opacity: 1;
-  top: 100%;
-  transform: translateY(0);
-  visibility: visible;
+  @media (min-width: 991px) {
+    opacity: 1;
+    top: 100%;
+    transform: translateY(0);
+    visibility: visible;
+  }
 }
 
 // TODO: i added this one, classes in nav must be revised
@@ -115,11 +117,19 @@
     }
   }
   &__toggle {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $white;
     z-index: 1;
+    height: 25px;
+    width: 25px;
     @media (min-width: 992px) {
       display: none;
+    }
+    & svg {
+      height: 20px;
+      width: auto !important;
     }
     & .mobile-menu-visible {
       color: $primary-color;
@@ -158,7 +168,7 @@
       .nav-menu > li {
         float: none;
         margin: 0;
-        padding: 20px 12px;
+        padding: 30px 12px 20px;
       }
       .nav-menu a,
       h5 {
@@ -181,6 +191,9 @@
         padding: 0;
         border-radius: 0;
         background: $grey;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
         & li {
           border-bottom: 1px solid $white;
         }
