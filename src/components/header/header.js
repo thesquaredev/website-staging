@@ -1,12 +1,55 @@
 import React from 'react'
 import './header.scss'
 import { Link } from 'gatsby'
+import classNames from 'classnames';
 import Logo from '../common/logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMap } from '@fortawesome/free-solid-svg-icons'
+import { faMap, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-const Header = ({ isScrolled }) => (
-  <header className={isScrolled ? 'header header-scrolled' : 'header'}>
+/**
+ * Utility to return classes for header element
+ * @param isScrolled Boolean that is true when user scrolls down more than 10px {@link Layout}
+ * @param isMobileMenuVisible Boolean that is true when mobile menu is open {@link Layout}
+ * @returns {string}
+ */
+const getHeaderClass = (isScrolled, isMobileMenuVisible) =>
+  classNames({
+    header: true,
+    'header-scrolled': isScrolled,
+    'mobile-menu-visible': isMobileMenuVisible
+  })
+
+/**
+ * Utility to return classes for toggle icon in header
+ * @param isMobileMenuVisible Boolean that is true when mobile menu is open {@link Layout}
+ * @returns {string}
+ */
+const getToggleClass = isMobileMenuVisible =>
+  classNames({
+    nav__toggle: true,
+    'mobile-menu-visible': isMobileMenuVisible,
+  })
+
+/**
+ * Utility that returns the navigation icon in small devices
+ * @param isMobileMenuVisible Boolean that is true when mobile menu is open {@link Layout}
+ * @returns {IconDefinition}
+ */
+const getToggleIcon = isMobileMenuVisible => isMobileMenuVisible ? faTimes : faMap;
+
+/**
+ * Utility to return classes for nav element
+ * @param isMobileMenuVisible Boolean that is true when mobile menu is open {@link Layout}
+ * @returns {string}
+ */
+const getNavClass = isMobileMenuVisible =>
+  classNames({
+    nav__menu: true,
+    'nav__menu--mobile': isMobileMenuVisible,
+  })
+
+const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
+  <header className={getHeaderClass(isScrolled, isMobileMenuVisible)}>
     <div className="container">
       <div className="nav">
         <div className="nav__logo">
@@ -14,10 +57,10 @@ const Header = ({ isScrolled }) => (
             <Logo className="logo" />
           </Link>
         </div>
-        <div className="nav__toggle">
-          <FontAwesomeIcon icon={faMap} />
+        <div className={getToggleClass(isMobileMenuVisible)} onClick={toggleMobileMenu}>
+          <FontAwesomeIcon icon={getToggleIcon(isMobileMenuVisible)} />
         </div>
-        <nav className="nav__menu" id="nav-menu-container">
+        <nav className={getNavClass(isMobileMenuVisible)}>
           <ul className="nav-menu sf-arrows">
             <li className="menu-has-children">
               <h5 className="menu-has-children__title">Solutions</h5>
@@ -35,7 +78,10 @@ const Header = ({ isScrolled }) => (
                   </li>
                   <li>
                     <Link to="/solutions/financial-services">
-                      <img src={'/icons/user-credit-card-bold-green.png'} alt="" />
+                      <img
+                        src={'/icons/user-credit-card-bold-green.png'}
+                        alt=""
+                      />
                       <div className="nav-submenu__item">
                         <span>KYC / Customer 360</span>
                         <span>Meet data challenges with AI</span>
@@ -88,9 +134,7 @@ const Header = ({ isScrolled }) => (
               <Link to="/showcase">Company</Link>
             </li>
             <li>
-              <Link to="/showcase">
-                Contact Us
-              </Link>
+              <Link to="/showcase">Contact Us</Link>
             </li>
           </ul>
         </nav>
