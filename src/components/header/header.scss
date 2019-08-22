@@ -53,7 +53,7 @@
 .nav-menu li:hover .nav-submenu {
   @media (min-width: 991px) {
     opacity: 1;
-    top: 100%;
+    top: 20px;
     transform: translateY(0);
     visibility: visible;
   }
@@ -130,6 +130,9 @@
     & svg {
       height: 20px;
       width: auto !important;
+      @media (max-width: 767px) {
+        height: 15px;
+      }
     }
     & .mobile-menu-visible {
       color: $primary-color;
@@ -140,9 +143,6 @@
     display: none;
     @media (min-width: 992px) {
       display: block;
-    }
-    @media (max-width: 1599px) {
-      padding-right: 60px;
     }
     &--mobile {
       display: block;
@@ -257,7 +257,7 @@
 .nav-submenu {
   display: flex;
   top: -500px;
-  left: -160px;
+  left: -230px;
   width: 552px;
   transform: translateY(17px);
   visibility: hidden;
@@ -291,7 +291,7 @@
     position: absolute;
     pointer-events: none;
     bottom: 100%;
-    left: 197px;
+    left: 267px;
     height: 0;
     width: 0;
     border-bottom: 7px solid #fff;
