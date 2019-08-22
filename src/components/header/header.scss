@@ -421,17 +421,6 @@
   color: $primary-color;
 }
 
-#mobile-body-overly {
-  width: 100vw;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-}
-
 /* Mobile Nav body classes */
 body.mobile-nav-active {
   overflow: hidden;
