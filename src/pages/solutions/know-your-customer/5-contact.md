@@ -1,9 +1,6 @@
 ---
-template: index
-title: Home
-slug: /
+template: default
 component: contact
-position: 5
 heading: Contact Us
 formTitle: Send us a message
 formNamePlaceholder: Your name

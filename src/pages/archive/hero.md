@@ -1,9 +1,6 @@
 ---
 template: default
-title: Solutions
-slug: /solutions
 component: hero
-position: 1
 heading: Turn your data into helpful solutions
 image: shipyard.jpg
 btnTxt: Get in touch

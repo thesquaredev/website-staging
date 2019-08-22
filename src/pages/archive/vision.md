@@ -1,9 +1,6 @@
 ---
 template: index
-title: Home
-slug: /
 component: imageText
-position: 4
 heading: Our vision
 btnTxt: 
 btnUrl: 

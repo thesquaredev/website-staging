@@ -68,7 +68,7 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                 <span className="nav-submenu__col">
                   <h6>By Use Case</h6>
                   <li>
-                    <Link to="/solutions/life-sciences">
+                    <Link to="/solutions/pharmacovigilance">
                       <img src={'/icons/pills-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Pharmacovigilance</span>
@@ -77,7 +77,7 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/financial-services">
+                    <Link to="/solutions/know-your-customer">
                       <img
                         src={'/icons/user-credit-card-bold-green.png'}
                         alt=""

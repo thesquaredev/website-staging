@@ -1,9 +1,6 @@
 ---
 template: default
-title: Financial-services
-slug: /solutions/financial-services
 component: imageText
-position: 3
 heading: Gain a holistic worldview of adverse events
 btnTxt: 
 btnUrl: 

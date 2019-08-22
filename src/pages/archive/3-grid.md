@@ -1,9 +1,6 @@
 ---
 template: default
-title: Home
-slug: /
 component: grid
-position: 3
 heading: Analyze, measure, and improve your customer experience. Over and over again.
 description: We make it simple to launch modern techniques and tools for your team or organisation, whether in the cloud or your premises.
 icons: single-man-bold-red.png, maps-search-bold-green.png, piggy-savings-bold-blue.png, house-bold-blue.png, shopping-cart-bold-green.png
