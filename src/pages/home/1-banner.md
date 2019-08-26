@@ -4,8 +4,8 @@ title: Home
 slug: /
 component: banner
 position: 1
-heading: Connect what matters
-btnTxt: Browse our solutions
+heading: Connect what mostly matters to your team
+btnTxt: Our solutions
 btnUrl: /solutions
 ---
 
