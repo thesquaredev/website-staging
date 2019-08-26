@@ -1,9 +1,6 @@
 ---
 template: default
-title: Solutions
-slug: /solutions
 component: cards
-position: 2
 moreTxt: Learn more
 ---
 

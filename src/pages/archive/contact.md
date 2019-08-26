@@ -1,9 +1,6 @@
 ---
-template: default
-title: Financial-services
-slug: /solutions/financial-services
+template: index
 component: contact
-position: 5
 heading: Contact Us
 formTitle: Send us a message
 formNamePlaceholder: Your name

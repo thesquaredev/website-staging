@@ -1,15 +1,11 @@
 ---
 template: default
-title: Life-sciences
-slug: /solutions/life-sciences
 component: imageText
-position: 2
-headline: 
 heading: Gain a holistic worldview of adverse events
 btnTxt: 
 btnUrl: 
-image: crystals.jpg
-imagePosition: right
+image: online-shopping.jpg
+imagePosition: left
 ---
 
 Identifying real-world safety risks requires connecting with the real world – placing your drug life cycle data in the 

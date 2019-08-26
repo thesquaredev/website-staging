@@ -23,6 +23,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/pages`,
+        ignore: [`**/archive/**`, `**/examples/**`],
       },
     },
     `gatsby-plugin-sass`,

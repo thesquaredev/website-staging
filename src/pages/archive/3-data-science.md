@@ -1,9 +1,6 @@
 ---
 template: default
-title: Home
-slug: /
 component: imageText
-position: 3
 headline: Technology
 heading: Data Science
 btnTxt: Get in touch

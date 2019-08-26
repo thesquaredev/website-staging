@@ -1,9 +1,6 @@
 ---
 template: default
-title: Financial-services
-slug: /solutions/financial-services
 component: quartet
-position: 4
 heading: Data integration with multiple public data sources
 description: Which customers are ripe to upgrade and which could churn?
 image: plane-trip-round-bold-red.png

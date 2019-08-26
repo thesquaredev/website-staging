@@ -1,9 +1,6 @@
 ---
 template: default
-title: Home
-slug: /
 component: cards
-position: 4
 headline: See what Squaredev can do for your enterprise
 moreTxt: Learn more
 ---

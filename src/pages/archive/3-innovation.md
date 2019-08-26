@@ -1,9 +1,6 @@
 ---
 template: default
-title: Home
-slug: /
 component: callToAction
-position: 3
 heading: Innovation
 btnTxt: See how
 image: grid.jpg

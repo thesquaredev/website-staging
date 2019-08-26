@@ -19,12 +19,10 @@ exports.createPages = ({ graphql, actions }) => {
         allMarkdownRemark {
           edges {
             node {
+              fileAbsolutePath
               frontmatter {
                 template
-                title
-                slug
                 component
-                position
                 heading
                 btnTxt
                 btnUrl
@@ -52,16 +50,30 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        // Get title, position and slug from path
+        const filePath = node.fileAbsolutePath
+        const title = filePath.split('/').slice(-2, -1)[0];
+        // Get slug from path, if path is 'home' then change it to root ('/')
+        const shortPath = filePath.split('/src/pages')[1].split('/').slice(1,-1).join('/');
+        const slug = shortPath === 'home' ? '/' : `/${shortPath}`;
+        // Check if a number prefix is used in the file for positioning.
+        // If not, the position returned will be 0
+        const prefix = filePath
+          .split('/')
+          .slice(-1)[0]
+          .split('-')[0]
+        const position = !isNaN(prefix) ? prefix : 0
+
         // Construct page
         const page = {
-          title: node.frontmatter.title,
+          title,
           template: node.frontmatter.template,
-          slug: node.frontmatter.slug,
+          slug,
         }
         // Construct component
         const component = {
           name: node.frontmatter.component,
-          position: node.frontmatter.position,
+          position,
         }
         if (
           node.frontmatter.component === 'banner' ||

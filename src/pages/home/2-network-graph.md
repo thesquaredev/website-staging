@@ -3,11 +3,7 @@
 # This markdown file while render a networkGraph component, which shows two columns: one showing a network
 # graph and the other showing text. The following properties may be set (properties with * are required):
 # template: The page template to use, leave it "default" if not sure
-##
-# title*: The title of the page 
-# slug*: The url of the page
 # component*: The React component to use (here is networkGraph)
-# position*: The position of the component in the page (a number)
 # headline: The text that appears above all texts
 # heading: The title of the section
 # btnTxt: The text of the button, if left blank, button will be hidden
@@ -20,7 +16,6 @@ template: default
 title: Home
 slug: /
 component: networkGraph
-position: 2
 headline: 
 heading: Reveal the connections between people, places and things
 btnTxt: See how
