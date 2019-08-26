@@ -6,8 +6,9 @@
   left: 0;
   top: 0;
   right: 0;
-  z-index: 1;
-  &.header-scrolled {
+  z-index: 2;
+  &.header-scrolled,
+  &.mobile-menu-visible {
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
     background: $white;
     transition: all 0.5s;
@@ -23,22 +24,8 @@
     #path26 {
       fill: $primary-color !important;
     }
-  }
-  &__logo {
-    @media screen and (max-width: 767px) {
-      margin-left: 15px;
-    }
-    svg {
-      max-height: 30px;
-      width: auto;
-      @media screen and (max-width: 767px) {
-        max-height: 20px;
-      }
-    }
-    #path22,
-    #path24,
-    #path26 {
-      fill: $white !important;
+    .nav__toggle {
+      color: $primary-color;
     }
   }
 }
@@ -64,10 +51,12 @@
 }
 
 .nav-menu li:hover .nav-submenu {
-  opacity: 1;
-  top: 100%;
-  transform: translateY(0);
-  visibility: visible;
+  @media (min-width: 991px) {
+    opacity: 1;
+    top: 20px;
+    transform: translateY(0);
+    visibility: visible;
+  }
 }
 
 // TODO: i added this one, classes in nav must be revised
@@ -84,7 +73,7 @@
   font-size: 1rem;
   text-transform: uppercase;
   outline: none;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   cursor: default;
   transition: all 0.3s ease 0s;
 }
@@ -107,16 +96,131 @@
 //  content: "\f105";
 //}
 
-/* Nav Meu Container */
-#nav-menu-container {
-  margin: 0 0 -14px 0;
-  @media (max-width: 768px) {
-    display: none;
+// Navigation
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    z-index: 1;
+    svg {
+      max-height: 30px;
+      width: auto;
+      @media screen and (max-width: 767px) {
+        max-height: 20px;
+      }
+    }
+    #path22,
+    #path24,
+    #path26 {
+      fill: $white !important;
+    }
   }
-  @media (max-width: 1599px) {
-    padding-right: 60px;
+  &__toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+    @media (min-width: 992px) {
+      display: none;
+    }
+    & svg {
+      height: 20px;
+      width: auto !important;
+      @media (max-width: 767px) {
+        height: 15px;
+      }
+    }
+    & .mobile-menu-visible {
+      color: $primary-color;
+    }
+  }
+  &__menu {
+    margin: 0 0 -14px 0;
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
+    &--mobile {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      background: $white;
+      padding: 50px 0 0 0;
+      overflow: scroll;
+      z-index: 0;
+      &:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $white;
+        height: 50px;
+        width: 100vw;
+        z-index: 1;
+      }
+      .nav-menu > li {
+        float: none;
+        margin: 0;
+        padding: 30px 12px 20px;
+      }
+      .nav-menu a,
+      h5 {
+        color: $primary-color;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+      .nav-submenu {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        visibility: visible;
+        box-shadow: none;
+        position: relative;
+        opacity: 1;
+        margin: 0 0 0 -12px;
+        padding: 0;
+        border-radius: 0;
+        background: $grey;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+        & li {
+          border-bottom: 1px solid $white;
+        }
+        & li a {
+          padding: 8px 32px;
+        }
+        &__col {
+          padding: 0;
+          width: 100%;
+          h6 {
+            padding: 12px 12px 5px 32px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
   }
 }
+
+//@media (max-width: 1023px) {
+//  #mobile-nav-toggle {
+//    display: inline;
+//  }
+//  #nav-menu-container {
+//    display: none;
+//  }
+//}
 
 /* Nav Meu Styling */
 .nav-menu a {
@@ -153,7 +257,7 @@
 .nav-submenu {
   display: flex;
   top: -500px;
-  left: -160px;
+  left: -230px;
   width: 552px;
   transform: translateY(17px);
   visibility: hidden;
@@ -187,7 +291,7 @@
     position: absolute;
     pointer-events: none;
     bottom: 100%;
-    left: 197px;
+    left: 267px;
     height: 0;
     width: 0;
     border-bottom: 7px solid #fff;
@@ -254,15 +358,6 @@
 //  font-weight: 900;
 //}
 
-@media (max-width: 1023px) {
-  #mobile-nav-toggle {
-    display: inline;
-  }
-  #nav-menu-container {
-    display: none;
-  }
-}
-
 /* Mobile Nav Styling */
 #mobile-nav {
   position: fixed;
@@ -324,17 +419,6 @@
 
 #mobile-nav ul .menu-item-active {
   color: $primary-color;
-}
-
-#mobile-body-overly {
-  width: 100vw;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
 }
 
 /* Mobile Nav body classes */

@@ -6,7 +6,6 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import './footer.scss'
-import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
 
 const Footer = () => (
@@ -19,50 +18,54 @@ const Footer = () => (
         <nav className="footer__menu col-md-9">
           <div className="footer__menu__col">
             <h5>Solutions</h5>
-            <ul>
-              <li>
-                <Link to="/solutions/life-sciences">
-                  <div className="footer__menu__item">
-                    <span>Pharmacovigilance</span>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions/financial-services">
-                  <div className="footer__menu__item">
-                    <span>KYC / Customer 360</span>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/generic">
-                  <div className="footer__menu__item">
-                    <span>Data privacy</span>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/generic">
-                  <div className="footer__menu__item">
-                    <span>Knowledge graphs</span>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/generic">
-                  <div className="footer__menu__item">
-                    <span>AI & machine learning</span>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/generic">
-                  <div className="footer__menu__item">
-                    <span>Data engineering</span>
-                  </div>
-                </Link>
-              </li>
-            </ul>
+            <div className="footer__menu__col__split">
+              <ul>
+                <li>
+                  <Link to="/solutions/life-sciences">
+                    <div className="footer__menu__item">
+                      <span>Pharmacovigilance</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/solutions/financial-services">
+                    <div className="footer__menu__item">
+                      <span>KYC / Customer 360</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/generic">
+                    <div className="footer__menu__item">
+                      <span>Data privacy</span>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <Link to="/generic">
+                    <div className="footer__menu__item">
+                      <span>Knowledge graphs</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/generic">
+                    <div className="footer__menu__item">
+                      <span>AI & machine learning</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/generic">
+                    <div className="footer__menu__item">
+                      <span>Data engineering</span>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="footer__menu__col">
             <h5>Company</h5>

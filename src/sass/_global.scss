@@ -30,9 +30,10 @@ body {
   padding: 70px 0;
 }
 
-// Larger container for larger screens
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1258px;
-  }
+// Override container
+.container {
+  max-width: 1140px;
+  @media (min-width: 1440px) {
+      max-width: 1258px;
+    }
 }

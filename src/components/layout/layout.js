@@ -11,7 +11,13 @@ class Layout extends React.Component {
     super(props)
     this.state = {
       isScrolled: false,
+      isMobileMenuVisible: false,
     }
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this)
+  }
+
+  toggleMobileMenu() {
+    this.setState({ isMobileMenuVisible: !this.state.isMobileMenuVisible })
   }
 
   componentDidMount() {
@@ -19,6 +25,11 @@ class Layout extends React.Component {
       const isScrolled = window.scrollY > 10
       if (isScrolled !== this.state.isScrolled) {
         this.setState({ isScrolled })
+      }
+    })
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 992) {
+        this.setState({ isMobileMenuVisible: false })
       }
     })
   }
@@ -42,7 +53,8 @@ class Layout extends React.Component {
               meta={[
                 {
                   name: 'description',
-                  content: 'We make it possible to turn your organisation\'s big data into actionable insights and build a sustainable competitive advantage.',
+                  content:
+                    "We make it possible to turn your organisation's big data into actionable insights and build a sustainable competitive advantage.",
                 },
                 {
                   name: 'keywords',
@@ -57,10 +69,13 @@ class Layout extends React.Component {
                 src="https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver"
               />
             </Helmet>
-            <Header isScrolled={this.state.isScrolled} />
+            <Header
+              isScrolled={this.state.isScrolled}
+              isMobileMenuVisible={this.state.isMobileMenuVisible}
+              toggleMobileMenu={this.toggleMobileMenu}
+            />
             {this.props.children}
             <Footer />
-            <div id="mobile-body-overly" style={{ display: 'none' }} />
           </>
         )}
       />
