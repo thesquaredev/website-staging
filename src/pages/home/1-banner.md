@@ -6,4 +6,5 @@ btnTxt: Our solutions
 btnUrl: /solutions
 ---
 
-Generate business value from unified data and deliver intelligence for IT engineers, data scientists and business users.
+Enrich your internal knowledge with external data sources. 
+Find new ways to understand your data and deliver value to your customers. 
