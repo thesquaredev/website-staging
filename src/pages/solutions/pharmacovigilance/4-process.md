@@ -1,9 +1,27 @@
 ---
+##
+# This markdown file will render a "quartet" component, which shows a grid with exactly 4 tiles. It is used to explain
+# a process with 4 stages. The following properties may be set (properties with * are required, to leave a property blank 
+# use ''):
+#
+# template*: The page template to use, leave it "default" if not sure
+# component*: The React component to use (here is "quartet")
+# heading: The title of the section
+# description: The subtitle of the section
+# image: The icon to use at the center of the component
+##
 template: default
 component: quartet
 heading: Data integration with multiple public data sources
 description: Which customers are ripe to upgrade and which could churn?
 image: plane-trip-round-bold-red.png
+#
+# HOW TO USE TEXT BELOW:
+#
+# Each H1 headline (rows starting with #) becomes the tile's title
+# Each H2 headline (rows starting with ##) becomes the tile's icon
+# Each paragraph (rows with just text) becomes the tile's main text
+##
 ---
 
 # 1_ Add public data and ontologies

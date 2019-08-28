@@ -1,9 +1,25 @@
 ---
+##
+# This markdown file will render a "grid" component, which shows a grid containing a series tiles. The following 
+# properties may be set (properties with * are required, to leave a property blank use ''):
+#
+# template*: The page template to use, leave it "default" if not sure
+# component*: The React component to use (here is "grid")
+# heading: The title of the section
+# description: The subtitle of the section
+# icons: The icons to be used for each tile
+##
 template: default
 component: grid
 heading: Analyze, measure, and improve your customer experience. Over and over again.
 description: We make it simple to launch modern techniques and tools for your team or organisation, whether in the cloud or your premises.
 icons: single-man-bold-red.png, maps-search-bold-green.png, piggy-savings-bold-blue.png, house-bold-blue.png, shopping-cart-bold-green.png
+#
+# HOW TO USE TEXT BELOW:
+#
+# Each H3 headline (rows starting with ###) becomes the tile's title
+# Each paragraph (rows with just text) becomes the tile's main text
+##
 ---
 
 ### Knowledge graphs

@@ -14,7 +14,7 @@ template: default
 component: cards
 headline: See what Squaredev can do for your enterprise
 moreTxt: Learn more
-linkUrl: ''
+linkUrl: 
 #
 # HOW TO USE TEXT BELOW:
 #
