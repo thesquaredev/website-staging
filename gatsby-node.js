@@ -32,16 +32,16 @@ exports.createPages = ({ graphql, actions }) => {
                 moreTxt
                 headline
                 icons
-                formTitle
-                formNamePlaceholder
-                formEmailPlaceholder
-                formMessagePlaceholder
-                formSubmitBtnTxt
-                addressTitle
-                addressLine1
-                addressLine2
-                addressCountry
-                addressEmail
+                # formTitle
+                # formNamePlaceholder
+                # formEmailPlaceholder
+                # formMessagePlaceholder
+                # formSubmitBtnTxt
+                # addressTitle
+                # addressLine1
+                # addressLine2
+                # addressCountry
+                # addressEmail
               }
               html
             }
@@ -49,13 +49,24 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(result => {
+      // When GraphQL fails to read markdown files (usually a field is missing from frontmatter), Gatsby throws a shitty
+      // generic error, that tells nada about the real issue. So, we catch and throw an exception showing the real error
+      if (!result.data) {
+        const message = result.errors[0].message
+        throw new Error(message)
+      }
+      // Read markdown data
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         // Get title, position and slug from path
         const filePath = node.fileAbsolutePath
-        const title = filePath.split('/').slice(-2, -1)[0];
+        const title = filePath.split('/').slice(-2, -1)[0]
         // Get slug from path, if path is 'home' then change it to root ('/')
-        const shortPath = filePath.split('/src/pages')[1].split('/').slice(1,-1).join('/');
-        const slug = shortPath === 'home' ? '/' : `/${shortPath}`;
+        const shortPath = filePath
+          .split('/src/pages')[1]
+          .split('/')
+          .slice(1, -1)
+          .join('/')
+        const slug = shortPath === 'home' ? '/' : `/${shortPath}`
         // Check if a number prefix is used in the file for positioning.
         // If not, the position returned will be 0
         const prefix = filePath
