@@ -85,7 +85,7 @@ class Contact extends React.Component {
   handleSubmit = (e, responseText) => {
     e.preventDefault()
     if (responseText) {
-      this.setState({ responseText: '', name: '', email: '', message: '' })
+      this.setState({ responseText: '' })
       return
     }
     const form = e.target
@@ -125,8 +125,13 @@ class Contact extends React.Component {
       responseText = randomResponse
         ? 'We got your message. Thank you'
         : 'Something went wrong. Please try again'
-      this.setState({ responseText })
-      this.setState({ loading: false })
+      this.setState({
+        responseText,
+        loading: false,
+        name: '',
+        email: '',
+        message: '',
+      })
     }, 3000)
   }
 
