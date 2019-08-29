@@ -20,24 +20,32 @@ class Contact extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const { name, email, message } = this.state
-    this.setState({ errors: [] })
+    let errors = []
+    const form = e.target
+    const name = form.name.value
+    const email = form.email.value
+    const message = form.message.value
     if (!name) {
-      this.setState(({ errors }) => ({ errors: [...errors, 'nameIsEmpty'] }))
+      errors.push('nameIsEmpty')
     }
     if (!email) {
-      this.setState(({ errors }) => ({ errors: [...errors, 'emailIsEmpty'] }))
+      errors.push('emailIsEmpty')
     } else if (
       !email.match(
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i
       )
     ) {
-      this.setState(({ errors }) => ({
-        errors: [...errors, 'emailIsNotFormatted'],
-      }))
+      errors.push('emailIsNotFormatted')
     }
     if (!message) {
-      this.setState(({ errors }) => ({ errors: [...errors, 'messageIsEmpty'] }))
+      errors.push('messageIsEmpty')
+    }
+    if (errors.length > 0) {
+      this.setState({ errors })
+    } else {
+      this.setState({ errors: [] })
+      const data = new FormData(form)
+      this.sendToSimpleForm(data)
     }
   }
 
@@ -45,6 +53,30 @@ class Contact extends React.Component {
     const { name, value } = e.target
     const form = this.state.form
     this.setState({ [name]: value })
+  }
+
+  sendToSimpleForm(data) {
+    fetch(
+      // 'https://getsimpleform.com/messages?form_api_token=9275a162832af0980b4902f51972cebc',
+      'https://formsubmit.io/send/kostas.siabanis@gmail.com',
+      {
+        method: 'POST',
+        // mode: 'no-cors',
+        redirect: 'manual',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+        body: data,
+      }
+    ).then(response => {
+      return response.json();
+    }).then(jsonResponse => {
+      console.log(jsonResponse);
+    }).catch (error => {
+      console.log(error)
+    })
   }
 
   render() {
@@ -126,6 +158,11 @@ class Contact extends React.Component {
                 <button type="submit" className="primary-btn" disabled={false}>
                   {form.submitBtnTxt}
                 </button>
+                <input
+                  name="_formsubmit_id"
+                  type="text"
+                  style={{ display: 'none' }}
+                />
               </form>
             </div>
             <div className="contact__address col-lg-6">
