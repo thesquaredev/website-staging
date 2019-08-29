@@ -131,10 +131,10 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
               </ul>
             </li>
             <li>
-              <Link to="/showcase">Company</Link>
+              <Link to="/company">Company</Link>
             </li>
             <li>
-              <Link to="/showcase">Contact Us</Link>
+              <Link to="/company/#contact2">Contact Us</Link>
             </li>
           </ul>
         </nav>
