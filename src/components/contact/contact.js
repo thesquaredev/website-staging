@@ -1,7 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faMapMarkerAlt,
+  faEnvelope,
+  faSpinner,
+} from '@fortawesome/free-solid-svg-icons'
 import './contact.scss'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
@@ -12,7 +15,60 @@ import {
   MESSAGE_IS_EMPTY,
   NAME_IS_EMPTY,
 } from '../common/constants'
+import classNames from 'classnames'
 
+/**
+ * Utility to return classes for response area
+ * @param responseText Information text showed to the user about the status of the form submission
+ * @returns {string}
+ */
+const getResponseClass = responseText =>
+  classNames({
+    contact__actions__response: true,
+    expanded: responseText,
+  })
+
+/**
+ * Utility to return classes for submit button
+ * @param loading Boolean while an AJAX call is in progress
+ * @returns {string}
+ */
+const getSubmitButtonClass = () =>
+  classNames({
+    'primary-btn': true,
+    contact__actions__spinner: false,
+  })
+
+/**
+ * The component that renders the form's actions bar. It contains the submit button and a message area
+ * @param loading Boolean while an AJAX call is in progress
+ * @param responseText The response text from the AJAX call
+ * @param submitBtnTxt User provided text of the submit button
+ */
+const FormActions = ({ loading, responseText, submitBtnTxt }) => {
+  const btnTxt = responseText ? 'OK' : submitBtnTxt
+  const content = loading ? (
+    <FontAwesomeIcon className={'contact__actions__spinner'} icon={faSpinner} />
+  ) : (
+    btnTxt
+  )
+  return (
+    <div className="contact__actions">
+      <div className={getResponseClass(responseText)}>{responseText}</div>
+      <button
+        type="submit"
+        className={getSubmitButtonClass(loading)}
+        disabled={loading}
+      >
+        {content}
+      </button>
+    </div>
+  )
+}
+
+/**
+ * The class that renders the contact form
+ */
 class Contact extends React.Component {
   constructor(props) {
     super(props)
@@ -21,12 +77,17 @@ class Contact extends React.Component {
       email: '',
       message: '',
       errors: [],
-      formIsValid: false,
+      responseText: '',
+      loading: false,
     }
   }
 
-  handleSubmit = e => {
+  handleSubmit = (e, responseText) => {
     e.preventDefault()
+    if (responseText) {
+      this.setState({ responseText: '', name: '', email: '', message: '' })
+      return
+    }
     const form = e.target
     const errors = this.validateForm(form)
     if (errors.length > 0) {
@@ -34,7 +95,8 @@ class Contact extends React.Component {
     } else {
       this.setState({ errors: [] })
       const data = new FormData(form)
-      this.sendToSimpleForm(data)
+      // this.sendToEmailService(data)
+      this.sendToFakeEmailService()
     }
   }
 
@@ -45,15 +107,30 @@ class Contact extends React.Component {
   }
 
   validateForm(form) {
-    let errors = [];
-    !form.name.value && errors.push(NAME_IS_EMPTY);
-    !form.email.value && errors.push(EMAIL_IS_EMPTY);
-    (form.email.value && !form.email.value.match(EMAIL_FORMAT_REGEX)) && errors.push(EMAIL_IS_NOT_FORMATTED)
-    !form.message.value && errors.push(MESSAGE_IS_EMPTY);
-    return errors;
+    let errors = []
+    !form.name.value && errors.push(NAME_IS_EMPTY)
+    !form.email.value && errors.push(EMAIL_IS_EMPTY)
+    form.email.value &&
+      !form.email.value.match(EMAIL_FORMAT_REGEX) &&
+      errors.push(EMAIL_IS_NOT_FORMATTED)
+    !form.message.value && errors.push(MESSAGE_IS_EMPTY)
+    return errors
   }
 
-  sendToSimpleForm(data) {
+  sendToFakeEmailService() {
+    let responseText = ''
+    const randomResponse = Math.random() > 0.5
+    this.setState({ loading: true })
+    setTimeout(() => {
+      responseText = randomResponse
+        ? 'We got your message. Thank you'
+        : 'Something went wrong. Please try again'
+      this.setState({ responseText })
+      this.setState({ loading: false })
+    }, 3000)
+  }
+
+  sendToEmailService(data) {
     fetch(
       // 'https://getsimpleform.com/messages?form_api_token=9275a162832af0980b4902f51972cebc',
       'https://formsubmit.io/send/kostas.siabanis@gmail.com',
@@ -85,7 +162,7 @@ class Contact extends React.Component {
       meta: { heading, form, address },
       elemId,
     } = this.props
-    const { name, email, message, errors } = this.state
+    const { name, email, message, errors, responseText, loading } = this.state
     return (
       <section id={elemId} className="contact">
         <div className="container">
@@ -95,7 +172,7 @@ class Contact extends React.Component {
               <h4 className="pb-15">{form.title}</h4>
               <form
                 name="contactForm"
-                onSubmit={this.handleSubmit}
+                onSubmit={e => this.handleSubmit(e, responseText)}
                 action="https://formspree.io/hello@thesquaredev.com"
                 method="POST"
                 noValidate
@@ -156,9 +233,11 @@ class Contact extends React.Component {
                     </small>
                   )}
                 </div>
-                <button type="submit" className="primary-btn" disabled={false}>
-                  {form.submitBtnTxt}
-                </button>
+                <FormActions
+                  loading={loading}
+                  responseText={responseText}
+                  submitBtnTxt={form.submitBtnTxt}
+                />
                 <input
                   name="_formsubmit_id"
                   type="text"
