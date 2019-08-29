@@ -9,9 +9,12 @@ import './contact.scss'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
 import {
+  CONTACT_FORM_RESPONSE_FAILURE,
+  CONTACT_FORM_RESPONSE_SUCCESS,
   EMAIL_FORMAT_REGEX,
   EMAIL_IS_EMPTY,
   EMAIL_IS_NOT_FORMATTED,
+  FORM_SUBMIT_URL,
   MESSAGE_IS_EMPTY,
   NAME_IS_EMPTY,
 } from '../common/constants'
@@ -19,7 +22,7 @@ import classNames from 'classnames'
 
 /**
  * Utility to return classes for response area
- * @param responseText Information text showed to the user about the status of the form submission
+ * @param responseText The response shown to the user after form submission
  * @returns {string}
  */
 const getResponseClass = responseText =>
@@ -42,7 +45,7 @@ const getSubmitButtonClass = () =>
 /**
  * The component that renders the form's actions bar. It contains the submit button and a message area
  * @param loading Boolean while an AJAX call is in progress
- * @param responseText The response text from the AJAX call
+ * @param responseText The response shown to the user after form submission
  * @param submitBtnTxt User provided text of the submit button
  */
 const FormActions = ({ loading, responseText, submitBtnTxt }) => {
@@ -82,6 +85,11 @@ class Contact extends React.Component {
     }
   }
 
+  /**
+   * Method to handle form submission
+   * @param e React's synthetic event
+   * @param responseText The response shown to the user after form submission
+   */
   handleSubmit = (e, responseText) => {
     e.preventDefault()
     if (responseText) {
@@ -96,16 +104,24 @@ class Contact extends React.Component {
       this.setState({ errors: [] })
       const data = new FormData(form)
       this.sendToEmailService(data)
-      // this.sendToFakeEmailService()
     }
   }
 
+  /**
+   * Method to handle input change
+   * @param e React's synthetic event
+   */
   handleChange = e => {
     const { name, value } = e.target
     const form = this.state.form
     this.setState({ [name]: value })
   }
 
+  /**
+   * Method to validate form
+   * @param form The HTML form element
+   * @returns an array containing error strings
+   */
   validateForm(form) {
     let errors = []
     !form.name.value && errors.push(NAME_IS_EMPTY)
@@ -117,49 +133,39 @@ class Contact extends React.Component {
     return errors
   }
 
-  sendToFakeEmailService() {
-    let responseText = ''
-    const randomResponse = Math.random() > 0.5
-    this.setState({ loading: true })
-    setTimeout(() => {
-      responseText = randomResponse
-        ? 'We got your message. Thank you'
-        : 'Something went wrong. Please try again'
-      this.setState({
-        responseText,
-        loading: false,
-        name: '',
-        email: '',
-        message: '',
-      })
-    }, 3000)
-  }
-
+  /**
+   * Method used to submit contact for to an external email service
+   * @param data The form data
+   */
   sendToEmailService(data) {
-    fetch(
-      // 'https://getsimpleform.com/messages?form_api_token=9275a162832af0980b4902f51972cebc',
-      'https://formsubmit.io/send/kostas.siabanis@gmail.com',
-      {
-        method: 'POST',
-        // mode: 'no-cors',
-        redirect: 'manual',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-        },
-        body: data,
-      }
-    )
+    this.setState({ loading: true })
+    fetch(FORM_SUBMIT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+      body: data,
+    })
       .then(response => {
-        console.log(response)
-        return response.json()
-      })
-      .then(jsonResponse => {
-        console.log(jsonResponse)
+        this.setState({
+          responseText: CONTACT_FORM_RESPONSE_SUCCESS,
+          loading: false,
+          name: '',
+          email: '',
+          message: '',
+        })
       })
       .catch(error => {
-        console.log(error)
+        this.setState({
+          responseText: CONTACT_FORM_RESPONSE_FAILURE,
+          loading: false,
+          name: '',
+          email: '',
+          message: '',
+        })
       })
   }
 

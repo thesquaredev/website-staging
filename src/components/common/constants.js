@@ -5,3 +5,6 @@ export const NAME_IS_EMPTY = 'nameIsEmpty'
 export const EMAIL_IS_EMPTY = 'emailIsEmpty'
 export const EMAIL_IS_NOT_FORMATTED = 'emailIsNotFormatted'
 export const MESSAGE_IS_EMPTY = 'messageIsEmpty';
+export const FORM_SUBMIT_URL = 'https://formsubmit.io/send/hello@thesquaredev.com'
+export const CONTACT_FORM_RESPONSE_SUCCESS = 'We got your message. Thank you.'
+export const CONTACT_FORM_RESPONSE_FAILURE = 'Something went wrong. Please try again.'
