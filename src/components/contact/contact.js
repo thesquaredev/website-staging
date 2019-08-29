@@ -5,6 +5,13 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './contact.scss'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
+import {
+  EMAIL_FORMAT_REGEX,
+  EMAIL_IS_EMPTY,
+  EMAIL_IS_NOT_FORMATTED,
+  MESSAGE_IS_EMPTY,
+  NAME_IS_EMPTY,
+} from '../common/constants'
 
 class Contact extends React.Component {
   constructor(props) {
@@ -20,26 +27,8 @@ class Contact extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    let errors = []
     const form = e.target
-    const name = form.name.value
-    const email = form.email.value
-    const message = form.message.value
-    if (!name) {
-      errors.push('nameIsEmpty')
-    }
-    if (!email) {
-      errors.push('emailIsEmpty')
-    } else if (
-      !email.match(
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i
-      )
-    ) {
-      errors.push('emailIsNotFormatted')
-    }
-    if (!message) {
-      errors.push('messageIsEmpty')
-    }
+    const errors = this.validateForm(form)
     if (errors.length > 0) {
       this.setState({ errors })
     } else {
@@ -53,6 +42,15 @@ class Contact extends React.Component {
     const { name, value } = e.target
     const form = this.state.form
     this.setState({ [name]: value })
+  }
+
+  validateForm(form) {
+    let errors = [];
+    !form.name.value && errors.push(NAME_IS_EMPTY);
+    !form.email.value && errors.push(EMAIL_IS_EMPTY);
+    (form.email.value && !form.email.value.match(EMAIL_FORMAT_REGEX)) && errors.push(EMAIL_IS_NOT_FORMATTED)
+    !form.message.value && errors.push(MESSAGE_IS_EMPTY);
+    return errors;
   }
 
   sendToSimpleForm(data) {
@@ -70,13 +68,16 @@ class Contact extends React.Component {
         },
         body: data,
       }
-    ).then(response => {
-      return response.json();
-    }).then(jsonResponse => {
-      console.log(jsonResponse);
-    }).catch (error => {
-      console.log(error)
-    })
+    )
+      .then(response => {
+        return response.json()
+      })
+      .then(jsonResponse => {
+        console.log(jsonResponse)
+      })
+      .catch(error => {
+        console.log(error)
+      })
   }
 
   render() {
