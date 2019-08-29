@@ -95,8 +95,8 @@ class Contact extends React.Component {
     } else {
       this.setState({ errors: [] })
       const data = new FormData(form)
-      // this.sendToEmailService(data)
-      this.sendToFakeEmailService()
+      this.sendToEmailService(data)
+      // this.sendToFakeEmailService()
     }
   }
 
@@ -152,6 +152,7 @@ class Contact extends React.Component {
       }
     )
       .then(response => {
+        console.log(response)
         return response.json()
       })
       .then(jsonResponse => {
