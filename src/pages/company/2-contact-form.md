@@ -6,6 +6,7 @@
 # template*: The page template to use, leave it "default" if not sure
 # component*: The React component to use (here is "component")
 # heading: The title of the section
+# description: The subtitle of the section
 # showAddress*: If set to "true" will show a column on the right with address and email information
 # formTitle: The title above the form
 # formNamePlaceholder*: The placeholder text for the name input
@@ -23,6 +24,7 @@
 template: default
 component: contact
 heading: Get in touch
+description: ''
 showAddress: true
 formTitle: Send us a message
 formNamePlaceholder: Your full name*
@@ -31,7 +33,7 @@ formCompanyPlaceholder: Your organisation's name*
 formJobPlaceholder: Your job title
 formMessagePlaceholder: Type your message here*
 formSubmitBtnTxt: Submit
-addressTitle: ''
+addressTitle: Or drop us a visit
 addressLine1: Rue Chair et Pain 3
 addressLine2: 1000 Bruselles
 addressCountry: Belgium

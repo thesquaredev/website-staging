@@ -10,10 +10,20 @@
 }
 
 .contact {
-  padding: 120px 0;
+  padding: 70px 0;
+  &__heading {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 2.57rem;
+  }
+  &__description {
+    text-align: center;
+    font-size: 1.2rem;
+  }
   &__wrapper {
     display: flex;
     justify-content: center;
+    padding-top: 40px;
   }
   &__form {
     width: 49%;

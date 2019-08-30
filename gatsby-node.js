@@ -155,6 +155,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
         if (node.frontmatter.component === 'contact') {
           component.heading = node.frontmatter.heading
+          component.description = node.frontmatter.description
           component.showAddress = node.frontmatter.showAddress
           component.form = {
             title: node.frontmatter.formTitle,

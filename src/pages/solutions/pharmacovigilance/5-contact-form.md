@@ -1,4 +1,4 @@
-````---
+---
 ##
 # This markdown file will render a "contact" component which renders a contact form. The following properties may be set 
 # (properties with * are required, to leave a property blank use ''):
@@ -23,17 +23,17 @@
 ##
 template: default
 component: contact
-heading: Get in touch
-description: Use the form below to send us a message
-showAddress: true
-formTitle: Send us a message
+heading: Ready?
+description: Learn what we can accelerate your PV process
+showAddress: false
+formTitle: ''
 formNamePlaceholder: Your full name*
 formEmailPlaceholder: Your work email*
 formCompanyPlaceholder: Your organisation's name*
 formJobPlaceholder: Your job title
 formMessagePlaceholder: Type your message here*
 formSubmitBtnTxt: Submit
-addressTitle: Or drop us a visit
+addressTitle: ''
 addressLine1: Rue Chair et Pain 3
 addressLine2: 1000 Bruselles
 addressCountry: Belgium
