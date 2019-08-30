@@ -1,4 +1,4 @@
----
+````---
 ##
 # This markdown file will render a "contact" component which renders a contact form. The following properties may be set 
 # (properties with * are required, to leave a property blank use ''):
@@ -31,7 +31,7 @@ formCompanyPlaceholder: Your organisation's name*
 formJobPlaceholder: Your job title
 formMessagePlaceholder: Type your message here*
 formSubmitBtnTxt: Submit
-addressTitle: ''
+addressTitle: Or drop us a visit
 addressLine1: Rue Chair et Pain 3
 addressLine2: 1000 Bruselles
 addressCountry: Belgium

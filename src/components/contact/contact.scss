@@ -11,8 +11,27 @@
 
 .contact {
   padding: 120px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__form {
+    width: 49%;
+    padding-right: 15px;
+    padding-left: 15px;
+    &--center {
+      h4{
+        text-align: center;
+      }
+      .contact__actions {
+        justify-content: center;
+      }
+    }
+  }
   &__address {
-    padding-left: 100px;
+    width: 49%;
+    padding-left: 115px;
+    padding-right: 15px;
     &__icon {
       width: 15px;
     }

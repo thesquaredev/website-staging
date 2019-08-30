@@ -9,14 +9,21 @@ import './contact.scss'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
 import {
+  COMPANY_IS_EMPTY,
+  COMPANY_IS_EMPTY_USER_ERROR,
   CONTACT_FORM_RESPONSE_FAILURE,
   CONTACT_FORM_RESPONSE_SUCCESS,
   EMAIL_FORMAT_REGEX,
   EMAIL_IS_EMPTY,
+  EMAIL_IS_EMPTY_USER_ERROR,
   EMAIL_IS_NOT_FORMATTED,
+  EMAIL_IS_NOT_FORMATTED_USER_ERROR,
   FORM_SUBMIT_URL,
   MESSAGE_IS_EMPTY,
+  MESSAGE_IS_EMPTY_USER_ERROR,
   NAME_IS_EMPTY,
+  NAME_IS_EMPTY_USER_ERROR,
+  SUBMIT_BTNTXT_OK,
 } from '../common/constants'
 import classNames from 'classnames'
 
@@ -49,9 +56,9 @@ const getSubmitButtonClass = () =>
  * @param submitBtnTxt User provided text of the submit button
  */
 const FormActions = ({ loading, responseText, submitBtnTxt }) => {
-  const btnTxt = responseText ? 'OK' : submitBtnTxt
+  const btnTxt = responseText ? SUBMIT_BTNTXT_OK : submitBtnTxt
   const content = loading ? (
-    <FontAwesomeIcon className={'contact__actions__spinner'} icon={faSpinner} />
+    <FontAwesomeIcon className="contact__actions__spinner" icon={faSpinner} />
   ) : (
     btnTxt
   )
@@ -77,6 +84,8 @@ class Contact extends React.Component {
     super(props)
     this.state = {
       name: '',
+      company: '',
+      job: '',
       email: '',
       message: '',
       errors: [],
@@ -125,6 +134,7 @@ class Contact extends React.Component {
   validateForm(form) {
     let errors = []
     !form.name.value && errors.push(NAME_IS_EMPTY)
+    !form.company.value && errors.push(COMPANY_IS_EMPTY)
     !form.email.value && errors.push(EMAIL_IS_EMPTY)
     form.email.value &&
       !form.email.value.match(EMAIL_FORMAT_REGEX) &&
@@ -150,43 +160,57 @@ class Contact extends React.Component {
       body: data,
     })
       .then(response => {
-        this.setState({
-          responseText: CONTACT_FORM_RESPONSE_SUCCESS,
-          loading: false,
-          name: '',
-          email: '',
-          message: '',
-        })
+        this.resetFormAndSetResponse(CONTACT_FORM_RESPONSE_SUCCESS)
       })
       .catch(error => {
-        this.setState({
-          responseText: CONTACT_FORM_RESPONSE_FAILURE,
-          loading: false,
-          name: '',
-          email: '',
-          message: '',
-        })
+        this.resetFormAndSetResponse(CONTACT_FORM_RESPONSE_FAILURE)
       })
+  }
+
+  getContactFormClass(showAddress) {
+    return classNames({
+      contact__form: true,
+      'contact__form--center': !showAddress,
+    })
+  }
+
+  resetFormAndSetResponse(responseText) {
+    this.setState({
+      responseText,
+      loading: false,
+      name: '',
+      email: '',
+      message: '',
+      company: '',
+      job: '',
+    })
   }
 
   render() {
     const {
-      meta: { heading, form, address },
+      meta: { heading, form, address, showAddress },
       elemId,
     } = this.props
-    const { name, email, message, errors, responseText, loading } = this.state
+    const {
+      name,
+      email,
+      job,
+      company,
+      message,
+      errors,
+      responseText,
+      loading,
+    } = this.state
     return (
       <section id={elemId} className="contact">
         <div className="container">
-          <h1 className="text-center pb-60">{heading}</h1>
-          <div className="row">
-            <div className="col-lg-6">
-              <h4 className="pb-15">{form.title}</h4>
+          {heading && <h1 className="text-center pb-60">{heading}</h1>}
+          <div className="row contact__wrapper">
+            <div className={this.getContactFormClass(showAddress)}>
+              {form.title && <h4 className="pb-15">{form.title}</h4>}
               <form
                 name="contactForm"
                 onSubmit={e => this.handleSubmit(e, responseText)}
-                action="https://formspree.io/hello@thesquaredev.com"
-                method="POST"
                 noValidate
               >
                 <div className="mt-15">
@@ -200,11 +224,40 @@ class Contact extends React.Component {
                     value={name}
                     required
                   />
-                  {errors.includes('nameIsEmpty') && (
-                    <small className="form-text text-muted">
-                      Please enter your name
+                  {errors.includes(NAME_IS_EMPTY) && (
+                    <small className="form-text text-danger">
+                      {NAME_IS_EMPTY_USER_ERROR}
                     </small>
                   )}
+                </div>
+                <div className="mt-15">
+                  <input
+                    name="company"
+                    type="text"
+                    placeholder={form.companyPlaceholder}
+                    maxLength="120"
+                    className="single-input"
+                    onChange={this.handleChange}
+                    value={company}
+                    required
+                  />
+                  {errors.includes(COMPANY_IS_EMPTY) && (
+                    <small className="form-text text-danger">
+                      {COMPANY_IS_EMPTY_USER_ERROR}
+                    </small>
+                  )}
+                </div>
+                <div className="mt-15">
+                  <input
+                    name="job"
+                    type="text"
+                    placeholder={form.jobPlaceholder}
+                    maxLength="120"
+                    className="single-input"
+                    onChange={this.handleChange}
+                    value={job}
+                    required
+                  />
                 </div>
                 <div className="mt-15">
                   <input
@@ -217,14 +270,14 @@ class Contact extends React.Component {
                     value={email}
                     required
                   />
-                  {errors.includes('emailIsEmpty') && (
-                    <small className="form-text text-muted">
-                      Please enter an email address
+                  {errors.includes(EMAIL_IS_EMPTY) && (
+                    <small className="form-text text-danger">
+                      {EMAIL_IS_EMPTY_USER_ERROR}
                     </small>
                   )}
-                  {errors.includes('emailIsNotFormatted') && (
-                    <small className="form-text text-muted">
-                      Please provide a valid email
+                  {errors.includes(EMAIL_IS_NOT_FORMATTED) && (
+                    <small className="form-text text-danger">
+                      {EMAIL_IS_NOT_FORMATTED_USER_ERROR}
                     </small>
                   )}
                 </div>
@@ -239,9 +292,9 @@ class Contact extends React.Component {
                     value={message}
                     required
                   />
-                  {errors.includes('messageIsEmpty') && (
-                    <small className="form-text text-muted">
-                      Please enter a message to send
+                  {errors.includes(MESSAGE_IS_EMPTY) && (
+                    <small className="form-text text-danger">
+                      {MESSAGE_IS_EMPTY_USER_ERROR}
                     </small>
                   )}
                 </div>
@@ -257,25 +310,27 @@ class Contact extends React.Component {
                 />
               </form>
             </div>
-            <div className="contact__address col-lg-6">
-              <h4 className="pb-15">{address.title}</h4>
-              <div className="d-flex pt-15">
-                <div className="contact__address__icon">
-                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+            {showAddress && (
+              <div className="contact__address">
+                {address.title && <h4 className="pb-15">{address.title}</h4>}
+                <div className="d-flex pt-15">
+                  <div className="contact__address__icon">
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                  </div>
+                  <div className="pl-30">
+                    <div className="pb-10">{address.line1}</div>
+                    <div className="pb-10">{address.line2}</div>
+                    <div className="pb-10">{address.country}</div>
+                  </div>
                 </div>
-                <div className="pl-30">
-                  <div className="pb-10">{address.line1}</div>
-                  <div className="pb-10">{address.line2}</div>
-                  <div className="pb-10">{address.country}</div>
+                <div className="d-flex pt-15">
+                  <div className="contact__address__icon">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </div>
+                  <div className="pl-30">{address.email}</div>
                 </div>
               </div>
-              <div className="d-flex pt-15">
-                <div className="contact__address__icon">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </div>
-                <div className="pl-30">{address.email}</div>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
