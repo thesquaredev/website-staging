@@ -32,7 +32,6 @@ exports.createPages = ({ graphql, actions }) => {
                 backgroundSize
                 moreTxt
                 headline
-                icons
                 showAddress
                 formTitle
                 formNamePlaceholder
