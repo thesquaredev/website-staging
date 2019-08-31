@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import classNames from 'classnames';
 import Logo from '../common/logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMap, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 /**
  * Utility to return classes for header element
@@ -35,7 +35,7 @@ const getToggleClass = isMobileMenuVisible =>
  * @param isMobileMenuVisible Boolean that is true when mobile menu is open {@link Layout}
  * @returns {IconDefinition}
  */
-const getToggleIcon = isMobileMenuVisible => isMobileMenuVisible ? faTimes : faMap;
+const getToggleIcon = isMobileMenuVisible => isMobileMenuVisible ? faTimes : faBars;
 
 /**
  * Utility to return classes for nav element

@@ -1,4 +1,4 @@
-import { IMAGE_LEFT } from './constants'
+import { IMAGE_RIGHT } from './constants'
 
 const lorem =
   'Lorem ipsum dolor sit amet, utamur consetetur nam an, per et graece disputando, an probo copiosae mnesarchum eum. Te nominavi quaerendum vim, ullum dicit ea est. Ne vim natum meliore omnesque. Mundi ornatus habemus nam no, utinam essent option an has. Denique volutpat has cu. Ad sit inani exerci phaedrum.'
@@ -8,7 +8,7 @@ const mockData = {
   btnTxt: lorem.substring(0, 11),
   btnUrl: '#',
   description: lorem.substring(0, 60),
-  imagePosition: IMAGE_LEFT,
+  imagePosition: IMAGE_RIGHT,
   moreTxt: lorem.substring(0, 11),
   headline: lorem.substring(0, 30),
   image: 'grid.jpg',

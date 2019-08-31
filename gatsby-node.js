@@ -29,9 +29,9 @@ exports.createPages = ({ graphql, actions }) => {
                 description
                 image
                 imagePosition
+                backgroundSize
                 moreTxt
                 headline
-                icons
                 formTitle
                 formNamePlaceholder
                 formEmailPlaceholder
@@ -99,6 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
           component.description = node.frontmatter.description
           component.image = node.frontmatter.image
           component.imagePosition = node.frontmatter.imagePosition
+          component.backgroundSize = node.frontmatter.backgroundSize
           component.html = node.html
         }
         if (node.frontmatter.component === 'grid') {
@@ -140,15 +141,6 @@ exports.createPages = ({ graphql, actions }) => {
             icon: getTextContent(quarter, 'h2'),
             description: getTextContent(quarter, 'p'),
           }))
-        }
-        if (node.frontmatter.component === 'networkGraph') {
-          component.headline = node.frontmatter.headline
-          component.heading = node.frontmatter.heading
-          component.btnTxt = node.frontmatter.btnTxt
-          component.btnUrl = node.frontmatter.btnUrl
-          component.imagePosition = node.frontmatter.imagePosition
-          component.html = node.html
-          component.icons = node.frontmatter.icons.split(', ')
         }
         if (node.frontmatter.component === 'contact') {
           component.heading = node.frontmatter.heading

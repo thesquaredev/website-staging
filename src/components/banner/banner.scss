@@ -3,6 +3,8 @@
 .banner {
   position: relative;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
   &__bg {
     position: absolute;
     top: 0;
@@ -13,7 +15,6 @@
     height: 100%;
     background-image: radial-gradient(ellipse farthest-side at 100% 100%,#1cafc6 20%,#012690 110%);
     &__img {
-      background-image: url("/images/hand-holding-phone-taking-photo.png");
       height: 100%;
       width: 100%;
       background-size: cover;
@@ -30,12 +31,19 @@
   &__text {
     color: white;
     font-size: 1.1rem;
+    z-index: 1;
     @media (max-width: 414px) {
       font-size: 0.9rem;
     }
+    &__headline {
+      color: white;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
     &__heading {
       color: white;
-      font-size: 3.5rem;
+      font-size: 5.5rem;
       font-weight: 500;
       margin-top: 20px;
       @media (max-width: 414px) {
@@ -64,12 +72,25 @@
         border: 1px solid $white;
       }
     }
-    @media (max-width: 763px) {
-      p {
-        //color: $black;
-      }
+  }
+  &__chord {
+    position: absolute;
+    top: 0;
+    right: -40%;
+    height: 100%;
+    width: 100%;
+    @media (min-width: 1600px) {
+      right: -10%;
     }
   }
-  &__image {
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }
