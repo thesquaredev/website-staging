@@ -32,9 +32,13 @@ exports.createPages = ({ graphql, actions }) => {
                 backgroundSize
                 moreTxt
                 headline
+                icons
+                showAddress
                 formTitle
                 formNamePlaceholder
                 formEmailPlaceholder
+                formCompanyPlaceholder
+                formJobPlaceholder
                 formMessagePlaceholder
                 formSubmitBtnTxt
                 addressTitle
@@ -144,10 +148,14 @@ exports.createPages = ({ graphql, actions }) => {
         }
         if (node.frontmatter.component === 'contact') {
           component.heading = node.frontmatter.heading
+          component.description = node.frontmatter.description
+          component.showAddress = node.frontmatter.showAddress
           component.form = {
             title: node.frontmatter.formTitle,
             namePlaceholder: node.frontmatter.formNamePlaceholder,
             emailPlaceholder: node.frontmatter.formEmailPlaceholder,
+            companyPlaceholder: node.frontmatter.formCompanyPlaceholder,
+            jobPlaceholder: node.frontmatter.formJobPlaceholder,
             messagePlaceholder: node.frontmatter.formMessagePlaceholder,
             submitBtnTxt: node.frontmatter.formSubmitBtnTxt,
           }

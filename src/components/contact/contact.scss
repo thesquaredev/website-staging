@@ -10,9 +10,38 @@
 }
 
 .contact {
-  padding: 120px 0;
+  padding: 70px 0;
+  &__heading {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 2.57rem;
+  }
+  &__description {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  &__form {
+    width: 49%;
+    padding-right: 15px;
+    padding-left: 15px;
+    &--center {
+      h4{
+        text-align: center;
+      }
+      .contact__actions {
+        justify-content: center;
+      }
+    }
+  }
   &__address {
-    padding-left: 100px;
+    width: 49%;
+    padding-left: 115px;
+    padding-right: 15px;
     &__icon {
       width: 15px;
     }
