@@ -29,6 +29,9 @@
     width: 49%;
     padding-right: 15px;
     padding-left: 15px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     &--center {
       h4{
         text-align: center;
