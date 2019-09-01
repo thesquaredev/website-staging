@@ -110,7 +110,6 @@ const Sankey = () => (
     data={data}
     margin={{ top: 40, right: 160, bottom: 40, left: 0 }}
     align="justify"
-    // colors={{ scheme: 'category10' }}
     colors={['#012690', '#1CAFC6']}
     nodeOpacity={1}
     nodeThickness={18}

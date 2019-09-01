@@ -1,35 +1,48 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import './cards.scss'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
 
-const Card = ({ industry, heading, description, image, moreTxt }) => (
-  <a href="/behavioral-analytics/" className="card">
-    <span className="card__title">{industry}</span>
-    <h4>{heading}</h4>
-    <img src={`/images/${image}`} alt="" />
-    <p>{description}</p>
-    <span className="card__more">{moreTxt}</span>
-  </a>
+/**
+ * Renders a card
+ * @param headline The card's headline
+ * @param heading The card's heading
+ * @param icon The card's icon
+ * @param url The url to follow when clicking the card
+ */
+const Card = ({ headline, heading, icon, url }) => (
+  <Link to={url} className="card">
+    <img src={`/icons/${icon}`} alt="" />
+    <span className="card__title">{headline}</span>
+    <h3 className="card__heading">{heading}</h3>
+  </Link>
 )
 
-const Cards = ({ meta: { headline, moreTxt, cards }, elemId }) => (
+/**
+ * Renders a series of cards
+ * @param heading The text that appears in the upper left area of the section
+ * @param icon The icon to accompany the heading
+ * @param cards On object containing an array of card properties
+ * @param elemId The id of the root element of the section
+ */
+const Cards = ({ meta: { heading, icon, cards }, elemId }) => (
   <section className="cards section-gap" id={elemId}>
     <div className="container">
       <div className="cards__wrapper">
-        {headline && (
+        {heading && (
           <div className="cards__heading">
-            <h2>{headline}</h2>
+            <h2>{heading}</h2>
+            <img src={`/icons/${icon}`} alt="" />
           </div>
         )}
-        {cards.map(({ industry, heading, image, description }, i) => {
+        {cards.map(({ headline, heading, icon, url }, i) => {
           return (
             <Card
-              industry={industry}
+              headline={headline}
               heading={heading}
-              image={image}
-              description={description}
-              moreTxt={moreTxt}
+              icon={icon}
+              url={url}
               key={i}
             />
           )

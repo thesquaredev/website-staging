@@ -11,10 +11,20 @@
 
 .contact {
   padding: 70px 0;
-  &__heading {
-    text-align: center;
-    margin: 16px 0;
-    font-size: 2.57rem;
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__heading {
+      text-align: center;
+      margin: 16px 0;
+      font-size: 2.57rem;
+    }
+    img {
+      height: 38px;
+      width: auto;
+      margin-right: 12px;
+    }
   }
   &__description {
     text-align: center;

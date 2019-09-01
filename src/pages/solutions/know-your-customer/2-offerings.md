@@ -13,8 +13,8 @@ component: pills
 #
 # HOW TO USE TEXT BELOW:
 #
-# Each H1 headline (rows starting with #) becomes the card's title
-# Each H2 headline (rows starting with ##) becomes the card's icon
+# Each H1 header (rows starting with #) becomes the card's title
+# Each H2 header (rows starting with ##) becomes the card's icon
 # Each paragraph (rows with just text) becomes the card's main text
 ##
 ---

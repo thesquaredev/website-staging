@@ -6,6 +6,7 @@
 # template*: The page template to use, leave it "default" if not sure
 # component*: The React component to use (here is "component")
 # heading: The title of the section
+# icon: The icon to use before the section heading
 # description: The subtitle of the section
 # showAddress*: If set to "true" will show a column on the right with address and email information
 # formTitle: The title above the form
@@ -24,6 +25,7 @@
 template: default
 component: contact
 heading: Ready?
+icon: weightlifting-bold-blue.png
 description: Learn what we can accelerate your PV process
 showAddress: false
 formTitle: ''
