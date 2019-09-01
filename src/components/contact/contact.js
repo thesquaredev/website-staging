@@ -188,7 +188,7 @@ class Contact extends React.Component {
 
   render() {
     const {
-      meta: { heading, description, form, address, showAddress },
+      meta: { heading, icon, description, form, address, showAddress },
       elemId,
     } = this.props
     const {
@@ -204,7 +204,14 @@ class Contact extends React.Component {
     return (
       <section id={elemId} className="contact">
         <div className="container">
-          {heading && <h2 className="contact__heading">{heading}</h2>}
+          <div className="contact__header">
+            {icon && <img src={`/icons/${icon}`} alt="" />}
+            {heading && (
+              <h2 className="contact__header__heading">
+                {heading}
+              </h2>
+            )}
+          </div>
           {description && <p className="contact__description">{description}</p>}
           <div className="row contact__wrapper">
             <div className={this.getContactFormClass(showAddress)}>
