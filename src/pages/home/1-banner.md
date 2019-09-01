@@ -12,10 +12,10 @@
 ##
 template: default
 component: banner
-headline: We are a data startup
+headline: We are a data analytics startup
 heading: Your BIG data on steroids
 btnTxt: Our solutions
-btnUrl: /solutions
+btnUrl: cards3
 ---
 
 Enrich your internal knowledge with external data sources. 

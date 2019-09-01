@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import './banner.scss'
 import withShowcase from '../common/withShowcase/withShowcase'
 import withLocation from '../common/withLocation'
 import Chord from '../charts/chord/chord'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 /**
  * Renders a fullscreen banner component
@@ -31,9 +31,9 @@ const Banner = ({ meta: { heading, headline, html, btnTxt, btnUrl }, elemId }) =
             className="banner__text__body"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <Link className="primary-btn" to={btnUrl}>
+          <AnchorLink className="primary-btn" href={`#${btnUrl}`}>
             {btnTxt}
-          </Link>
+          </AnchorLink>
         </div>
       </div>
     </div>

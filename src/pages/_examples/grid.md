@@ -17,7 +17,7 @@ icons: single-man-bold-red.png, maps-search-bold-green.png, piggy-savings-bold-b
 #
 # HOW TO USE TEXT BELOW:
 #
-# Each H3 headline (rows starting with ###) becomes the tile's title
+# Each H3 header (rows starting with ###) becomes the tile's title
 # Each paragraph (rows with just text) becomes the tile's main text
 ##
 ---

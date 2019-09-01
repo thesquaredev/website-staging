@@ -30,7 +30,6 @@ exports.createPages = ({ graphql, actions }) => {
                 image
                 imagePosition
                 backgroundSize
-                moreTxt
                 headline
                 showAddress
                 formTitle
@@ -45,6 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
                 addressLine2
                 addressCountry
                 addressEmail
+                icon
               }
               html
             }
@@ -117,13 +117,13 @@ exports.createPages = ({ graphql, actions }) => {
         }
         if (node.frontmatter.component === 'cards') {
           const cards = node.html.split('<hr>\n')
-          component.headline = node.frontmatter.headline
-          component.moreTxt = node.frontmatter.moreTxt
+          component.heading = node.frontmatter.heading
+          component.icon = node.frontmatter.icon
           component.cards = cards.map(card => ({
-            industry: getTextContent(card, 'h1'),
+            headline: getTextContent(card, 'h1'),
             heading: getTextContent(card, 'h2'),
-            image: getTextContent(card, 'h3'),
-            description: getTextContent(card, 'p'),
+            icon: getTextContent(card, 'h3'),
+            url: getTextContent(card, 'h4'),
           }))
         }
         if (node.frontmatter.component === 'pills') {
@@ -147,6 +147,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
         if (node.frontmatter.component === 'contact') {
           component.heading = node.frontmatter.heading
+          component.icon = node.frontmatter.icon
           component.description = node.frontmatter.description
           component.showAddress = node.frontmatter.showAddress
           component.form = {

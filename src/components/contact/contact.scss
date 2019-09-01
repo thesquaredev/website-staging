@@ -11,10 +11,20 @@
 
 .contact {
   padding: 70px 0;
-  &__heading {
-    text-align: center;
-    margin: 16px 0;
-    font-size: 2.57rem;
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__heading {
+      text-align: center;
+      margin: 16px 0;
+      font-size: 2.57rem;
+    }
+    img {
+      height: 38px;
+      width: auto;
+      margin-right: 12px;
+    }
   }
   &__description {
     text-align: center;
@@ -31,6 +41,12 @@
     padding-left: 15px;
     @media (max-width: 768px) {
       width: 100%;
+      h4{
+        text-align: center;
+      }
+      .contact__actions {
+        justify-content: center;
+      }
     }
     &--center {
       h4{
@@ -42,9 +58,17 @@
     }
   }
   &__address {
+    display: flex;
+    flex-direction: column;
     width: 49%;
     padding-left: 115px;
     padding-right: 15px;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-top: 50px;
+      padding-left: 15px;
+      align-items: center;
+    }
     &__icon {
       width: 15px;
     }

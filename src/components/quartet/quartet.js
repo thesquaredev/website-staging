@@ -8,7 +8,7 @@ const Quarter = ({ heading, icon, description }) => (
     <div className="quarter__image">
       <img src={`/icons/${icon}`} alt="" />
     </div>
-    <h4 className="quarter__heading">{heading}</h4>
+    <h3 className="quarter__heading">{heading}</h3>
     <div className="quarter__description">{description}</div>
   </div>
 )
