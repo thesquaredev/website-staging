@@ -9,6 +9,9 @@
     grid-auto-rows: 1fr;
     grid-column-gap: 24px;
     grid-row-gap: 20px;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     @media (min-width: 992px) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -27,7 +30,7 @@
     img {
       transform: rotate(10deg);
       &:hover {
-        transform: rotate(-10deg);
+        transform: rotate(-10deg) scale(-1, 1);
       }
     }
   }
@@ -39,7 +42,7 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.51;
-  padding: 30px 30px 30px 30px;
+  padding: 30px;
   position: relative;
   overflow: hidden;
   &__title {
