@@ -9,7 +9,6 @@ import Hero from '../components/hero/hero'
 import Pills from '../components/pills/pills'
 import Quartet from '../components/quartet/quartet'
 import mockData from '../components/common/mockData'
-import NetworkGraph from '../components/networkGraph/networkGraph'
 
 const meta = mockData;
 
@@ -23,7 +22,6 @@ const Showcase = () => (
     <Pills meta={{ ...meta, name: 'Pills' }} />
     <ImageText meta={{ ...meta, name: 'ImageText' }} />
     <Quartet meta={{ ...meta, name: 'Quartet' }} />
-    <NetworkGraph meta={{ ...meta, name: 'NetworkGraph' }} />
   </Layout>
 )
 

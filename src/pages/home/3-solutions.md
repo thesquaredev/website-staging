@@ -12,7 +12,7 @@
 ##
 template: default
 component: cards
-headline: See what Squaredev can do for your enterprise
+headline: See what Squaredev can do for your organisation
 moreTxt: Learn more
 linkUrl: ''
 #

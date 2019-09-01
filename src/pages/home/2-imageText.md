@@ -20,9 +20,9 @@ headline: _ one two three
 heading: Gain a holistic worldview of adverse events
 btnTxt: Let's talk
 btnUrl: ''
-image: online-shopping.jpg
+image: dashboard.jpg
 imagePosition: left
-backgroundSize: cover
+backgroundSize: contain
 ---
 
 Identifying real-world safety risks requires connecting with the real world – placing your drug life cycle data in the

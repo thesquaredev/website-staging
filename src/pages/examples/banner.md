@@ -5,13 +5,15 @@
 #
 # template*: The page template to use, leave it "default" if not sure
 # component*: The React component to use (here is "banner")
+# headline: The text that appears above all texts
 # heading: The title of the section
 # btnTxt: The text of the button, if left blank, button will be hidden
 # btnUrl: The link to be followed when button is clicked 
 ##
 template: default
 component: banner
-heading: Enhance your data reality
+headline: We are a data startup
+heading: Your BIG data on steroids
 btnTxt: Our solutions
 btnUrl: /solutions
 ---

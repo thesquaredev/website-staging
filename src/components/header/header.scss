@@ -16,9 +16,6 @@
     .menu-has-children__title {
       color: $primary-color;
     }
-    //.nav-submenu a {
-    //  color: $accent-color;
-    //}
     #path22,
     #path24,
     #path26 {
@@ -34,8 +31,7 @@
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu,
-.nav-menu * {
+.nav-menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -65,36 +61,18 @@
 }
 
 .menu-has-children__title {
-  padding: 0 8px 0px 8px;
+  padding: 0 8px 0 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1rem;
-  text-transform: uppercase;
+  color: $white;
   outline: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: $secondary-font;
   cursor: default;
   transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
-
-/* Nav Menu Arrows */
-//.sf-arrows .sf-with-ul {
-//  padding-right: 30px;
-//}
-//
-//.sf-arrows .sf-with-ul:after {
-//  content: "\f107";
-//  position: absolute;
-//  right: 15px;
-//  font-family: FontAwesome;
-//  font-style: normal;
-//  font-weight: normal;
-//}
-//
-//.sf-arrows ul .sf-with-ul:after {
-//  content: "\f105";
-//}
 
 // Navigation
 .nav {
@@ -174,8 +152,8 @@
       h5 {
         color: $primary-color;
         font-size: 1.7rem;
-        text-transform: capitalize;
         font-weight: 500;
+        text-decoration: none !important;
       }
       .nav-submenu {
         display: flex;
@@ -197,8 +175,12 @@
         & li {
           border-bottom: 1px solid $white;
         }
-        & li a {
+        & li a, a:focus, a:hover {
           padding: 8px 32px;
+          text-decoration: none;
+        }
+        &__item {
+          color: $black;
         }
         &__col {
           padding: 0;
@@ -213,26 +195,17 @@
   }
 }
 
-//@media (max-width: 1023px) {
-//  #mobile-nav-toggle {
-//    display: inline;
-//  }
-//  #nav-menu-container {
-//    display: none;
-//  }
-//}
-
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 0 8px 0px 8px;
+  padding: 0 8px 0 8px;
   text-decoration: none;
   display: inline-block;
   color: $white;
-  font-weight: 400;
-  font-size: 1rem;
-  text-transform: uppercase;
   outline: none;
-  font-family: $secondary-font;
+  font-family: $secondary-font !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .nav-menu li:hover > a,
@@ -245,7 +218,7 @@
 }
 
 .nav-menu a:hover {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 .nav-menu img {
@@ -280,7 +253,7 @@
   & li a {
     padding: 12px 10px;
     color: $accent-color;
-    font-weight: 500;
+    font-weight: 400;
     transition: 0.3s;
     display: flex;
     font-size: 1rem;
@@ -326,110 +299,12 @@
     display: flex;
     flex-direction: column;
     & span:first-of-type {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1rem;
     }
     & span:last-of-type {
-      //font-weight: 600;
       font-size: 0.9rem;
       color: $dark-grey;
     }
   }
-}
-
-/* Mobile Nav Toggle */
-#mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  z-index: 999;
-  top: 16px;
-  border: 0;
-  background: none;
-  font-size: 1.2rem;
-  display: none;
-  transition: all 0.4s;
-  outline: none;
-  cursor: pointer;
-  color: $white;
-}
-
-//#mobile-nav-toggle i {
-//  color: $primary-color;
-//  font-weight: 900;
-//}
-
-/* Mobile Nav Styling */
-#mobile-nav {
-  position: fixed;
-  top: 0;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: rgba(0, 0, 0, 0.8);
-  left: -20vw;
-  width: 20vw;
-  overflow-y: auto;
-  transition: 0.4s;
-}
-
-#mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#mobile-nav ul li {
-  position: relative;
-}
-
-#mobile-nav ul li a {
-  text-transform: uppercase;
-  overflow: hidden;
-  padding: 10px 22px 10px 15px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  outline: none;
-}
-
-#mobile-nav ul li a:hover {
-}
-
-#mobile-nav ul li li {
-  padding-left: 30px;
-}
-
-//#mobile-nav ul .menu-has-children i {
-//  position: absolute;
-//  right: 0;
-//  z-index: 99;
-//  padding: 15px;
-//  cursor: pointer;
-//  color: #fff;
-//}
-//
-//#mobile-nav ul .menu-has-children i.fa-chevron-up {
-//  color: $primary-color;
-//}
-//
-//#mobile-nav ul .menu-has-children li a {
-//  text-transform: none;
-//}
-
-#mobile-nav ul .menu-item-active {
-  color: $primary-color;
-}
-
-/* Mobile Nav body classes */
-body.mobile-nav-active {
-  overflow: hidden;
-}
-
-body.mobile-nav-active #mobile-nav {
-  left: 0;
-}
-
-body.mobile-nav-active #mobile-nav-toggle {
-  color: #fff;
 }

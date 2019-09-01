@@ -19,7 +19,7 @@ const Cards = ({ meta: { headline, moreTxt, cards }, elemId }) => (
       <div className="cards__wrapper">
         {headline && (
           <div className="cards__heading">
-            <h1>{headline}</h1>
+            <h2>{headline}</h2>
           </div>
         )}
         {cards.map(({ industry, heading, image, description }, i) => {

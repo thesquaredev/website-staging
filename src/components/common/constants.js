@@ -1,6 +1,5 @@
-import React from 'react'
-
-export const IMAGE_LEFT = 'left'
+export const IMAGE_LEFT = 'right'
+export const IMAGE_RIGHT = 'right'
 export const SHOWCASE = 'showcase'
 export const EMAIL_FORMAT_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
 export const NAME_IS_EMPTY = 'nameIsEmpty'
@@ -17,3 +16,5 @@ export const NAME_IS_EMPTY_USER_ERROR = 'Please enter your name'
 export const MESSAGE_IS_EMPTY_USER_ERROR = 'Please enter a message to send'
 export const COMPANY_IS_EMPTY_USER_ERROR = 'Please enter your organisation\'s name'
 export const SUBMIT_BTNTXT_OK = 'OK'
+export const BACKGROUND_SIZE_CONTAIN = 'contain'
+export const BACKGROUND_SIZE_COVER = 'cover'
