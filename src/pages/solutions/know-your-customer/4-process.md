@@ -18,8 +18,8 @@ image: plane-trip-round-bold-red.png
 #
 # HOW TO USE TEXT BELOW:
 #
-# Each H1 headline (rows starting with #) becomes the tile's title
-# Each H2 headline (rows starting with ##) becomes the tile's icon
+# Each H1 header (rows starting with #) becomes the tile's title
+# Each H2 header (rows starting with ##) becomes the tile's icon
 # Each paragraph (rows with just text) becomes the tile's main text
 ##
 ---
