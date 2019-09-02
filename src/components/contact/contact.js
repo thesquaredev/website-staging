@@ -122,7 +122,6 @@ class Contact extends React.Component {
    */
   handleChange = e => {
     const { name, value } = e.target
-    const form = this.state.form
     this.setState({ [name]: value })
   }
 
@@ -206,11 +205,7 @@ class Contact extends React.Component {
         <div className="container">
           <div className="contact__header">
             {icon && <img src={`/icons/${icon}`} alt="" />}
-            {heading && (
-              <h2 className="contact__header__heading">
-                {heading}
-              </h2>
-            )}
+            {heading && <h2 className="contact__header__heading">{heading}</h2>}
           </div>
           {description && <p className="contact__description">{description}</p>}
           <div className="row contact__wrapper">

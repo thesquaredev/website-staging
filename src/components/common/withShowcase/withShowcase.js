@@ -4,10 +4,6 @@ import { SHOWCASE } from '../constants'
 
 const withShowcase = WrappedComponent =>
   class extends React.Component {
-    constructor(props) {
-      super(props)
-    }
-
     render() {
       return this.props.location.search.includes(SHOWCASE) ? (
         <div className="showcase" data-name={this.props.meta.name}>

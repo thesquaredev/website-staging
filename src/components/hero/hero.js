@@ -4,7 +4,10 @@ import { Link } from 'gatsby'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
 
-const Hero = ({ meta: { heading, description, html, image, btnTxt, btnUrl }, elemId }) => (
+const Hero = ({
+  meta: { heading, description, html, image, btnTxt, btnUrl },
+  elemId,
+}) => (
   <section className="hero" id={elemId}>
     <div className="hero__bg">
       <div
@@ -18,9 +21,11 @@ const Hero = ({ meta: { heading, description, html, image, btnTxt, btnUrl }, ele
           <div className="generic-banner-content">
             <h1 className="text-white">{heading}</h1>
             <p>{description}</p>
-            {btnTxt && <Link className="primary-btn" to={btnUrl}>
-              {btnTxt}
-            </Link>}
+            {btnTxt && (
+              <Link className="primary-btn" to={btnUrl}>
+                {btnTxt}
+              </Link>
+            )}
           </div>
         </div>
       </div>
