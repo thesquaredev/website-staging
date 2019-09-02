@@ -5,99 +5,99 @@ import { ResponsiveSankey } from '@nivo/sankey'
  * The data to use in the chart below
  */
 const data = {
-  "nodes": [
+  nodes: [
     {
-      "id": "Mexico",
-      "color": "hsl(347, 70%, 50%)"
+      id: 'Mexico',
+      color: 'hsl(347, 70%, 50%)',
     },
     {
-      "id": "Argentina",
-      "color": "hsl(151, 70%, 50%)"
+      id: 'Argentina',
+      color: 'hsl(151, 70%, 50%)',
     },
     {
-      "id": "United States",
-      "color": "hsl(232, 70%, 50%)"
+      id: 'United States',
+      color: 'hsl(232, 70%, 50%)',
     },
     {
-      "id": "Panama",
-      "color": "hsl(306, 70%, 50%)"
+      id: 'Panama',
+      color: 'hsl(306, 70%, 50%)',
     },
     {
-      "id": "Colombia",
-      "color": "hsl(149, 70%, 50%)"
+      id: 'Colombia',
+      color: 'hsl(149, 70%, 50%)',
     },
     {
-      "id": "Canada",
-      "color": "hsl(191, 70%, 50%)"
-    }
+      id: 'Canada',
+      color: 'hsl(191, 70%, 50%)',
+    },
   ],
-  "links": [
+  links: [
     {
-      "source": "Argentina",
-      "target": "Canada",
-      "value": 116
+      source: 'Argentina',
+      target: 'Canada',
+      value: 116,
     },
     {
-      "source": "Argentina",
-      "target": "Panama",
-      "value": 9
+      source: 'Argentina',
+      target: 'Panama',
+      value: 9,
     },
     {
-      "source": "Argentina",
-      "target": "Colombia",
-      "value": 41
+      source: 'Argentina',
+      target: 'Colombia',
+      value: 41,
     },
     {
-      "source": "Argentina",
-      "target": "United States",
-      "value": 128
+      source: 'Argentina',
+      target: 'United States',
+      value: 128,
     },
     {
-      "source": "Argentina",
-      "target": "Mexico",
-      "value": 91
+      source: 'Argentina',
+      target: 'Mexico',
+      value: 91,
     },
     {
-      "source": "Mexico",
-      "target": "Canada",
-      "value": 125
+      source: 'Mexico',
+      target: 'Canada',
+      value: 125,
     },
     {
-      "source": "Mexico",
-      "target": "United States",
-      "value": 190
+      source: 'Mexico',
+      target: 'United States',
+      value: 190,
     },
     {
-      "source": "Mexico",
-      "target": "Colombia",
-      "value": 120
+      source: 'Mexico',
+      target: 'Colombia',
+      value: 120,
     },
     {
-      "source": "Colombia",
-      "target": "Canada",
-      "value": 164
+      source: 'Colombia',
+      target: 'Canada',
+      value: 164,
     },
     {
-      "source": "Colombia",
-      "target": "Panama",
-      "value": 159
+      source: 'Colombia',
+      target: 'Panama',
+      value: 159,
     },
     {
-      "source": "Colombia",
-      "target": "United States",
-      "value": 149
+      source: 'Colombia',
+      target: 'United States',
+      value: 149,
     },
     {
-      "source": "Panama",
-      "target": "United States",
-      "value": 87
+      source: 'Panama',
+      target: 'United States',
+      value: 87,
     },
     {
-      "source": "Panama",
-      "target": "Canada",
-      "value": 175
-    }
-  ]
+      source: 'Panama',
+      target: 'Canada',
+      value: 175,
+    },
+  ],
 }
 
 /**

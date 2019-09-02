@@ -10,7 +10,7 @@ import Pills from '../components/pills/pills'
 import Quartet from '../components/quartet/quartet'
 import mockData from '../components/common/mockData'
 
-const meta = mockData;
+const meta = mockData
 
 const Showcase = () => (
   <Layout>

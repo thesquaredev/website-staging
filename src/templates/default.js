@@ -17,15 +17,15 @@ import Quartet from '../components/quartet/quartet'
  * @param i Index used for mapping
  */
 const componentResolver = (meta, elemId, i) => ({
-  ['banner']: <Banner meta={meta} elemId={elemId} key={i} />,
-  ['grid']: <Grid meta={meta} elemId={elemId} key={i} />,
-  ['calltoaction']: <CallToAction meta={meta} elemId={elemId} key={i} />,
-  ['contact']: <Contact meta={meta} elemId={elemId} key={i} />,
-  ['imagetext']: <ImageText meta={meta} elemId={elemId} key={i} />,
-  ['cards']: <Cards meta={meta} elemId={elemId} key={i} />,
-  ['hero']: <Hero meta={meta} elemId={elemId} key={i} />,
-  ['pills']: <Pills meta={meta} elemId={elemId} key={i} />,
-  ['quartet']: <Quartet meta={meta} elemId={elemId} key={i} />,
+  banner: <Banner meta={meta} elemId={elemId} key={i} />,
+  grid: <Grid meta={meta} elemId={elemId} key={i} />,
+  calltoaction: <CallToAction meta={meta} elemId={elemId} key={i} />,
+  contact: <Contact meta={meta} elemId={elemId} key={i} />,
+  imagetext: <ImageText meta={meta} elemId={elemId} key={i} />,
+  cards: <Cards meta={meta} elemId={elemId} key={i} />,
+  hero: <Hero meta={meta} elemId={elemId} key={i} />,
+  pills: <Pills meta={meta} elemId={elemId} key={i} />,
+  quartet: <Quartet meta={meta} elemId={elemId} key={i} />,
 })
 
 /**

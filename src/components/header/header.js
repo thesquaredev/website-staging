@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.scss'
 import { Link } from 'gatsby'
-import classNames from 'classnames';
+import classNames from 'classnames'
 import Logo from '../common/logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +16,7 @@ const getHeaderClass = (isScrolled, isMobileMenuVisible) =>
   classNames({
     header: true,
     'header-scrolled': isScrolled,
-    'mobile-menu-visible': isMobileMenuVisible
+    'mobile-menu-visible': isMobileMenuVisible,
   })
 
 /**
@@ -35,7 +35,8 @@ const getToggleClass = isMobileMenuVisible =>
  * @param isMobileMenuVisible Boolean that is true when mobile menu is open {@link Layout}
  * @returns {IconDefinition}
  */
-const getToggleIcon = isMobileMenuVisible => isMobileMenuVisible ? faTimes : faBars;
+const getToggleIcon = isMobileMenuVisible =>
+  isMobileMenuVisible ? faTimes : faBars
 
 /**
  * Utility to return classes for nav element
@@ -57,7 +58,10 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
             <Logo className="logo" />
           </Link>
         </div>
-        <div className={getToggleClass(isMobileMenuVisible)} onClick={toggleMobileMenu}>
+        <div
+          className={getToggleClass(isMobileMenuVisible)}
+          onClick={toggleMobileMenu}
+        >
           <FontAwesomeIcon icon={getToggleIcon(isMobileMenuVisible)} />
         </div>
         <nav className={getNavClass(isMobileMenuVisible)}>

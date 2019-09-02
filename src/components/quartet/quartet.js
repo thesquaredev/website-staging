@@ -13,7 +13,10 @@ const Quarter = ({ heading, icon, description }) => (
   </div>
 )
 
-const Quartet = ({ meta: { heading, description, image, quarters }, elemId }) => (
+const Quartet = ({
+  meta: { heading, description, image, quarters },
+  elemId,
+}) => (
   <section className="quartet section-gap" id={elemId}>
     <div className="container">
       <h2 className="quartet__heading">{heading}</h2>
