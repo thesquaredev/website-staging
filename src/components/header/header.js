@@ -117,11 +117,11 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/generic">
+                    <Link to="/solutions/machine-learning">
                       <img src={'/icons/robot-head-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>AI & machine learning</span>
-                        <span>Lorem ipsum dolor sit amet</span>
+                        <span>Machine Learning</span>
+                        <span>Solve problems intelligently</span>
                       </div>
                     </Link>
                   </li>
