@@ -29,6 +29,8 @@
     }
     img {
       transform: rotate(10deg);
+      width: auto;
+      height: 38px;
       &:hover {
         transform: rotate(-10deg) scale(-1, 1);
       }
@@ -65,7 +67,7 @@
     bottom: 30px;
     right: 15px;
     width: auto;
-    height: 48px;
+    height: 38px;
   }
   &__more {
     color: $primary-color;

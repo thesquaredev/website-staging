@@ -14,8 +14,14 @@ import withShowcase from '../common/withShowcase/withShowcase'
 const Card = ({ headline, heading, icon, url }) => (
   <Link to={url} className="card">
     <img src={`/icons/${icon}`} alt="" />
-    <span className="card__title">{headline}</span>
-    <h3 className="card__heading">{heading}</h3>
+    <span
+      className="card__title"
+      dangerouslySetInnerHTML={{ __html: headline }}
+    />
+    <h3
+      className="card__heading"
+      dangerouslySetInnerHTML={{ __html: heading }}
+    />
   </Link>
 )
 
@@ -32,7 +38,7 @@ const Cards = ({ meta: { heading, icon, cards }, elemId }) => (
       <div className="cards__wrapper">
         {heading && (
           <div className="cards__heading">
-            <h2>{heading}</h2>
+            <h2 dangerouslySetInnerHTML={{ __html: heading }} />
             <img src={`/icons/${icon}`} alt="" />
           </div>
         )}
