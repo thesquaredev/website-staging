@@ -7,6 +7,10 @@ import Header from '../header/header'
 import '../../sass/style.scss'
 
 class Layout extends React.Component {
+  // This is to avoid "Can't perform a React state update on an unmounted component" error.
+  // Solution found here: https://github.com/material-components/material-components-web-react/issues/434#issuecomment-449561024
+  _isMounted = false;
+
   constructor(props) {
     super(props)
     this.state = {
@@ -21,17 +25,23 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
+    this._isMounted = true;
+
     document.addEventListener('scroll', () => {
       const isScrolled = window.scrollY > 10
-      if (isScrolled !== this.state.isScrolled) {
+      if (isScrolled !== this.state.isScrolled && this._isMounted) {
         this.setState({ isScrolled })
       }
     })
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 992) {
+      if (window.innerWidth > 992 && this._isMounted) {
         this.setState({ isMobileMenuVisible: false })
       }
     })
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   render() {
