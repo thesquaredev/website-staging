@@ -126,11 +126,11 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/generic">
+                    <Link to="/solutions/">
                       <img src={'/icons/visualizations.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Data engineering</span>
-                        <span>Lorem ipsum dolor sit amet</span>
+                        <span>Make large scale processing easy</span>
                       </div>
                     </Link>
                   </li>
