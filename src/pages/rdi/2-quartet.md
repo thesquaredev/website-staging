@@ -24,7 +24,7 @@ image: plane-trip-round-bold-red.png
 ##
 ---
 
-# Data Analytics & Information Visualization
+# Data Analytics &amp; Information Visualization
 ## database-share-bold-blue.png
 
 **Privacy-preserving Platform (PPP)** allows on the one hand website owners to meet the EU regulatory requirements and on the other hand the users (visitors of a website) to be informed about the types of data the website collects and also provide their consent for specific data-processing purposes. PPP displays user notifications regarding the required consent in the form of pop-ups or widgets. It also collects and stores information about visitor’s consent decisions together with a history of changes thereof. Moreover, it manage specific user requests closely connected with the users fundamental rights as described within the GDPR, such as requests to access (right-of-access), rectify (right-to-rectification), move (right-to-data-portability) and erase (right-to-be-forgotten) their data ensuring that a user’s selection is remembered and respected.
@@ -38,7 +38,7 @@ image: plane-trip-round-bold-red.png
 
 ---
 
-# Social Media & Collaborative Systems
+# Social Media &amp; Collaborative Systems
 ## brain-bold-green.png
 
 **Semantic Artificial Intelligence Platform (SAIP)** that aims at the identification of “fake news” coming from various data sources such as social media, websites, fora, etc. targeting vulnerable groups of people and alter the public sentiment of the local communities. The platform spots manipulated content and find untrue claims by analyzing massive amounts of social media sharing patterns. Using Graph technology and advanced Machine Learning algorithms we can also detect the stance of a cluster of related articles found and stored in a Database, towards the whole body of the article.
@@ -47,7 +47,7 @@ image: plane-trip-round-bold-red.png
 
 ---
 
-# Safety & (Cyber)Security
+# Safety &amp; (Cyber)Security
 ## analytics-bold-blue.png
 
 Data Lineage Platform (DLP) based on Machine Learning and Knowledge Graphs providing enterprises the means to not only store and use data but also to draw connections between them, capturing facts related to people, processes, applications, data and things, and connect those facts with the relationships among them. Knowledge graphs can also capture evidence to evaluate the strengths of these relationships, allowing companies to derive context from data. Enterprises are able to prove their compliance with the GDPR and improve their transparency with regulators due to the undisputable proofs of the personal data flows.
