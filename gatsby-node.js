@@ -106,13 +106,13 @@ exports.createPages = ({ graphql, actions }) => {
           component.html = node.html
         }
         if (node.frontmatter.component === 'grid') {
-          const texts = node.html.split('<hr>\n')
-          const icons = node.frontmatter.icons.split(', ')
+          const tiles = node.html.split('<hr>\n')
           component.heading = node.frontmatter.heading
           component.description = node.frontmatter.description
-          component.tiles = texts.map((html, i) => ({
-            html,
-            icon: icons[i],
+          component.tiles = tiles.map((tile, i) => ({
+            heading: getTextContent(tile, 'h1'),
+            icon: getTextContent(tile, 'h2'),
+            description: getTextContent(tile, 'p'),
           }))
         }
         if (node.frontmatter.component === 'cards') {
