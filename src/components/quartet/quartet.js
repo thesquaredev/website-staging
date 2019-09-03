@@ -2,7 +2,6 @@ import React from 'react'
 import './quartet.scss'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
-import MarkupAndDown from '../common/markupandown'
 
 const Quarter = ({ heading, icon, description }) => (
   <div className="quarter">
