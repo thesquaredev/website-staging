@@ -4,13 +4,14 @@ import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
 
 // Subcomponents
-const Tile = ({ html, icon }) => (
+const Tile = ({ heading, icon, description }) => (
   <div className="single-offer d-flex flex-row">
     <div className="icon">
       <img src={`/icons/${icon}`} alt="" />
     </div>
     <div className="desc">
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      {heading && <h3>{heading}</h3>}
+      <div dangerouslySetInnerHTML={{ __html: description }} />
     </div>
   </div>
 )
@@ -28,8 +29,15 @@ const Grid = ({ meta: { heading, description, tiles }, elemId }) => (
         </div>
       </div>
       <div className="row flex-wrap">
-        {tiles.map((tile, i) => {
-          return <Tile html={tile.html} icon={tile.icon} key={i} />
+        {tiles.map(({ heading, description, icon }, i) => {
+          return (
+            <Tile
+              heading={heading}
+              description={description}
+              icon={icon}
+              key={i}
+            />
+          )
         })}
       </div>
     </div>

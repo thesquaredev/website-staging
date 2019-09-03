@@ -23,43 +23,56 @@ const mockData = {
   ],
   cards: [
     {
-      industry: lorem.substring(0, 11),
+      headline: lorem.substring(0, 11),
       heading: lorem.substring(0, 60),
-      description: lorem.substring(0, 150),
-      image: 'grid.jpg',
-      moreTxt: lorem.substring(0, 11),
+      icon: 'lab-tubes.png',
+      moreTxt: '#'
     },
     {
-      industry: lorem.substring(0, 11),
+      headline: lorem.substring(0, 11),
       heading: lorem.substring(0, 60),
-      description: lorem.substring(0, 150),
-      image: 'grid.jpg',
-      moreTxt: lorem.substring(0, 11),
+      icon: 'lab-tubes.png',
+      moreTxt: '#'
     },
     {
-      industry: lorem.substring(0, 11),
+      headline: lorem.substring(0, 11),
       heading: lorem.substring(0, 60),
-      description: lorem.substring(0, 150),
-      image: 'grid.jpg',
-      moreTxt: lorem.substring(0, 11),
+      icon: 'lab-tubes.png',
+      moreTxt: '#'
+    },
+    {
+      headline: lorem.substring(0, 11),
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      moreTxt: '#'
+    },
+    {
+      headline: lorem.substring(0, 11),
+      heading: lorem.substring(0, 60),
+      icon: 'lab-tubes.png',
+      moreTxt: '#'
     },
   ],
   tiles: [
     {
-      html: `<p>${lorem.substring(0, 150)}</p>`,
-      icon: 'engineering.svg',
+      heading: lorem.substring(0, 60),
+      description: `<p>${lorem.substring(0, 150)}</p>`,
+      icon: 'lab-tubes.png',
     },
     {
-      html: `<p>${lorem.substring(0, 150)}</p>`,
-      icon: 'networking.svg',
+      heading: lorem.substring(0, 60),
+      description: `<p>${lorem.substring(0, 150)}</p>`,
+      icon: 'lab-tubes.png',
     },
     {
-      html: `<p>${lorem.substring(0, 150)}</p>`,
-      icon: 'iot.svg',
+      heading: lorem.substring(0, 60),
+      description: `<p>${lorem.substring(0, 150)}</p>`,
+      icon: 'lab-tubes.png',
     },
     {
-      html: `<p>${lorem.substring(0, 150)}</p>`,
-      icon: 'ml.svg',
+      heading: lorem.substring(0, 60),
+      description: `<p>${lorem.substring(0, 150)}</p>`,
+      icon: 'lab-tubes.png',
     },
   ],
   pills: [
