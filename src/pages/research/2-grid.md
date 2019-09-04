@@ -27,13 +27,6 @@ description: We make it simple to launch modern techniques and tools for your te
 
 ---
 
-# Smart Technologies
-## maps-search-bold-green.png
-
-**IoT Device Behaviour Analyzer (DBA)** for automatic detection of suspicious (unauthorized) devices connected to your IoT network.
-
----
-
 # Social Media & Collaborative Systems
 ## house-bold-blue.png
 
@@ -41,6 +34,13 @@ description: We make it simple to launch modern techniques and tools for your te
 
 **Opinion Mining Platform (OMP)** for understanding the attitudes and opinions expressed in the social media posts. 
 
+
+---
+
+# Smart Technologies
+## maps-search-bold-green.png
+
+**IoT Device Behaviour Analyzer (DBA)** for automatic detection of suspicious (unauthorized) devices connected to your IoT network.
 
 ---
 
