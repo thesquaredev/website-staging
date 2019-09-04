@@ -20,27 +20,30 @@ description: We make it simple to launch modern techniques and tools for your te
 ##
 ---
 
-# Knowledge graphs
+# Data Analytics & Information Visualization
 ## single-man-bold-red.png
 
-Connect to diverse data sources, process and analyze massive volumes of structured and unstructured data and visualize the results to find insights. Use open source software or cloud solutions to build beautiful dashboards for your team or organisation.
+**Privacy-preserving Platform (PPP)** for GDPR compliance ensuring that your data is remembered and respected. 
 
 ---
 
-# AI and machine learning
+# Smart Technologies
 ## maps-search-bold-green.png
 
-Create knowledge graphs to seamlessly break down data silos across your teams or departments and use connections to identify and build corporate knowledge. Simply know what you know and what you don't know.
+**IoT Device Behaviour Analyzer (DBA)** for automatic detection of suspicious (unauthorized) devices connected to your IoT network.
 
 ---
 
-# Data engineering
+# Social Media & Collaborative Systems
 ## house-bold-blue.png
 
-Easily connect, manage and analyze IoT data from dispersed devices. Create digital twins and increase efficiency on critical equipment by providing information on maintenance and reliability. Build interactive dashboards and watch your devices report in real time.
+**Semantic Artificial Intelligence Platform (SAIP)** for “fake news” identification coming from social media, websites, fora, etc. targeting vulnerable groups of people.
+
+**Opinion Mining Platform (OMP)** for understanding the attitudes and opinions expressed in the social media posts. 
+
 
 ---
 
-# Data protection
+# Safety & (Cyber)Security
 ## shopping-cart-bold-green.png
-We are continuously looking for machine learning (ML) and natural language processing (NLP) techniques for embedding AI into our solutions and avoid technological disruption (too much data).
+**Data Lineage Platform (DLP)** for improving your organization’s transparency with regulators regarding personal data flows.
