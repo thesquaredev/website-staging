@@ -108,11 +108,11 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                 <span className="nav-submenu__col">
                   <h6>By Technology</h6>
                   <li>
-                    <Link to="/generic">
+                    <Link to="/solutions/knowledge-graphs">
                       <img src={'/icons/brain-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Knowledge graphs</span>
-                        <span>Break down data silos</span>
+                        <span>Transform data to knowledge</span>
                       </div>
                     </Link>
                   </li>
@@ -126,7 +126,7 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/">
+                    <Link to="/solutions/data-engineering">
                       <img src={'/icons/visualizations.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Data engineering</span>
