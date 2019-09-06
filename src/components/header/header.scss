@@ -69,7 +69,7 @@
   font-family: $secondary-font;
   cursor: default;
   transition: all 0.3s ease 0s;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   font-size: 1.1rem;
 }
@@ -175,7 +175,9 @@
         & li {
           border-bottom: 1px solid $white;
         }
-        & li a, a:focus, a:hover {
+        & li a,
+        a:focus,
+        a:hover {
           padding: 8px 32px;
           text-decoration: none;
         }
@@ -203,7 +205,7 @@
   color: $white;
   outline: none;
   font-family: $secondary-font !important;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   font-size: 1.1rem;
 }
@@ -245,6 +247,20 @@
   padding: 5px;
   background: $white;
   border-radius: 5px;
+  &--compact {
+    flex-direction: column;
+    left: -95px;
+    width: 276px;
+    padding-bottom: 20px;
+    .nav-submenu__col {
+      width: 100%;
+      border: none !important;
+      padding: 10px 8px 5px
+    }
+    &:after {
+      left: 126px !important;
+    }
+  }
   & li {
     min-width: 180px;
     text-align: left;

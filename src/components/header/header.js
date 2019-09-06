@@ -71,7 +71,7 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
             </li>
             <li className="menu-has-children">
               <h5 className="menu-has-children__title">Solutions</h5>
-              <ul className="nav-submenu">
+              <ul className="nav-submenu nav-submenu--compact">
                 <span className="nav-submenu__col">
                   <h6>By Use Case</h6>
                   <li>
@@ -79,28 +79,19 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                       <img src={'/icons/pills-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Pharmacovigilance</span>
-                        <span>Leverage data-driven innovation</span>
+                        <span>Safety Signal Intelligence</span>
                       </div>
                     </Link>
                   </li>
                   <li>
                     <Link to="/solutions/know-your-customer">
                       <img
-                        src={'/icons/user-credit-card-bold-green.png'}
+                        src={'/icons/rating-bold-green.png'}
                         alt=""
                       />
                       <div className="nav-submenu__item">
-                        <span>KYC / Customer 360</span>
-                        <span>Meet data challenges with AI</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/generic">
-                      <img src={'/icons/user-shield.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Data privacy</span>
-                        <span>Ensure GDPR compliance</span>
+                        <span>Human Resources</span>
+                        <span>Online Reputation Management</span>
                       </div>
                     </Link>
                   </li>
@@ -122,15 +113,6 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                       <div className="nav-submenu__item">
                         <span>Machine Learning</span>
                         <span>Solve problems intelligently</span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/solutions/data-engineering">
-                      <img src={'/icons/visualizations.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Data engineering</span>
-                        <span>Make large scale processing easy</span>
                       </div>
                     </Link>
                   </li>
