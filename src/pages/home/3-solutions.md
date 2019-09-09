@@ -26,32 +26,26 @@ icon: lab-tube-bold-green.png
 # Pharmacovigilance
 ## Accelerate the process of Signal Management and predict unknown adverse drug reactions
 ### pills-icon-bold-green.png
-#### /solutions/pharmacovigilance
+#### /solutions/safety-signal-intelligence
 
 ---
 
-# KYC / Customer 360
-## Better know your customers and build a full 360 view of their connections
-### user-credit-card-bold-green.png
-#### /solutions/pharmacovigilance
+# Human Resources
+## Improve your online presence on Glassdoor and attract the best talents in the market
+### rating-bold-green.png
+#### /solutions/online-reputation-management
 
----
-
-# GDPR Compliance
-## Make consent management easy with our turnkey Consent Management Platform (CMP)
-### user-shield.png
-#### /solutions/pharmacovigilance
 
 ---
 
 # Knowledge graphs 
 ## Break down data silos across your organisation and generate your enterprise knowledge graph
 ### brain-bold-green.png
-#### /solutions/pharmacovigilance
+#### /solutions/knowledge-graphs
 
 ---
 
 # AI and Machine Learning 
 ## Easy implement AI initiatives within your company and introduce digital assistants
 ### robot-head-bold-green.png
-#### /solutions/pharmacovigilance
+#### /solutions/machine-learning

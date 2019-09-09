@@ -13,7 +13,7 @@
 template: default
 component: banner
 headline: We are a data analytics startup
-heading: Your BIG data on steroids
+heading: Your big data on steroids
 btnTxt: Our solutions
 btnUrl: cards3
 ---

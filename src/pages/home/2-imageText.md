@@ -17,16 +17,12 @@
 template: default
 component: imageText
 headline: _ one two three
-heading: Gain a holistic worldview of adverse events
+heading: Deliver business value with data intelligence
 btnTxt: Let's talk
-btnUrl: ''
+btnUrl: company/#contact2
 image: dashboard.jpg
 imagePosition: left
 backgroundSize: contain
 ---
 
-Identifying real-world safety risks requires connecting with the real world – placing your drug life cycle data in the
-context of the people and products outside of your organization. With the proliferation of new technologies, varying
-ontologies, and evolving regulations, adverse events (AE) data continues to grow in volume and complexity. Integrating
-disparate data into your drug safety workflows to run accurate signal detection and prioritize case management now
-demands not only reliable access to siloed data sources, but confidence in the data itself.
+Increasing data volumes as well as increasing data complexity are currently forcing industries to look for solutions to reduce data processing costs. Our solutions provide a way to reduce data complexity, combine them with external sources and give your company 360 view of it's data as well as new insights.
