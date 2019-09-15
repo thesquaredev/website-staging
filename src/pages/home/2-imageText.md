@@ -16,17 +16,18 @@
 ##
 template: default
 component: imageText
-headline: _ one two three
-heading: Gain a holistic worldview of adverse events
+headline: _ Data intelligence
+heading: Connect what matters
 btnTxt: Let's talk
-btnUrl: ''
+btnUrl: company/#contact2
 image: dashboard.jpg
 imagePosition: left
 backgroundSize: contain
 ---
 
-Identifying real-world safety risks requires connecting with the real world – placing your drug life cycle data in the
-context of the people and products outside of your organization. With the proliferation of new technologies, varying
-ontologies, and evolving regulations, adverse events (AE) data continues to grow in volume and complexity. Integrating
-disparate data into your drug safety workflows to run accurate signal detection and prioritize case management now
-demands not only reliable access to siloed data sources, but confidence in the data itself.
+Your organisation's internal data might be BIG, but still, it's not enough to meet today's data challenges. We believe
+it's because, it's only _part of a whole_. 
+
+We make it possible to integrate your internal data to external data sources and generate more knowledge, empowering you 
+to achieve a true 360° view of your business. We leverage artificial intelligence (AI) methodologies and the cloud, to 
+connect what matters and provide intelligent insights.
