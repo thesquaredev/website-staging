@@ -35,17 +35,16 @@ icon: lab-tube-bold-green.png
 ### rating-bold-green.png
 #### /solutions/online-reputation-management
 
-
 ---
 
 # Knowledge graphs 
-## Break down data silos across your organisation and generate your enterprise knowledge graph
+## Break down data silos across your organisation and generate enterprise knowledge
 ### brain-bold-green.png
 #### /solutions/knowledge-graphs
 
 ---
 
 # AI and Machine Learning 
-## Easy implement AI initiatives within your company and introduce digital assistants
+## Easily implement AI initiatives within your company and introduce digital assistants
 ### robot-head-bold-green.png
 #### /solutions/machine-learning

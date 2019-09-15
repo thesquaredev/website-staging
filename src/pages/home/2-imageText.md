@@ -16,8 +16,8 @@
 ##
 template: default
 component: imageText
-headline: _ one two three
-heading: Deliver business value with data intelligence
+headline: _ Data intelligence
+heading: Connect what matters
 btnTxt: Let's talk
 btnUrl: company/#contact2
 image: dashboard.jpg
@@ -25,4 +25,9 @@ imagePosition: left
 backgroundSize: contain
 ---
 
-Increasing data volumes as well as increasing data complexity are currently forcing industries to look for solutions to reduce data processing costs. Our solutions provide a way to reduce data complexity, combine them with external sources and give your company 360 view of it's data as well as new insights.
+Your organisation's internal data might be BIG, but still, it's not enough to meet today's data challenges. We believe
+it's because, it's only _part of a whole_. 
+
+We make it possible to integrate your internal data to external data sources and generate more knowledge, empowering you 
+to achieve a true 360° view of your business. We leverage artificial intelligence (AI) methodologies and the cloud, to 
+connect what matters and provide intelligent insights.
