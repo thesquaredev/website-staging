@@ -13,8 +13,8 @@
 ##
 template: default
 component: hero
-heading: Redefine banking and insurance with AI
-description: Most large financial organizations are wrestling with fundamental data management challenges. Traditional technologies are struggling to meet these challenges and they demand a new approach. Forward thinking organizations are deploying semantic Knowledge Graphs as a powerful option.
+heading: Innovation through research and development
+description: We currently work on research and development projects not only to serve our customers but also to develop our own product lines. Our goal is to develop our skills and technologies and enhance our presence in the global market.
 image: skyscraper.jpg
 btnTxt: ''
 btnUrl: ''
