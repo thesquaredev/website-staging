@@ -24,7 +24,7 @@
 ##
 template: default
 component: contact
-heading: Get in touch
+heading: Interested in learning more details?
 icon: 
 description: Use the form below to send us a message
 showAddress: false
