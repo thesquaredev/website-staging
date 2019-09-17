@@ -1,8 +1,8 @@
 import React from 'react'
 import './hero.scss'
-import { Link } from 'gatsby'
 import withLocation from '../common/withLocation'
 import withShowcase from '../common/withShowcase/withShowcase'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = ({
   meta: { heading, description, html, image, btnTxt, btnUrl },
@@ -22,9 +22,9 @@ const Hero = ({
             <h1 className="text-white">{heading}</h1>
             <p>{description}</p>
             {btnTxt && (
-              <Link className="primary-btn" to={btnUrl}>
+              <AnchorLink className="primary-btn" href={`#${btnUrl}`}>
                 {btnTxt}
-              </Link>
+              </AnchorLink>
             )}
           </div>
         </div>

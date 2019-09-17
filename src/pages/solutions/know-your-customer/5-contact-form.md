@@ -24,9 +24,9 @@
 ##
 template: default
 component: contact
-heading: Ready?
-icon: weightlifting-bold-blue.png
-description: Learn what we can accelerate your PV process
+heading: How can we help?
+icon: 
+description: 
 showAddress: false
 formTitle: ''
 formNamePlaceholder: Your full name*

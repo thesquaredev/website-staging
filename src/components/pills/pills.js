@@ -6,7 +6,7 @@ import withShowcase from '../common/withShowcase/withShowcase'
 const Pill = ({ heading, icon, description }) => (
   <div className="pill">
     <img src={`/icons/${icon}`} alt="" />
-    <h2 className="pill__heading">{heading}</h2>
+    <h3 className="pill__heading">{heading}</h3>
     <p className="pill__description">{description}</p>
   </div>
 )

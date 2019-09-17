@@ -16,17 +16,21 @@
 ##
 template: default
 component: imageText
-headline: _ one two three
-heading: Gain a holistic worldview of adverse events
-btnTxt: Let's talk
+headline: _ how it works
+heading: Leveraging the opportunities of open banking for KYC/AML
+btnTxt: ''
 btnUrl: ''
 image: online-shopping.jpg
 imagePosition: left
 backgroundSize: cover
 ---
 
-Identifying real-world safety risks requires connecting with the real world – placing your drug life cycle data in the
-context of the people and products outside of your organization. With the proliferation of new technologies, varying
-ontologies, and evolving regulations, adverse events (AE) data continues to grow in volume and complexity. Integrating
-disparate data into your drug safety workflows to run accurate signal detection and prioritize case management now
-demands not only reliable access to siloed data sources, but confidence in the data itself.
+The Open Banking specification is slated to include data that can be used to complete an identity check, directly from a
+user’s bank. This identity information, combined with a source of income analysis offered through Credit Kudos, makes 
+Open Banking a powerful tool in the KYC/AML process. Any company that needs to understand sources of wealth, or verify
+the identity of an individual as verified by their primary current account can capitalise on Open Banking.
+
+KYC (Know Your Customer) allows financial institutions to verify customers’ personal data, using information from their 
+online banking. The KYC output provides different types of personal data in a standardised, unified form. Additional 
+information is extrapolated from transaction data about the customer (e.g. geolocation) for more thorough customer 
+identification.

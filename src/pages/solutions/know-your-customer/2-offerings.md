@@ -19,21 +19,22 @@ component: pills
 ##
 ---
 
-# Acquire self-service insights from different data sources
-## visualizations.png
+# Get a true 360° view of your customer
+## user-360-bold-green.png
 
-Eos ne habeo euismod laboramus. Ferri nominavi an pri. Fugit tation omnium eu mel. Quis aperiri labitur ad mea
+Include data that can be used to complete an identity check, directly from a user’s bank.
 
 ---
 
-# Get a better 360° view of your customer
+# Achieve a better identity check
 ## customer-bold-red.png
 
-Ei vero iusto signiferumque eos. Eu erant utinam vis, homero consetetur dissentias his te. Ea doming scripta qui
+Verify customer identity easily, using Open Banking data. Quick and easy KYC checks using Open Banking data. Built for 
+global banks, lenders, brands and fintechs. 
 
 ---
 
-# Speed up and automate data preparation for AI and ML
+# Accelerate Know Your Customer (KYC) Onboarding
 ## scifi-robot-bold-blue.png
 
 Ex sed falli zril ignota, accumsan splendide ex nam. Pro at aperiam rationibus. Qui ut postea reformidans

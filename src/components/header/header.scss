@@ -39,7 +39,7 @@
 
 .nav-menu li {
   position: relative;
-  white-space: nowrap;
+  //white-space: nowrap;
 }
 
 .nav-menu > li {
@@ -53,11 +53,6 @@
     transform: translateY(0);
     visibility: visible;
   }
-}
-
-// TODO: i added this one, classes in nav must be revised
-.nav-menu li.menu-has-children span {
-  margin-right: 4px;
 }
 
 .menu-has-children__title {
@@ -231,7 +226,7 @@
 // Submenu
 .nav-submenu {
   display: flex;
-  top: -500px;
+  top: -5000px;
   left: -230px;
   width: 552px;
   transform: translateY(17px);

@@ -16,18 +16,15 @@
 ##
 template: default
 component: imageText
-headline: _ AI for better insights
-heading: Gain a 360° view of your business
-btnTxt: Let's talk
-btnUrl: company/#contact2
+headline: _ digital transformation
+heading: A new form of credit data 
+btnTxt: 'Get in touch'
+btnUrl: ''
 image: dashboard.jpg
 imagePosition: left
 backgroundSize: contain
 ---
 
-Your organisation's internal data might be BIG, but still, it's not enough to meet today's data challenges. We believe
-it's because, it's only _part of a whole_. 
-
-We make it possible to integrate your internal data to external data sources and generate more knowledge, empowering you 
-to achieve a true 360° view of your business. We leverage artificial intelligence (AI) methodologies and the cloud, to 
-connect what matters and provide intelligent insights.
+We are leveraging Open Banking data and financial behavior to provide a fairer credit score that enables lenders to 
+make credit more accessible to their customers and deliver a better digital experience. At the same time we aim at 
+offering personalised explanations and make credit decisions transparent to consumers.

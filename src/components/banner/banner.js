@@ -2,7 +2,6 @@ import React from 'react'
 import './banner.scss'
 import withShowcase from '../common/withShowcase/withShowcase'
 import withLocation from '../common/withLocation'
-import Chord from '../charts/chord/chord'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 /**
@@ -41,9 +40,6 @@ const Banner = ({
           </AnchorLink>
         </div>
       </div>
-    </div>
-    <div className="banner__chord">
-      <Chord />
     </div>
   </section>
 )

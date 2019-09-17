@@ -75,29 +75,38 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                 <span className="nav-submenu__col">
                   <h6>By Use Case</h6>
                   <li>
-                    <Link to="/solutions/safety-signal-intelligence">
-                      <img src={'/icons/pills-icon-bold-green.png'} alt="" />
+                    <Link to="/solutions/credit-scoring">
+                      <img
+                        src={'/icons/user-credit-card-bold-green.png'}
+                        alt=""
+                      />
                       <div className="nav-submenu__item">
-                        <span>Pharmacovigilance</span>
-                        <span>Safety Signal Intelligence</span>
+                        <span>Credit Scoring</span>
+                        <span>Speed up your credit process</span>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/online-reputation-management">
-                      <img
-                        src={'/icons/rating-bold-green.png'}
-                        alt=""
-                      />
+                    <Link to="/solutions/know-your-customer">
+                      <img src={'/icons/user-360-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Human Resources</span>
-                        <span>Online Reputation Management</span>
+                        <span>KYC/AML</span>
+                        <span>Enrich customer 360° views</span>
                       </div>
                     </Link>
                   </li>
                 </span>
                 <span className="nav-submenu__col">
                   <h6>By Technology</h6>
+                  <li>
+                    <Link to="/solutions/machine-learning">
+                      <img src={'/icons/robot-head-bold-green.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>Machine Learning</span>
+                        <span>Solve problems intelligently</span>
+                      </div>
+                    </Link>
+                  </li>
                   <li>
                     <Link to="/solutions/knowledge-graphs">
                       <img src={'/icons/brain-icon-bold-green.png'} alt="" />
@@ -108,11 +117,11 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/machine-learning">
-                      <img src={'/icons/robot-head-bold-green.png'} alt="" />
+                    <Link to="/solutions/open-banking">
+                      <img src={'/icons/bank-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Machine Learning</span>
-                        <span>Solve problems intelligently</span>
+                        <span>Open Banking</span>
+                        <span>Integrate Open Banking data</span>
                       </div>
                     </Link>
                   </li>
