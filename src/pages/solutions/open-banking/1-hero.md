@@ -13,9 +13,9 @@
 ##
 template: default
 component: hero
-heading: Redefine banking and insurance with AI
-description: Most large financial organizations are wrestling with fundamental data management challenges. Traditional technologies are struggling to meet these challenges and they demand a new approach. 
-image: skyscraper.jpg
+heading: Use Open Banking for faster and better credit decisions
+description: Start accepting more applicants, faster while lowering default rates. We make it easy to collect and incorporate Open Banking data into existing affordability and credit risk models. 
+image: atm-and-card.jpg
 btnTxt: ''
 btnUrl: ''
 ---

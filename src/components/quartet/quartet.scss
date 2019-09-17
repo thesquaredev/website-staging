@@ -54,7 +54,8 @@
   min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  font-size: 1.15rem;
   &:nth-of-type(2) {
     border-image: linear-gradient(
         to top left,
