@@ -24,9 +24,9 @@
 ##
 template: default
 component: contact
-heading: Get in touch
+heading: Interested in learning more details?
 icon: weightlifting-bold-green.png
-description: Use the form below to send us a message
+description: Send an email through the form below
 showAddress: false
 formTitle: ''
 formNamePlaceholder: Your full name*
