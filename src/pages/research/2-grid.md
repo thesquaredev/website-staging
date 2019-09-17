@@ -10,8 +10,7 @@
 ##
 template: default
 component: grid
-heading: Analyze, measure, and improve your customer experience. Over and over again.
-description: We make it simple to launch modern techniques and tools for your team or organisation, whether in the cloud or your premises.
+heading: Several different domains with a common denominator. Our technology. Knowledge Graphs and Artificial Intelligence.
 # HOW TO USE TEXT BELOW:
 #
 # Each H1 header (rows starting with #) becomes the tile's title
