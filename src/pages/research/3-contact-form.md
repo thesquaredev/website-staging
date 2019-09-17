@@ -25,7 +25,7 @@
 template: default
 component: contact
 heading: Get in touch
-icon: weightlifting-bold-green.png
+icon: 
 description: Use the form below to send us a message
 showAddress: false
 formTitle: ''
@@ -39,5 +39,5 @@ addressTitle: Or drop us a visit
 addressLine1: Rue Chair et Pain 3
 addressLine2: 1000 Bruselles
 addressCountry: Belgium
-addressEmail: hello@thesquaredev.com
+addressEmail: innovation@thesquaredev.com
 ---
