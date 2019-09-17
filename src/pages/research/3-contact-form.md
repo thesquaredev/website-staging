@@ -25,8 +25,8 @@
 template: default
 component: contact
 heading: Interested in learning more details?
-icon: weightlifting-bold-green.png
-description: Send an email through the form below
+icon: 
+description: Use the form below to send us a message
 showAddress: false
 formTitle: ''
 formNamePlaceholder: Your full name*
@@ -39,5 +39,5 @@ addressTitle: Or drop us a visit
 addressLine1: Rue Chair et Pain 3
 addressLine2: 1000 Bruselles
 addressCountry: Belgium
-addressEmail: hello@thesquaredev.com
+addressEmail: innovation@thesquaredev.com
 ---
