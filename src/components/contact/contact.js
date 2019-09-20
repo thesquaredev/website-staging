@@ -287,8 +287,8 @@ class Contact extends React.Component {
                     </small>
                   )}
                 </div>
-                <div className="mt-15">
-                  <input type="hidden" name="route" value={pathname} required />
+                <div>
+                  <input type="hidden" name="route" value={pathname} />
                 </div>
                 <div className="mt-15 pb-25">
                   <textarea
