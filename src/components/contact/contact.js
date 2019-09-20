@@ -95,7 +95,9 @@ class Contact extends React.Component {
   }
 
   /**
-   * Method to handle form submission
+   * Method to handle form submission. In the form data object
+   * there is also a hidden field with the route value.
+   * This is used so that we know what page the form was submitted from
    * @param e React's synthetic event
    * @param responseText The response shown to the user after form submission
    */
@@ -187,6 +189,7 @@ class Contact extends React.Component {
 
   render() {
     const {
+      location: { pathname },
       meta: { heading, icon, description, form, address, showAddress },
       elemId,
     } = this.props
@@ -283,6 +286,9 @@ class Contact extends React.Component {
                       {EMAIL_IS_NOT_FORMATTED_USER_ERROR}
                     </small>
                   )}
+                </div>
+                <div>
+                  <input type="hidden" name="route" value={pathname} />
                 </div>
                 <div className="mt-15 pb-25">
                   <textarea
