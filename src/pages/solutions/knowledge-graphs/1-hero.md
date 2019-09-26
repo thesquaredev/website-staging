@@ -15,7 +15,7 @@ template: default
 component: hero
 heading: Transforming Data into Knowledge
 description: Turn data into your organiaztion's power and make strategic choices.
-image: skyscraper.jpg
+image: library-books.jpg
 btnTxt: ''
 btnUrl: ''
 ---

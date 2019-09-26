@@ -21,46 +21,39 @@ const Footer = () => (
             <div className="footer__menu__col__split">
               <ul>
                 <li>
-                  <Link to="/solutions/life-sciences">
+                  <Link to="/solutions/credit-scoring">
                     <div className="footer__menu__item">
-                      <span>Pharmacovigilance</span>
+                      <span>Credit Scoring</span>
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/solutions/financial-services">
+                  <Link to="/solutions/lending">
                     <div className="footer__menu__item">
-                      <span>KYC / Customer 360</span>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/generic">
-                    <div className="footer__menu__item">
-                      <span>Data privacy</span>
+                      <span>Lending</span>
                     </div>
                   </Link>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <Link to="/generic">
+                  <Link to="/solutions/machine-learning">
+                    <div className="footer__menu__item">
+                      <span>Machine learning</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/solutions/knowledge-graphs">
                     <div className="footer__menu__item">
                       <span>Knowledge graphs</span>
                     </div>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/generic">
+                  <Link to="/solutions/open-banking-api">
                     <div className="footer__menu__item">
-                      <span>AI & machine learning</span>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/generic">
-                    <div className="footer__menu__item">
-                      <span>Data engineering</span>
+                      <span>Open Banking API</span>
                     </div>
                   </Link>
                 </li>
@@ -71,21 +64,14 @@ const Footer = () => (
             <h5>Company</h5>
             <ul>
               <li>
-                <Link to="/generic">
+                <Link to="/company">
                   <div className="footer__menu__item">
                     <span>About us</span>
                   </div>
                 </Link>
               </li>
               <li>
-                <Link to="/generic">
-                  <div className="footer__menu__item">
-                    <span>Mission</span>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/generic">
+                <Link to="/company/#contact2">
                   <div className="footer__menu__item">
                     <span>Contact us</span>
                   </div>

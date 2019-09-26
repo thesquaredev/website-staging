@@ -19,21 +19,21 @@ component: pills
 ##
 ---
 
-# Acquire highly predictive credit data
-## performance-graph-calculator-bold-red.png
+# Achieve higher acceptance rates
+## performance-increase-bold-red.png
 
-Get a better scoring model with our predictive analytics and calculate the probability of a customer defaulting on a loan.
-
----
-
-# Access Open Banking data
-## settings-desktop-bold-green.png
-
-Get instant confirmation of a customer's salary and real time balance, obtain aggregates and labelled transaction data.
+Accessing accurate financial data can boost the chances of an applicant getting accepted.
 
 ---
 
-# Deliver a great customer experience
+# Decrease default rates
+## performance-decrease-bold-green.png
+
+Using our predictive analytics platform you can easily view the probability of a customer defaulting on a loan.
+
+---
+
+# A better user experience
 ## smiley-happy-bold-blue.png
 
-No documents uploading, all the customer needs is a bank account. The whole process gets down to a single click. 
+No documents, just a bank account, guarantee a better user experience and access to digital products.

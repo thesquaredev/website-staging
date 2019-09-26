@@ -27,9 +27,9 @@ image: target-path-bold-red.png
 # <sup>_1_ _</sup>  Product application
 ## visa-bold-green.png
 
-When applying for a financial product, e.g. a car loan, a bank loan, or even a mobile, the customer is usually requested 
+When applying for a financial product, e.g. a car loan or a bank loan, the customer is usually requested 
 to upload a tax clearance document, a payroll slip and maybe other documents that prove financial status. Using our 
-platform, though, that won't be necessary.
+platform, though, that won't be necessary, all is needed is user's consent.
 
 ---
 
@@ -38,7 +38,7 @@ platform, though, that won't be necessary.
 
 The lender requests customer's consent to access account data, either by sending an invitation from our platform, or by 
 clicking an embedded button in the lender's website. After accessing their account information, using a GDPR compliant 
-authentication process, financial data is processed and delivered to the lender through our dashboard.
+authentication process, financial data is processed and delivered to the lender through our platform's dashboard.
 
 ---
 
@@ -47,7 +47,7 @@ authentication process, financial data is processed and delivered to the lender 
 
 Customer's financial information is categorized and aggregated. Our model will analyze spending habits to predict 
 whether the consumer will repay or not. Aggregated data and the credit score becomes available to the lender within our
-dashboard.
+platform's dashboard.
 
 ---
 

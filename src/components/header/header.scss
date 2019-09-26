@@ -65,8 +65,8 @@
   cursor: default;
   transition: all 0.3s ease 0s;
   text-transform: capitalize;
-  font-weight: 400;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 // Navigation
@@ -201,8 +201,8 @@
   outline: none;
   font-family: $secondary-font !important;
   text-transform: capitalize;
-  font-weight: 400;
-  font-size: 1.1rem;
+  font-weight: 500;
+  //font-size: 1.1rem;
 }
 
 .nav-menu li:hover > a,

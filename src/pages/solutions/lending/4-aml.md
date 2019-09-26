@@ -16,15 +16,17 @@
 ##
 template: default
 component: imageText
-headline: _ digital transformation
-heading: A new source of credit data 
-btnTxt: 'Get in touch'
+headline: _ Use case
+heading: Anti Money Laundering (AML)
+btnTxt: ''
 btnUrl: ''
 image: dashboard.jpg
-imagePosition: left
+imagePosition: right
 backgroundSize: contain
 ---
 
-We are leveraging Open Banking data and financial behavior to provide a fairer credit score that enables lenders to 
-make credit more accessible to their customers and deliver a better digital experience. At the same time we aim at 
-offering personalised explanations and make credit decisions transparent to consumers.
+Financial institutions are continuously obliged to spot and filter out fraudulent activity. With direct and real time
+access to applicant's bank account with Open Banking (PSD2), it becomes harder to fraud. Our solution can verify income, 
+years back and not just the last two months. It can also combine account data with the lender's database to match 
+applicant's identity even if this information is not provided by Open Banking (PSD2). Both are crucial for reducing 
+fraud and improving your AML process.

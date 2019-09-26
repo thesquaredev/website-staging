@@ -23,17 +23,17 @@ icon: lab-tube-bold-green.png
 ##
 ---
 
-# Pharmacovigilance
-## Accelerate the process of Signal Management and predict unknown adverse drug reactions
-### pills-icon-bold-green.png
-#### /solutions/safety-signal-intelligence
+# Credit scoring
+## Achieve higher acceptance rates and fewer bad loans, harnessing Open Banking data. 
+### user-credit-card-bold-green.png
+#### /solutions/credit-scoring
 
 ---
 
-# Human Resources
-## Improve your online presence on Glassdoor and attract the best talents in the market
-### rating-bold-green.png
-#### /solutions/online-reputation-management
+# Lending
+## Improve your KYC and AML processes and reduce your operational costs.
+### user-360-bold-green.png
+#### /solutions/income-verification
 
 ---
 
@@ -48,3 +48,10 @@ icon: lab-tube-bold-green.png
 ## Easily implement AI initiatives within your company and introduce digital assistants
 ### robot-head-bold-green.png
 #### /solutions/machine-learning
+
+---
+
+# Open Banking
+## Discover new opportunities for your lending business and transform your current processes.
+### bank-bold-green.png
+#### /solutions/open-banking

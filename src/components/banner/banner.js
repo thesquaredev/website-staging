@@ -12,8 +12,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
  * @param btnTxt The text of the button
  * @param btnUrl The link to be followed when button is clicked
  * @param elemId The id for the root element of the component
- * @returns {*}
- * @constructor
  */
 const Banner = ({
   meta: { heading, headline, html, btnTxt, btnUrl },

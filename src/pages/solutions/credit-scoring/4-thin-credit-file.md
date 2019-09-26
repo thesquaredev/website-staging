@@ -16,15 +16,19 @@
 ##
 template: default
 component: imageText
-headline: _ digital transformation
-heading: A new source of credit data 
-btnTxt: 'Get in touch'
+headline: _ income verification
+heading: Thin credit files, credit risk and fraudulent applications
+btnTxt: ''
 btnUrl: ''
-image: dashboard.jpg
-imagePosition: left
-backgroundSize: contain
+image: online-shopping.jpg
+imagePosition: right
+backgroundSize: cover
+# Our analytics platform can also income from non-monthly payments, like freelancing or
+# the gig economy (e.g. Uber income). This can also benefit borrowers, who would otherwise, would find it difficult to 
+# prove available income.
 ---
 
-We are leveraging Open Banking data and financial behavior to provide a fairer credit score that enables lenders to 
-make credit more accessible to their customers and deliver a better digital experience. At the same time we aim at 
-offering personalised explanations and make credit decisions transparent to consumers.
+The banking sector faces a lot of challenges when it comes to make a decision around credit risk. Not all customer are 
+paid monthly (e.g. gig economy), not all of them have a credit file (e.g. they just moved from abroad) and not all of
+them play fair (e.g. fraudulent applications). With the incorporation of income verification into your existing 
+processes, you can meet these challenges and take the right decisions.

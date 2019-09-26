@@ -14,8 +14,8 @@
 template: default
 component: hero
 heading: Embrace the future with Machine Learning
-description: Turn data into your organiaztion's power and make strategic choices.
-image: skyscraper.jpg
+description: Turn data into your organisation's power and make strategic choices.
+image: close-up-of-motherboard.jpg
 btnTxt: ''
 btnUrl: ''
 ---

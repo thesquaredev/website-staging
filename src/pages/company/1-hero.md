@@ -13,9 +13,9 @@
 ##
 template: default
 component: hero
-heading: Redefine banking and insurance with AI
-description: Most large financial organizations are wrestling with fundamental data management challenges. Traditional technologies are struggling to meet these challenges and they demand a new approach.
-image: skyscraper.jpg
+heading:  Our mission is to build the trust, between lenders and borrowers, from the ground up.
+description: We are a diverse team of youth and experience, that uses data science with Open Banking to build predictive analytics solutions for all.
+image: bright-yellow-brick.jpg
 btnTxt: ''
 btnUrl: ''
 ---

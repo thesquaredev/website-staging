@@ -24,9 +24,9 @@
 ##
 template: default
 component: contact
-heading: How can we help?
+heading: Ready to improve KYC/AML?
 icon: 
-description: 
+description: We are here to help you use Open Banking to improve your KYC/AML and cut on operational costs. Get in touch.
 showAddress: false
 formTitle: ''
 formNamePlaceholder: Your full name*

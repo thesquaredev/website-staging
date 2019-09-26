@@ -16,17 +16,16 @@
 ##
 template: default
 component: imageText
-headline: _ one two three
-heading: Gain a holistic worldview of adverse events
-btnTxt: Let's talk
-btnUrl: ''
-image: online-shopping.jpg
+headline: _ Data aggregation
+heading: A unified Open Banking API
+btnTxt: 
+btnUrl: 
+image: dashboard.jpg
 imagePosition: left
-backgroundSize: cover
+backgroundSize: contain
 ---
 
-Identifying real-world safety risks requires connecting with the real world – placing your drug life cycle data in the
-context of the people and products outside of your organization. With the proliferation of new technologies, varying
-ontologies, and evolving regulations, adverse events (AE) data continues to grow in volume and complexity. Integrating
-disparate data into your drug safety workflows to run accurate signal detection and prioritize case management now
-demands not only reliable access to siloed data sources, but confidence in the data itself.
+Open Banking (PSD2) is new and immature and requires effort to connect to different banks and different APIs, as each 
+bank has implemented its own version of the specification. Instead of spending months to connect to each bank and a life 
+keeping up to inevitable changes, you can use our unified Open Banking API to connect to all banks and grow with us. Our
+API already gives life to our solutions but can also support yours. Use the form below to connect with us.

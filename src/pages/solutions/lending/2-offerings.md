@@ -19,22 +19,21 @@ component: pills
 ##
 ---
 
-# Get a true 360° view of your customer
+# Enhance KYC
 ## user-360-bold-green.png
 
-Include data that can be used to complete an identity check, directly from a user’s bank.
+Access to account information identifies current liabilities that currently, are not visible in any other way.
 
 ---
 
-# Achieve a better identity check
-## customer-bold-red.png
+# A better AML process
+## crime-man-thief-bold-blue.png
 
-Verify customer identity easily, using Open Banking data. Quick and easy KYC checks using Open Banking data. Built for 
-global banks, lenders, brands and fintechs. 
+Income verification and identity verification can help reducing fraud and improve your AML process.
 
 ---
 
-# Accelerate Know Your Customer (KYC) Onboarding
-## scifi-robot-bold-blue.png
+# Reduce operational costs
+## fossil-energy-battery-bold-red.png
 
-Ex sed falli zril ignota, accumsan splendide ex nam. Pro at aperiam rationibus. Qui ut postea reformidans
+Save time and money that you would, otherwise, spend seeking information on a customer.

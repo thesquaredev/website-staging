@@ -16,18 +16,17 @@
 ##
 template: default
 component: imageText
-headline: _ AI for better insights
-heading: Gain a 360° view of your business
-btnTxt: Let's talk
-btnUrl: company/#contact2
+headline: _ Use case
+heading: Know Your Customer (KYC)
+btnTxt: ''
+btnUrl: ''
 image: dashboard.jpg
 imagePosition: left
 backgroundSize: contain
 ---
 
-Your organisation's internal data might be BIG, but still, it's not enough to meet today's data challenges. We believe
-it's because, it's only _part of a whole_. 
-
-We make it possible to integrate your internal data to external data sources and generate more knowledge, empowering you 
-to achieve a true 360° view of your business. We leverage artificial intelligence (AI) methodologies and the cloud, to 
-connect what matters and provide intelligent insights.
+SMEs that wish to get a better deal when it comes to lending, have better possibilities by allowing access to their 
+account data. By identifying turnover in real time through Open Banking (PSD2), banks and lenders can make wiser 
+decisions and eventually give a better offer. On the other hand, lenders might be interested in current liabilities
+for the customer, that cannot be found in credit bureaus. Combining this information with analysis offered from our 
+solution in real time makes Open Banking a powerful tool in the KYC process.

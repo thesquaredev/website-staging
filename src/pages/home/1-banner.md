@@ -18,7 +18,6 @@ btnTxt: More on solutions
 btnUrl: cards3
 ---
 
-We utilize [machine&nbsp;learning](/solutions/machine-learning) and [knowledge&nbsp;graphs](/solutions/knowledge-graphs) 
-with [open&nbsp;banking](/solutions/open-banking) to offer [KYC](/solutions/kyc) and 
-[credit&nbsp;scoring](/solutions/credit-scoring) to banks, lenders and borrowers. We also participate in several 
-[research](/research) projects funded by the European Union.
+We use [machine&nbsp;learning](/solutions/machine-learning) and [knowledge&nbsp;graphs](/solutions/knowledge-graphs) 
+with [open&nbsp;banking](/solutions/open-banking-api), so that banks lenders and fintechs can offer better 
+[scoring](/solutions/credit-scoring) and [lending](/solutions/income-verification) services to consumers and SMEs.
