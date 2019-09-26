@@ -82,16 +82,16 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                       />
                       <div className="nav-submenu__item">
                         <span>Credit Scoring</span>
-                        <span>Speed up your credit process</span>
+                        <span>Improve your risk model</span>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/know-your-customer">
-                      <img src={'/icons/user-360-bold-green.png'} alt="" />
+                    <Link to="/solutions/lending">
+                      <img src={'/icons/credit-card-check-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>KYC/AML</span>
-                        <span>Enrich customer 360° views</span>
+                        <span>Lending</span>
+                        <span>Verify income, liabilities & ID</span>
                       </div>
                     </Link>
                   </li>
@@ -117,10 +117,10 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/open-banking">
+                    <Link to="/solutions/open-banking-api">
                       <img src={'/icons/bank-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Open Banking</span>
+                        <span>Open Banking API</span>
                         <span>Integrate Open Banking data</span>
                       </div>
                     </Link>

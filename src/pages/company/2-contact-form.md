@@ -26,7 +26,7 @@ template: default
 component: contact
 heading: Get in touch
 icon: email-bold-blue.png
-description: ''
+description: Use the form below to send us a message.
 showAddress: true
 formTitle: Send us a message
 formNamePlaceholder: Your full name*

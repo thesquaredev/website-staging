@@ -15,7 +15,7 @@ template: default
 component: hero
 heading: Innovation through research and development
 description: We currently work on research and development projects not only to serve our customers but also to develop our own product lines. Our goal is to develop our skills and technologies and enhance our presence in the global market.
-image: skyscraper.jpg
+image: black-and-yellow-electronic-chip.jpeg
 btnTxt: ''
 btnUrl: ''
 ---

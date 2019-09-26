@@ -7,6 +7,9 @@
     text-align: center;
     font-size: 2.57rem;
     margin: 16px 0;
+    @media (max-width: 479px) {
+      font-size: 2rem;
+    }
   }
   &__description {
     text-align: center;
@@ -51,11 +54,10 @@
   padding: 40px 55px;
   border-style: solid;
   border-width: 1px;
-  min-height: 400px;
+  min-height: 330px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 1.15rem;
   &:nth-of-type(2) {
     border-image: linear-gradient(
         to top left,

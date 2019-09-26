@@ -13,9 +13,9 @@
 ##
 template: default
 component: hero
-heading: Use Open Banking for faster and better credit decisions
-description: Start accepting more applicants, faster while lowering default rates. We make it easy to collect and incorporate Open Banking data into existing affordability and credit risk models. 
-image: atm-and-card.jpg
+heading: Identify turnover and liabilities, for better KYC/AML for SMEs.
+description: Access to account information guarantees the enhancement of current KYC and AML processes.
+image: woman-reads-through-meeting-info.jpg
 btnTxt: ''
 btnUrl: ''
 ---

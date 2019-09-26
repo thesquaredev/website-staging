@@ -16,15 +16,15 @@
 ##
 template: default
 component: imageText
-headline: _ digital transformation
-heading: A new source of credit data 
-btnTxt: 'Get in touch'
-btnUrl: ''
+headline: _ Open banking
+heading: Transform your lending and scoring with Open Banking
+btnTxt: Let's talk
+btnUrl: company/#contact2
 image: dashboard.jpg
 imagePosition: left
 backgroundSize: contain
 ---
 
-We are leveraging Open Banking data and financial behavior to provide a fairer credit score that enables lenders to 
-make credit more accessible to their customers and deliver a better digital experience. At the same time we aim at 
-offering personalised explanations and make credit decisions transparent to consumers.
+Financial institutions have just started to scratch the surface of Open Banking with the development of account 
+aggregation applications. We believe that the next stage for Open Banking is _Credit Scoring_ and _Income Verification_. 
+It will be a challenging journey of building trust. We are here to help you incorporate them with your current processes.

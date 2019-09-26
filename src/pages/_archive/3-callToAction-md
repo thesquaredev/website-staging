@@ -1,0 +1,22 @@
+---
+##
+# This markdown file will render a callToAction component, which consists of a fluid (edge to edge) background image with
+# centered text and a call to action. The following properties may be set (properties with * are required, 
+# to leave a property blank use ''):
+#
+# template*: The page template to use, leave it "default" if not sure
+# component*: The React component to use (here is "calltoaction")
+# heading: The title of the section
+# btnTxt: The text of the button, if left blank, button will be hidden
+# btnUrl: The link to be followed when button is clicked 
+# image: The background image to use
+##
+template: default
+component: callToAction
+heading: 
+btnTxt: Browse our solutions
+btnUrl: /#cards3
+image: stone-column-architecture.jpg
+---
+
+Check our solutions to discover what we can do for you with Open Banking. Or use the form below to request something new.

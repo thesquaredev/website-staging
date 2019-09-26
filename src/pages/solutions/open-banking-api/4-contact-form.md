@@ -24,11 +24,11 @@
 ##
 template: default
 component: contact
-heading: Ready?
-icon: weightlifting-bold-blue.png
-description: Learn what we can accelerate your PV process
+heading: What is your use case with Open Banking?
+icon: 
+description: We are here to help you put it all together.
 showAddress: false
-formTitle: ''
+formTitle: 
 formNamePlaceholder: Your full name*
 formEmailPlaceholder: Your work email*
 formCompanyPlaceholder: Your organisation's name*

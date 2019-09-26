@@ -13,9 +13,9 @@
 ##
 template: default
 component: hero
-heading: Know Your Customer (KYC) and Anti-Money Laundering (AML)
-description: Enrich identity information with with a source of income analysis 
-image: woman-reads-through-meeting-info.jpg
+heading: Transform your lending and scoring with Open Banking
+description:  Discover new opportunities for your lending business and see how Open Banking can transform your current processes.
+image: products-are-paid.jpg
 btnTxt: ''
 btnUrl: ''
 ---
