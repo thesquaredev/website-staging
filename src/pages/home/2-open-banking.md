@@ -20,9 +20,9 @@ headline: _ Open banking
 heading: Transform your lending and scoring with Open Banking
 btnTxt: Let's talk
 btnUrl: company/#contact2
-image: dashboard.jpg
+image: flow-mac.jpg
 imagePosition: left
-backgroundSize: contain
+backgroundSize: cover
 ---
 
 Financial institutions have just started to scratch the surface of Open Banking with the development of account 

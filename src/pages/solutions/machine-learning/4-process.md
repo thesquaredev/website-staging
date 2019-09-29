@@ -24,7 +24,7 @@ image: plane-trip-round-bold-red.png
 ##
 ---
 
-# 1_ Gather and prepare data
+# <sup>_1_ _</sup> Gather and prepare data
 ## database-share-bold-blue.png
 
 Data preparation is one of the most important aspects of building a model. Quality of results is dictated by the
@@ -32,7 +32,7 @@ quality of data. Analysis, feature engineering, cleaning, scaling and other meth
 
 ---
 
-# 2_ Train model
+# <sup>_2_ _</sup> Train model
 ## database-network-bold-red.png
 
 After data has been prepared the model (the unit that actually makes the prediction) need to be built. State of the art 
@@ -40,14 +40,14 @@ tools are used for this like Tensorflow.
 
 ---
 
-# 3_ Evaluate and deploy
+# <sup>_3_ _</sup> Evaluate and deploy
 ## analytics-bold-blue.png
 
 The model is then evaluated with testing data and is improved until it is ready for production. Deployment can happen on a serve or if the architecture allows, on an edge node.
 
 ---
 
-# 4_ Monitor and improve
+# <sup>_4_ _</sup> Monitor and improve
 ## brain-bold-green.png
 
 

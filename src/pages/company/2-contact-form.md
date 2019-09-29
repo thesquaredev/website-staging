@@ -36,8 +36,8 @@ formJobPlaceholder: Your job title
 formMessagePlaceholder: Type your message here*
 formSubmitBtnTxt: Submit
 addressTitle: Or drop us a visit
-addressLine1: Rue Chair et Pain 3
-addressLine2: 1000 Bruselles
+addressLine1: Aarschotsestraat 52 / 004
+addressLine2: 1800 Vilvoorde
 addressCountry: Belgium
 addressEmail: hello@thesquaredev.com
 ---

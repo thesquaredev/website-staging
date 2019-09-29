@@ -79,32 +79,26 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div className="footer__menu__col">
-            <h5>Follow us</h5>
-            <div className="footer__social">
-              <a
-                href="https://twitter.com/thesquaredev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/thesquaredev/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="https://github.com/thesquaredev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </div>
-          </div>
+          {/*<div className="footer__menu__col">*/}
+          {/*  <h5>Follow us</h5>*/}
+          {/*  <div className="footer__social">*/}
+          {/*    <a*/}
+          {/*      href="https://twitter.com/thesquaredev"*/}
+          {/*      target="_blank"*/}
+          {/*    >*/}
+          {/*      <FontAwesomeIcon icon={faTwitter} />*/}
+          {/*    </a>*/}
+          {/*    <a*/}
+          {/*      href="https://www.linkedin.com/company/thesquaredev/"*/}
+          {/*      target="_blank"*/}
+          {/*    >*/}
+          {/*      <FontAwesomeIcon icon={faLinkedin} />*/}
+          {/*    </a>*/}
+          {/*    <a href="https://github.com/thesquaredev" target="_blank">*/}
+          {/*      <FontAwesomeIcon icon={faGithub} />*/}
+          {/*    </a>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </nav>
       </div>
       <div className="row">

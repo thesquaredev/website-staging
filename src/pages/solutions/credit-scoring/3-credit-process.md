@@ -18,13 +18,13 @@ template: default
 component: imageText
 headline: _ digital transformation
 heading: A new source of credit data 
-btnTxt: 'Get in touch'
+btnTxt: ''
 btnUrl: ''
-image: dashboard.jpg
+image: flow-imac-office.jpg
 imagePosition: left
-backgroundSize: contain
+backgroundSize: cover
 ---
 
-We are leveraging Open Banking data and financial behavior to provide a fairer credit score that enables lenders to 
+We are leveraging Open Banking (PSD2) data and financial behavior to provide a fairer credit score that enables lenders to 
 make credit more accessible to their customers and deliver a better digital experience. At the same time we aim at 
 offering personalised explanations and make credit decisions transparent to consumers.

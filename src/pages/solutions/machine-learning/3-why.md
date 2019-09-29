@@ -16,9 +16,9 @@
 ##
 template: default
 component: imageText
-headline: _ Computers get smarter, so should your company
+headline: _ Digital transformation
 heading: Let us apply our expertise to solve your problems.
-btnTxt: Let's talk
+btnTxt: ''
 btnUrl: ''
 image: online-shopping.jpg
 imagePosition: left
