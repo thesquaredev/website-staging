@@ -116,6 +116,11 @@ Just push to master branch, the rest is taken care by CircleCI
     
     # Merge remote master branch (or the branch you want to merge) from local master branch
     git merge website-staging/master
+    
+    # Change CNAME contents (in static folder) from staging.thesquaredev.com to www.thesquaredev.com 
+    
+    # Push
+    git push
     ```
 
 2. **Resolve conflicts and push new changes to live repo**
