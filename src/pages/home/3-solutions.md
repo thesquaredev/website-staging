@@ -33,7 +33,7 @@ icon: lab-tube-bold-green.png
 # Lending
 ## Improve your KYC and AML processes and reduce your operational costs.
 ### user-360-bold-green.png
-#### /solutions/income-verification
+#### /solutions/lending
 
 ---
 
@@ -54,4 +54,4 @@ icon: lab-tube-bold-green.png
 # Open Banking
 ## Discover new opportunities for your lending business and transform your current processes.
 ### bank-bold-green.png
-#### /solutions/open-banking
+#### /solutions/open-banking-api

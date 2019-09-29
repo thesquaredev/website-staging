@@ -10,7 +10,7 @@
   &.header-scrolled,
   &.mobile-menu-visible {
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-    background: $white;
+    background: $white !important; // required for iPad
     transition: all 0.5s;
     .nav-menu a,
     .menu-has-children__title {
@@ -78,7 +78,7 @@
     z-index: 1;
     svg {
       max-height: 30px;
-      width: auto;
+      width: 137.7px; // setting this to auto causes misplacement in iPad
       @media screen and (max-width: 767px) {
         max-height: 20px;
       }

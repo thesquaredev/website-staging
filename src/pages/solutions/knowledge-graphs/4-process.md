@@ -24,7 +24,7 @@ image: plane-trip-round-bold-red.png
 ##
 ---
 
-# 1_ Understanding the field and defining the actors
+# <sup>_1_ _</sup> Understanding the field and defining the actors
 ## database-share-bold-blue.png
 
 The first question should be what actors there are in the field that you are interested to research.
@@ -32,7 +32,7 @@ The actors can vary from real persons to concepts, from institutions to inanimat
 
 ---
 
-# 2_ Detecting the relationships
+# <sup>_3_ _</sup> Detecting the relationships
 ## database-network-bold-red.png
 
 The second step is to come up with relations that make the interaction or some other relation possible between the actors. These will describe
@@ -40,14 +40,14 @@ every relation in your domain of interest.
 
 ---
 
-# 3_ Compiling data & building the graph
+# <sup>_3_ _</sup> Compiling data & building the graph
 ## analytics-bold-blue.png
 
 Gathering data from public sources to augment the existing will also expand your domain's knowledge and uncover hidden connections and patterns.
 
 ---
 
-# 4_ Reading & analyzing the graph
+# <sup>_4_ _</sup> Reading & analyzing the graph
 ## brain-bold-green.png
 
 

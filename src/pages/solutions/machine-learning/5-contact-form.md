@@ -25,7 +25,7 @@
 template: default
 component: contact
 heading: Ready?
-icon: weightlifting-bold-blue.png
+icon: 
 description: Let us solve your problems intelligently
 showAddress: false
 formTitle: ''

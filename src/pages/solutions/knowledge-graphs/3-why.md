@@ -16,9 +16,9 @@
 ##
 template: default
 component: imageText
-headline: _ Computers get smarter, so should your company
+headline: _ Digital transformation
 heading: What is an Enterprise Knowledge Graph and why should you be interested?
-btnTxt: Let's talk
+btnTxt: ''
 btnUrl: ''
 image: online-shopping.jpg
 imagePosition: left

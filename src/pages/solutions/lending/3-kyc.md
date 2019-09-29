@@ -20,9 +20,9 @@ headline: _ Use case
 heading: Know Your Customer (KYC)
 btnTxt: ''
 btnUrl: ''
-image: dashboard.jpg
+image: hand-shake-meeting.jpg
 imagePosition: left
-backgroundSize: contain
+backgroundSize: cover
 ---
 
 SMEs that wish to get a better deal when it comes to lending, have better possibilities by allowing access to their 

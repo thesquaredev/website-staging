@@ -14,7 +14,7 @@
 template: default
 component: hero
 heading:  Our mission is to build the trust, between lenders and borrowers, from the ground up.
-description: We are a diverse team of youth and experience, that uses data science with Open Banking to build predictive analytics solutions for all.
+description: We are a diverse team of youth and experience, that uses data science with Open Banking (PSD2) to build predictive analytics solutions for all.
 image: bright-yellow-brick.jpg
 btnTxt: ''
 btnUrl: ''

@@ -20,9 +20,9 @@ headline: _ Use case
 heading: Anti Money Laundering (AML)
 btnTxt: ''
 btnUrl: ''
-image: dashboard.jpg
+image: flow-ipad.jpg
 imagePosition: right
-backgroundSize: contain
+backgroundSize: cover
 ---
 
 Financial institutions are continuously obliged to spot and filter out fraudulent activity. With direct and real time

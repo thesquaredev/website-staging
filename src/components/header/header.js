@@ -66,9 +66,9 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
         </div>
         <nav className={getNavClass(isMobileMenuVisible)}>
           <ul className="nav-menu sf-arrows">
-            <li>
-              <Link to="/research">Research</Link>
-            </li>
+            {/*<li>*/}
+            {/*  <Link to="/research">Research</Link>*/}
+            {/*</li>*/}
             <li className="menu-has-children">
               <h5 className="menu-has-children__title">Solutions</h5>
               <ul className="nav-submenu nav-submenu--compact">

@@ -20,9 +20,9 @@ headline: _ Data aggregation
 heading: A unified Open Banking API
 btnTxt: 
 btnUrl: 
-image: dashboard.jpg
+image: flow-mac.jpg
 imagePosition: left
-backgroundSize: contain
+backgroundSize: cover
 ---
 
 Open Banking (PSD2) is new and immature and requires effort to connect to different banks and different APIs, as each 
