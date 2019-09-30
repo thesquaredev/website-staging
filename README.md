@@ -133,6 +133,6 @@ Just push to master branch, the rest is taken care by CircleCI
 
     Change the name of of the custom domain for GitHub Pages in file static/CNAME to match the one you want
 
-4.  **Resolve conflicts and push new changes to live repo**
+4.  **Resolve conflicts and push changes**
 
     `git push`
