@@ -20,7 +20,7 @@ headline: _ Digital transformation
 heading: Let us apply our expertise to solve your problems.
 btnTxt: ''
 btnUrl: ''
-image: online-shopping.jpg
+image: drone-in-flight.jpg
 imagePosition: left
 backgroundSize: cover
 ---

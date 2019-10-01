@@ -20,7 +20,7 @@ headline: _ Digital transformation
 heading: What is an Enterprise Knowledge Graph and why should you be interested?
 btnTxt: ''
 btnUrl: ''
-image: online-shopping.jpg
+image: hand-holds-model-brain.jpg
 imagePosition: left
 backgroundSize: cover
 ---
