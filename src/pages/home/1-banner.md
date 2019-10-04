@@ -20,4 +20,4 @@ btnUrl: cards3
 
 We use [machine&nbsp;learning](/solutions/machine-learning) and [knowledge&nbsp;graphs](/solutions/knowledge-graphs) 
 with [open&nbsp;banking](/solutions/open-banking-api), so that banks lenders and fintechs can offer better 
-[scoring](/solutions/credit-scoring) and [lending](/solutions/income-verification) services to consumers and SMEs.
+[scoring](/solutions/credit-scoring) and [lending](/solutions/lending) services to consumers and SMEs.
