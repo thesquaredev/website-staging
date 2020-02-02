@@ -167,6 +167,14 @@ exports.createPages = ({ graphql, actions }) => {
             email: node.frontmatter.addressEmail,
           }
         }
+        if (node.frontmatter.component === 'featured') {
+          const banners = node.html.split('<hr>\n')
+          component.banners = banners.map(banner => ({
+            url: getTextContent(banner, 'h1'),
+            imgSrc: getTextContent(banner, 'h2'),
+            altText: getTextContent(banner, 'h3'),
+          }))
+        }
         // Find page index if already exists
         const index = pages.findIndex(p => p.title === page.title)
         // Existing page, add component
