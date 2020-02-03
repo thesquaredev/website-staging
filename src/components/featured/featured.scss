@@ -1,0 +1,20 @@
+@import '../../sass/theme/theme-variables';
+
+.featured {
+  height: 10vw;
+  max-height: 180px;
+  min-height: 130px;
+  width: 100%;
+  background: $light-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__banner {
+    margin: 0 5vw;
+    img {
+      height: 5vw;
+      max-height: 40px;
+      width: auto;
+    }
+  }
+}
