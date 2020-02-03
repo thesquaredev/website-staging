@@ -13,11 +13,10 @@
 template: default
 component: banner
 headline: We are a data analytics startup
-heading: Knowledge drives transformation
+heading: We believe technology should improve lives
 btnTxt: More on solutions
 btnUrl: cards3
 ---
 
-We use [machine&nbsp;learning](/solutions/machine-learning) and [knowledge&nbsp;graphs](/solutions/knowledge-graphs) 
-with [open&nbsp;banking](/solutions/open-banking-api), so that banks, lenders and fintechs can offer better 
-[scoring](/solutions/credit-scoring) and [lending](/solutions/lending) services to consumers and SMEs.
+This is why we provide you with insights to understand your customers and offer them better, personalised services.
+
