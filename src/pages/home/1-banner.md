@@ -18,5 +18,5 @@ btnTxt: More on solutions
 btnUrl: cards3
 ---
 
-This is why we provide you with insights to understand your customers and offer them better, personalised services.
+We provide insights to understand your customers and offer them better, personalised services.
 

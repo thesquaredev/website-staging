@@ -25,8 +25,8 @@ imagePosition: left
 backgroundSize: cover
 ---
 
-SMEs that wish to get a better deal when it comes to lending, have better possibilities by allowing access to their 
-account data. By identifying turnover in real time through Open Banking (PSD2), banks and lenders can make wiser 
-decisions and eventually give a better offer. On the other hand, lenders might be interested in current liabilities
-for the customer, that cannot be found in credit bureaus. Combining this information with analysis offered from our 
-solution in real time makes Open Banking a powerful tool in the KYC process.
+Consumers that wish to get a better deal when it comes to credit, have better possibilities by allowing access to their 
+account data. By verifying income in real time through Open Banking (PSD2), you can make wiser decisions and eventually 
+give a better offer. On the other hand, you might be interested in existing liabilities that cannot be found in credit 
+bureaus. Combining this information with analysis offered from our solution in real time, makes Open Banking a powerful 
+tool in your KYC process.

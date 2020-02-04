@@ -27,6 +27,6 @@ backgroundSize: cover
 
 Financial institutions are continuously obliged to spot and filter out fraudulent activity. With direct and real time
 access to applicant's bank account with Open Banking (PSD2), it becomes harder to fraud. Our solution can verify income, 
-years back and not just the last two months. It can also combine account data with the lender's database to match 
+a year back and not just the last two months. It can also combine account data with the lender's database to match 
 applicant's identity even if this information is not provided by Open Banking (PSD2). Both are crucial for reducing 
 fraud and improving your AML process.
