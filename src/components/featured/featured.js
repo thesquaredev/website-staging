@@ -3,15 +3,13 @@ import './featured.scss'
 
 const Featured = ({ meta: { banners }, elemId }) => (
   <section className="featured" id={elemId}>
-    {banners.map(({ url, imgSrc, altText }) => {
-      console.log(url)
-      return (
-      <div className="featured__banner">
+    {banners.map(({ url, imgSrc, altText }, i) => (
+      <div className="featured__banner" key={i}>
         <a href={`https://${url}`} target="_blank" rel="noopener noreferrer">
           <img src={imgSrc} alt={altText} />
         </a>
       </div>
-    )})}
+    ))}
   </section>
 )
 

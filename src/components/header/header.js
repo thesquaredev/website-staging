@@ -87,11 +87,11 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/lending">
+                    <Link to="/solutions/income-verification">
                       <img src={'/icons/credit-card-check-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Lending</span>
-                        <span>Verify income, liabilities & ID</span>
+                        <span>Income Verification</span>
+                        <span>Save the paperwork, give instant decisions</span>
                       </div>
                     </Link>
                   </li>

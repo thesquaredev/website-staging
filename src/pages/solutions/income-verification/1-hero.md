@@ -13,7 +13,7 @@
 ##
 template: default
 component: hero
-heading: Identify turnover and liabilities, for better KYC/AML for SMEs.
+heading: Income verification and liabilities identification, for better KYC/AML.
 description: Access to account information guarantees the enhancement of current KYC and AML processes.
 image: woman-reads-through-meeting-info.jpg
 btnTxt: ''

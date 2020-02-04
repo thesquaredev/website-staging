@@ -30,10 +30,10 @@ icon: lab-tube-bold-green.png
 
 ---
 
-# Lending
-## Improve your KYC and AML processes and reduce your operational costs.
+# Income verification
+## Automate income verification, save the paperwork, give instant decisions
 ### user-360-bold-green.png
-#### /solutions/lending
+#### /solutions/income-verification
 
 ---
 
