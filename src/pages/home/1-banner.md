@@ -15,7 +15,7 @@ component: banner
 headline: We are a data analytics startup
 heading: We believe technology should improve lives
 btnTxt: More on solutions
-btnUrl: cards3
+btnUrl: cards4
 ---
 
 This is why we build solutions that provide insights to understand your customers and offer them better, personalised 

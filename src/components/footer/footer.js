@@ -34,6 +34,13 @@ const Footer = () => (
                     </div>
                   </Link>
                 </li>
+                <li>
+                  <Link to="/solutions/transaction-analytics">
+                    <div className="footer__menu__item">
+                      <span>Transaction Analytics</span>
+                    </div>
+                  </Link>
+                </li>
               </ul>
               <ul>
                 <li>
