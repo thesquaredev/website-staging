@@ -81,6 +81,7 @@
       width: 137.7px; // setting this to auto causes misplacement in iPad
       @media screen and (max-width: 767px) {
         max-height: 20px;
+        max-width: 98px; // we need this to place logo correctly in smaller screens
       }
     }
     #path22,

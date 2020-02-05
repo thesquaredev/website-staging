@@ -28,9 +28,9 @@ const Footer = () => (
                   </Link>
                 </li>
                 <li>
-                  <Link to="/solutions/lending">
+                  <Link to="/solutions/income-verification">
                     <div className="footer__menu__item">
-                      <span>Lending</span>
+                      <span>Income Verification</span>
                     </div>
                   </Link>
                 </li>
