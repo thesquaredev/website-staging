@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Data management & Open Banking',
+    title: 'Data analytics & Open Banking',
   },
   // pathPrefix: "/website",
   plugins: [
