@@ -71,7 +71,7 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
             {/*</li>*/}
             <li className="menu-has-children">
               <h5 className="menu-has-children__title">Solutions</h5>
-              <ul className="nav-submenu nav-submenu--compact">
+              <ul className="nav-submenu">
                 <span className="nav-submenu__col">
                   <h6>By Use Case</h6>
                   <li>
@@ -120,8 +120,8 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     <Link to="/solutions/knowledge-graphs">
                       <img src={'/icons/brain-icon-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Knowledge graphs</span>
-                        <span>Transform data to knowledge</span>
+                        <span>Knowledge Graphs</span>
+                        <span>Break down data silos and generate knowledge</span>
                       </div>
                     </Link>
                   </li>
