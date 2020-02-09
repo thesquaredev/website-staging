@@ -91,7 +91,7 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                       <img src={'/icons/credit-card-check-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Income Verification</span>
-                        <span>Save the paperwork, give instant decisions</span>
+                        <span>Save the paperwork and give instant decisions</span>
                       </div>
                     </Link>
                   </li>
@@ -130,7 +130,7 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                       <img src={'/icons/bank-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
                         <span>Open Banking API</span>
-                        <span>Integrate Open Banking data</span>
+                        <span>Integrate Open Banking data in your current processes</span>
                       </div>
                     </Link>
                   </li>
