@@ -17,7 +17,7 @@
 template: default
 component: imageText
 headline: _ Use case
-heading: Analyse the market and personalise services
+heading: Analyse the market to predict trends and personalise services
 btnTxt: ''
 btnUrl: ''
 image: products-are-paid.jpg
@@ -26,7 +26,9 @@ backgroundSize: cover
 ---
 
 Markets are becoming increasingly difficult to reason with and customers only get more demanding over time.
-Get the insights needed to get closer to your customers and personalise their experience.
-Offer services customized to each of your customer's needs.
+Get the insights needed to get closer to your customers and personalise their experience with your services.
 Use targeted marketing to make offers that people actually will want.
-These insights can be applied to both online and onsite services.
+
+By using Transaction analytics, demand signals can be identified, predicting emerging trends of customers.
+These demand analytics can then be translated to coming market changes, helping companies adapt to the needs and demand of their customers before they become mainstream.
+Let your company set the pace of the market and be ahead of your competition.
