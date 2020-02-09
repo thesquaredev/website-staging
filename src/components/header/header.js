@@ -96,10 +96,10 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/transaction-analytics">
+                    <Link to="/solutions/marketing-insights">
                       <img src={'/icons/visualizations.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Transaction Analytics</span>
+                        <span>Marketing Insights</span>
                         <span>Personalise your services and analyse the market</span>
                       </div>
                     </Link>

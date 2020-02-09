@@ -35,9 +35,9 @@ const Footer = () => (
                   </Link>
                 </li>
                 <li>
-                  <Link to="/solutions/transaction-analytics">
+                  <Link to="/solutions/marketing-insights">
                     <div className="footer__menu__item">
-                      <span>Transaction Analytics</span>
+                      <span>Marketing Insights</span>
                     </div>
                   </Link>
                 </li>
