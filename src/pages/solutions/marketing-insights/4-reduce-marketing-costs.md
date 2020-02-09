@@ -21,7 +21,7 @@ heading: Reduce marketing costs
 btnTxt: ''
 btnUrl: ''
 image: flow-mac.jpg
-imagePosition: left
+imagePosition: right
 backgroundSize: cover
 ---
 
