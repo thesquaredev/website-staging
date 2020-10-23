@@ -5,15 +5,14 @@
 @import 'typography';
 
 // including variables and mixins
-//@import "theme/_variables.scss_";
-@import "theme/theme-variables";
-@import "theme/mixins";
-@import "theme/flexbox";
-@import "theme/reset";
+@import 'theme/theme-variables';
+@import 'theme/mixins';
+@import 'theme/flexbox';
+@import 'theme/reset';
 
 // Custom Scss
-@import "theme/elements";
-@import "theme/home";
-@import "theme/footer";
-//@import "theme/banner";
-//@import "../components/grid/expertise";
+@import 'theme/elements';
+@import 'theme/home';
+@import 'theme/footer';
+
+@import 'theme/cookie-bar';
