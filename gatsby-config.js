@@ -28,9 +28,14 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        trackingId: 'UA-134148559-1',
+        googleAnalytics: {
+          trackingId: 'UA-134148559-1',
+          cookieName: 'gdpr-google-analytics',
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development'],
       },
     },
   ],

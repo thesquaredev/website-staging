@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import CookieConsent from 'react-cookie-consent'
 import Footer from '../footer/footer'
 import Header from '../header/header'
 import '../../sass/style.scss'
@@ -9,7 +10,7 @@ import '../../sass/style.scss'
 class Layout extends React.Component {
   // This is to avoid "Can't perform a React state update on an unmounted component" error.
   // Solution found here: https://github.com/material-components/material-components-web-react/issues/434#issuecomment-449561024
-  _isMounted = false;
+  _isMounted = false
 
   constructor(props) {
     super(props)
@@ -25,7 +26,7 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
-    this._isMounted = true;
+    this._isMounted = true
 
     document.addEventListener('scroll', () => {
       const isScrolled = window.scrollY > 10
@@ -41,7 +42,7 @@ class Layout extends React.Component {
   }
 
   componentWillUnmount() {
-    this._isMounted = false;
+    this._isMounted = false
   }
 
   render() {
@@ -86,6 +87,31 @@ class Layout extends React.Component {
             />
             {this.props.children}
             <Footer />
+            {/* In order to be able to test cookie bar in dev environment, 
+            you must uncomment sameSite and debug props below.  */}
+            <CookieConsent
+              location="bottom"
+              buttonText="Accept"
+              declineButtonText="Decline"
+              cookieName="gdpr-google-analytics"
+              enableDeclineButton
+              buttonClasses="cookie-bar__button cookie-bar__button--accept"
+              containerClasses="cookie-bar--container"
+              contentClasses="cookie-bar--content"
+              buttonWrapperClasses="cookie-bar--buttons"
+              declineButtonClasses="cookie-bar__button cookie-bar__button--decline"
+              disableStyles={true}
+              flipButtons
+              // sameSite="strict"
+              // debug={true}
+            >
+              <div>
+                We use cookies to collect information about how you interact
+                with this website and allow us to remember you. If you decline,
+                your information won’t be tracked. A single cookie will be used
+                in your browser to remember your preference not to be tracked.
+              </div>
+            </CookieConsent>
           </>
         )}
       />
