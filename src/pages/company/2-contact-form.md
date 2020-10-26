@@ -1,6 +1,6 @@
 ---
 ##
-# This markdown file will render a "contact" component which renders a contact form. The following properties may be set 
+# This markdown file will render a "contact" component which renders a contact form. The following properties may be set
 # (properties with * are required, to leave a property blank use ''):
 #
 # template*: The page template to use, leave it "default" if not sure
