@@ -1,6 +1,6 @@
 ---
 ##
-# This markdown file will render a classic "hero" component.  The following properties may be set (properties with * 
+# This markdown file will render a classic "hero" component.  The following properties may be set (properties with *
 # are required, to leave a property blank use ''):
 #
 # template*: The page template to use, leave it "default" if not sure
@@ -14,7 +14,7 @@
 template: default
 component: hero
 heading: Innovation through research and development
-description: We currently work on research and development projects not only to serve our customers but also to develop our own product lines. Our goal is to develop our skills and technologies and enhance our presence in the global market.
+description: We currently work on research and development projects not only to serve our customers but also to develop our own product lines. Our goal is to apply AI in different fields and provide value in the world.
 image: black-and-yellow-electronic-chip.jpeg
 btnTxt: ''
 btnUrl: ''

@@ -66,71 +66,75 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
         </div>
         <nav className={getNavClass(isMobileMenuVisible)}>
           <ul className="nav-menu sf-arrows">
-            {/*<li>*/}
-            {/*  <Link to="/research">Research</Link>*/}
-            {/*</li>*/}
+            <li>
+              <Link to="/research">Research</Link>
+            </li>
             <li className="menu-has-children">
-              <h5 className="menu-has-children__title">Solutions</h5>
+              {/* <h5 className="menu-has-children__title">Technology</h5> */}
               <ul className="nav-submenu">
                 <span className="nav-submenu__col">
-                  <h6>By Use Case</h6>
+                  <h6>Research</h6>
                   <li>
-                    <Link to="/solutions/credit-scoring">
-                      <img
-                        src={'/icons/user-credit-card-bold-green.png'}
-                        alt=""
-                      />
+                    <Link to="/technology/artificial-intelligence">
+                      <img src={'/icons/robot-head-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Credit Scoring</span>
-                        <span>Improve your risk model</span>
+                        <span>Explainable AI</span>
+                        <span>
+                          Solve problems intelligently. AI is no longer a black
+                          box
+                        </span>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/income-verification">
-                      <img src={'/icons/credit-card-check-bold-green.png'} alt="" />
+                    <Link to="/technology/linked-open-data">
+                      <img src={'/icons/brain-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Income Verification</span>
-                        <span>Save the paperwork and give instant decisions</span>
+                        <span>Linked Open Data</span>
+                        <span>
+                          Semantically connected data that provide insights
+                        </span>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/marketing-insights">
-                      <img src={'/icons/visualizations.png'} alt="" />
+                    <Link to="/technology/graphs">
+                      <img src={'/icons/databases-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Marketing Insights</span>
-                        <span>Personalise your services and analyse the market</span>
+                        <span>Graphs at Scale</span>
+                        <span>AI powered graphs at scale</span>
                       </div>
                     </Link>
                   </li>
                 </span>
                 <span className="nav-submenu__col">
-                  <h6>By Technology</h6>
+                  <h6>Engineering</h6>
                   <li>
-                    <Link to="/solutions/machine-learning">
-                      <img src={'/icons/robot-head-bold-green.png'} alt="" />
+                    <Link to="/technology/data-science">
+                      <img src={'/icons/visualizations.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Machine Learning</span>
-                        <span>Solve problems intelligently</span>
+                        <span>Data Science & Engineering</span>
+                        <span>
+                          Convert data into value and capitalise on your data
+                        </span>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/knowledge-graphs">
-                      <img src={'/icons/brain-icon-bold-green.png'} alt="" />
+                    <Link to="/technology/software-systems">
+                      <img src={'/icons/server.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Knowledge Graphs</span>
-                        <span>Break down data silos and generate knowledge</span>
+                        <span>Software Systems</span>
+                        <span>Intelligent applications that deliver value</span>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/solutions/open-banking-api">
-                      <img src={'/icons/bank-bold-green.png'} alt="" />
+                    <Link to="/technology/serverless-computing">
+                      <img src={'/icons/network-live.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Open Banking API</span>
-                        <span>Integrate Open Banking data in your current processes</span>
+                        <span>Serverless Computing</span>
+                        <span>Reduce price, increase expansion</span>
                       </div>
                     </Link>
                   </li>

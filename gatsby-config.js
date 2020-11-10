@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Data analytics & Open Banking',
+    title: 'Squaredev | AI systems',
   },
   // pathPrefix: "/website",
   plugins: [

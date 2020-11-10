@@ -16,7 +16,7 @@ const Footer = () => (
           <img src={'/images/logo.png'} alt="Squaredev" />
         </div>
         <nav className="footer__menu col-md-9">
-          <div className="footer__menu__col">
+          {/* <div className="footer__menu__col">
             <h5>Solutions</h5>
             <div className="footer__menu__col__split">
               <ul>
@@ -57,19 +57,19 @@ const Footer = () => (
                     </div>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/solutions/open-banking-api">
-                    <div className="footer__menu__item">
-                      <span>Open Banking API</span>
-                    </div>
-                  </Link>
-                </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="footer__menu__col">
             <h5>Company</h5>
             <ul>
+              <li>
+                <Link to="/research">
+                  <div className="footer__menu__item">
+                    <span>Research</span>
+                  </div>
+                </Link>
+              </li>
               <li>
                 <Link to="/company">
                   <div className="footer__menu__item">
@@ -86,32 +86,26 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          {/*<div className="footer__menu__col">*/}
-          {/*  <h5>Follow us</h5>*/}
-          {/*  <div className="footer__social">*/}
-          {/*    <a*/}
-          {/*      href="https://twitter.com/thesquaredev"*/}
-          {/*      target="_blank"*/}
-          {/*    >*/}
-          {/*      <FontAwesomeIcon icon={faTwitter} />*/}
-          {/*    </a>*/}
-          {/*    <a*/}
-          {/*      href="https://www.linkedin.com/company/thesquaredev/"*/}
-          {/*      target="_blank"*/}
-          {/*    >*/}
-          {/*      <FontAwesomeIcon icon={faLinkedin} />*/}
-          {/*    </a>*/}
-          {/*    <a href="https://github.com/thesquaredev" target="_blank">*/}
-          {/*      <FontAwesomeIcon icon={faGithub} />*/}
-          {/*    </a>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
+          <div className="footer__menu__col">
+            <h5>Follow us</h5>
+            <div className="footer__social">
+              <a
+                href="https://www.linkedin.com/company/squaredev/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="https://github.com/thesquaredev" target="_blank">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
       <div className="row">
         <div className="footer__text col-12">
           Copyright © {new Date().getFullYear()} Squaredev, All rights reserved
-          | Cookies | Policy
+          {/* | Cookies | Policy */}
         </div>
       </div>
     </div>
