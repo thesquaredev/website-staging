@@ -1,6 +1,6 @@
 ---
 ##
-# This markdown file will render a classic "hero" component.  The following properties may be set (properties with * 
+# This markdown file will render a classic "hero" component.  The following properties may be set (properties with *
 # are required, to leave a property blank use ''):
 #
 # template*: The page template to use, leave it "default" if not sure
@@ -13,9 +13,9 @@
 ##
 template: default
 component: hero
-heading: Transforming Data into Knowledge
-description: Turn data into your organiaztion's power and make strategic choices.
-image: library-books.jpg
-btnTxt: ''
-btnUrl: ''
+heading: Our software systems are built to be smart and scale
+description: Software engineering is what makes our AI systems scale. Advanced systems is what we do.
+image: servers.jpg
+btnTxt:
+btnUrl:
 ---

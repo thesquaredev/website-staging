@@ -16,7 +16,7 @@
 ##
 template: default
 component: imageText
-headline: _ Digital transformation
+headline: _ Smart systems; Smart decisions
 heading: What is an Enterprise Knowledge Graph and why should you be interested?
 btnTxt: ''
 btnUrl: ''
@@ -25,6 +25,4 @@ imagePosition: left
 backgroundSize: cover
 ---
 
-An Enterprise Knowledge Graph is a model of a knowledge domain created by subject-matter experts with the help of intelligent machine learning algorithms.
-It provides a structure and common interface for all of your data and enables the creation of smart multilateral relations throughout your databases.
-Structured as an additional virtual data layer, the Knowledge Graph lies on top of your existing databases or data sets to link all your data together at scale – be it structured or unstructured.
+An Enterprise Knowledge Graph is a model of a knowledge domain created by subject-matter experts with the help of intelligent machine learning algorithms. It provides a structure and common interface for all of your data and enables the creation of smart multilateral relations throughout your databases. Structured as an additional virtual data layer, the Knowledge Graph lies on top of your existing databases or data sets to link all your data together at scale – be it structured or unstructured.

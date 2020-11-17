@@ -29,17 +29,7 @@ icon: lab-tube-bold-green.png
 
 ### brain-bold-green.png
 
-#### /research
-
----
-
-# Graphs at scale & linked data
-
-## Use linked open data to enhance your data and create knowledge
-
-### databases-bold-green.png
-
-#### /research
+#### /technology/artificial-intelligence
 
 ---
 
@@ -49,17 +39,7 @@ icon: lab-tube-bold-green.png
 
 ### server.png
 
-#### /research
-
----
-
-# Serverless computing
-
-## Serverless systems that scale as your organization scales.
-
-### network-live.png
-
-#### /research
+#### /technology/software-systems
 
 ---
 
@@ -69,4 +49,26 @@ icon: lab-tube-bold-green.png
 
 ### visualizations.png
 
-#### /research
+#### /technology/machine-learning-engineering
+
+---
+
+# Natural language processing
+
+## Understand unstructured text; give meaning and context to produce insights
+
+### brain-icon-bold-green.png
+
+#### /technology/natural-language-processing
+
+---
+
+# Graphs at scale & linked data
+
+## Use linked open data to enhance your data and create knowledge
+
+### databases-bold-green.png
+
+#### /technology/knowledge-graphs
+
+---
