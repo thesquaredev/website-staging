@@ -66,14 +66,11 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
         </div>
         <nav className={getNavClass(isMobileMenuVisible)}>
           <ul className="nav-menu sf-arrows">
-            <li>
-              <Link to="/research">Research</Link>
-            </li>
             <li className="menu-has-children">
-              {/* <h5 className="menu-has-children__title">Technology</h5> */}
+              <h5 className="menu-has-children__title">Technology</h5>
               <ul className="nav-submenu">
                 <span className="nav-submenu__col">
-                  <h6>Research</h6>
+                  <h6>Innovation</h6>
                   <li>
                     <Link to="/technology/artificial-intelligence">
                       <img src={'/icons/robot-head-bold-green.png'} alt="" />
@@ -87,22 +84,25 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                     </Link>
                   </li>
                   <li>
-                    <Link to="/technology/linked-open-data">
-                      <img src={'/icons/brain-bold-green.png'} alt="" />
+                    <Link to="/technology/knowledge-graphs">
+                      <img src={'/icons/databases-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Linked Open Data</span>
+                        <span>Knowledge graphs</span>
                         <span>
-                          Semantically connected data that provide insights
+                          Semantically linked data that provide insights
                         </span>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/technology/graphs">
-                      <img src={'/icons/databases-bold-green.png'} alt="" />
+                    <Link to="/technology/software-2">
+                      <img src={'/icons/brain-bold-green.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Graphs at Scale</span>
-                        <span>AI powered graphs at scale</span>
+                        <span>Software 2.0</span>
+                        <span>
+                          Data is now a first class citizen. Software is
+                          changing
+                        </span>
                       </div>
                     </Link>
                   </li>
@@ -110,12 +110,23 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                 <span className="nav-submenu__col">
                   <h6>Engineering</h6>
                   <li>
-                    <Link to="/technology/data-science">
+                    <Link to="/technology/machine-learning-engineering">
                       <img src={'/icons/visualizations.png'} alt="" />
                       <div className="nav-submenu__item">
-                        <span>Data Science & Engineering</span>
+                        <span>ML Engineering</span>
                         <span>
                           Convert data into value and capitalise on your data
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/technology/natural-language-processing">
+                      <img src={'/icons/brain-icon-bold-green.png'} alt="" />
+                      <div className="nav-submenu__item">
+                        <span>NLP Applications</span>
+                        <span>
+                          Computational linguistics to understand data
                         </span>
                       </div>
                     </Link>
@@ -129,17 +140,11 @@ const Header = ({ isScrolled, isMobileMenuVisible, toggleMobileMenu }) => (
                       </div>
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/technology/serverless-computing">
-                      <img src={'/icons/network-live.png'} alt="" />
-                      <div className="nav-submenu__item">
-                        <span>Serverless Computing</span>
-                        <span>Reduce price, increase expansion</span>
-                      </div>
-                    </Link>
-                  </li>
                 </span>
               </ul>
+            </li>
+            <li>
+              <Link to="/research">Research</Link>
             </li>
             <li>
               <Link to="/company">Company</Link>
