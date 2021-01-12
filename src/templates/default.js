@@ -10,6 +10,7 @@ import Hero from '../components/hero/hero'
 import Pills from '../components/pills/pills'
 import Quartet from '../components/quartet/quartet'
 import Featured from '../components/featured/featured'
+import Team from '../components/team/team'
 
 /**
  * Utility to resolve the component in use
@@ -28,6 +29,7 @@ const componentResolver = (meta, elemId, i) => ({
   pills: <Pills meta={meta} elemId={elemId} key={i} />,
   quartet: <Quartet meta={meta} elemId={elemId} key={i} />,
   featured: <Featured meta={meta} elemId={elemId} key={i} />,
+  team: <Team meta={meta} elemId={elemId} key={i} />,
 })
 
 /**

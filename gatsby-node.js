@@ -175,6 +175,17 @@ exports.createPages = ({ graphql, actions }) => {
             altText: getTextContent(banner, 'h3'),
           }))
         }
+        if (node.frontmatter.component === 'team') {
+          const members = node.html.split('<hr>\n')
+          component.heading = node.frontmatter.heading
+          component.icon = node.frontmatter.icon
+          component.description = node.frontmatter.description
+          component.members = members.map(member => ({
+            name: getTextContent(member, 'h1'),
+            position: getTextContent(member, 'h2'),
+            photo: getTextContent(member, 'h3'),
+          }))
+        }
         // Find page index if already exists
         const index = pages.findIndex(p => p.title === page.title)
         // Existing page, add component
