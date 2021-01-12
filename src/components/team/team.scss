@@ -1,0 +1,70 @@
+@import '../../sass/theme/theme-variables';
+
+.team {
+  background: $light-grey;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 48px;
+    @media (max-width: 767px) {
+      align-items: center;
+    }
+  }
+  &__heading {
+    h2 {
+      float: left;
+      font-size: 2.57rem;
+      margin: 12px 0;
+    }
+    img {
+      height: 50px;
+      margin: 0 12px;
+      &:hover {
+        transform: rotate(-10deg) scale(-1, 1);
+      }
+    }
+  }
+  &__description {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}
+
+.member {
+  display: block;
+  height: 100%;
+  font-size: 1.2rem;
+  line-height: 1.51;
+  position: relative;
+  &__name {
+    display: block;
+    margin: 16px 0 8px;
+  }
+  &__img-wrapper {
+    overflow: hidden;
+    border-radius: 5px;
+    img {
+      width: 100%;
+      height: auto;
+      transform: scale(1);
+      transition: all 0.1s linear;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
