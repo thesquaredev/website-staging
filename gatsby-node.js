@@ -45,6 +45,9 @@ exports.createPages = ({ graphql, actions }) => {
                 addressCountry
                 addressEmail
                 icon
+                secondaryAddressLine1
+                secondaryAddressLine2
+                secondaryAddressCountry
               }
               html
             }
@@ -165,6 +168,11 @@ exports.createPages = ({ graphql, actions }) => {
             line2: node.frontmatter.addressLine2,
             country: node.frontmatter.addressCountry,
             email: node.frontmatter.addressEmail,
+          }
+          component.secondaryAddress = {
+            line1: node.frontmatter.secondaryAddressLine1,
+            line2: node.frontmatter.secondaryAddressLine2,
+            country: node.frontmatter.secondaryAddressCountry,
           }
         }
         if (node.frontmatter.component === 'featured') {

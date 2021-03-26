@@ -190,7 +190,15 @@ class Contact extends React.Component {
   render() {
     const {
       location: { pathname },
-      meta: { heading, icon, description, form, address, showAddress },
+      meta: {
+        heading,
+        icon,
+        description,
+        form,
+        address,
+        secondaryAddress,
+        showAddress,
+      },
       elemId,
     } = this.props
     const {
@@ -330,6 +338,16 @@ class Contact extends React.Component {
                     <div className="pb-10">{address.line1}</div>
                     <div className="pb-10">{address.line2}</div>
                     <div className="pb-10">{address.country}</div>
+                  </div>
+                </div>
+                <div className="d-flex pt-15">
+                  <div className="contact__address__icon">
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                  </div>
+                  <div className="pl-30">
+                    <div className="pb-10">{secondaryAddress.line1}</div>
+                    <div className="pb-10">{secondaryAddress.line2}</div>
+                    <div className="pb-10">{secondaryAddress.country}</div>
                   </div>
                 </div>
                 <div className="d-flex pt-15">
