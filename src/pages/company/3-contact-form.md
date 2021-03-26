@@ -21,6 +21,9 @@
 # addressLine2*: The text for address line 2
 # addressCountry*: The text for address country
 # addressEmail*: The text for the email to show
+# secondaryAddressLine1*: The text for the secondary address line 1
+# secondaryAddressLine2*: The text for secondary address line 2
+# secondaryAddressCountry*: The text for secondary address country
 ##
 template: default
 component: contact
@@ -39,5 +42,8 @@ addressTitle: Or drop us a visit
 addressLine1: Aarschotsestraat 52 / 004
 addressLine2: 1800 Vilvoorde
 addressCountry: Belgium
+secondaryAddressLine1: 59-61 Agiou Konstantinou st.
+secondaryAddressLine2: 151 24 Marousi
+secondaryAddressCountry: Athens
 addressEmail: hello@thesquaredev.com
 ---
